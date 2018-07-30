@@ -50,13 +50,13 @@ MVP, but it's something we're looking at for the future.
 [GOV.UK Elements], [GOV.UK Frontend Toolkit], [GOV.UK Template] and [GaaP Analytics]
 are included using [NPM] and bundled in on build. You can include more [NPM]
 modules easily by installing them as a dependency and including paths to them.
-This works because within [config.rb](https://github.com/alphagov/product-page-example/blob/master/config.rb#L77) sprockets is instructed to look within
+This works because within [config.rb](https://github.com/alphagov/govwifi-product-page/blob/master/config.rb#L77) sprockets is instructed to look within
 `node_modules/`.
 
 ### Getting started with Google Analytics
 To get started with Google Analytics you will need an account and a tracking ID
 you can get these by talking to the GaaP programme team. The analytics ID is then
-set within [config.rb](https://github.com/alphagov/product-page-example/blob/master/config.rb#L34).
+set within [config.rb](https://github.com/alphagov/govwifi-product-page/blob/master/config.rb#L34).
 
 To learn about how to get started with event tracking head over to [GaaP Analytics].
 

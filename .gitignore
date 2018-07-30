@@ -19,6 +19,7 @@
 
 # Ignore node modules
 /node_modules
+/vendor/bundle
 
 # PaaS authentication file
 Staticfile.auth

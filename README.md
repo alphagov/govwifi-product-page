@@ -1,82 +1,33 @@
-# Product Page Example
+# GovWifi Product Page
 
-This repository contains a number of [components](#components) that can be used
-to build 'product pages' for GOV.UK Products like [GOV.UK Pay], [GOV.UK
-Notify] and [GOV.UK Registers].
+This is the product page for GovWifi. It is a [middleman site](http://middlemanapp.com/) originally copied from the [product-page-example](https://github.com/alphagov/product-page-example) repo.
 
-![Screenshot of the example product page](screenshot.png)
+## Getting Setup for Developement
 
-It is also a [middleman site](http://middlemanapp.com/) for the sole purpose of
-providing an _example_ of how to use the components to build a site. You do not
-have to use middleman to build your product page.
+The recommended ruby version is `2.5.1`. You may need to install this.
 
-This shares a number of components and design considerations with the [tech docs
-template](https://github.com/alphagov/tech-docs-template), which may also be
-useful for product teams.
+To pull the code from Github, enter the following into your terminal (Applications -> Utilities -> Terminal on Mac):
 
+- `git clone https://github.com/alphagov/govwifi-product-page.git`
+- `cd govwifi-product-page`
+- `gem install bundler`
+- `make build`
 
-## Components
+You can now open the codebase in any text editor and make changes.
 
-For documentation on each component, read the comments at the top of each
-component's stylesheet:
+## Getting Started
 
-- [Breadcrumbs](source/stylesheets/modules/_breadcrumbs.scss)
-- [Content Section](source/stylesheets/modules/_content-section.scss)
-- [Full Width Form](source/stylesheets/modules/_full-width-form.scss)
-- [GOV.UK Logo](source/stylesheets/modules/_govuk-logo.scss)
-- [Header](source/stylesheets/modules/_header.scss)
-- [Hero 'Alternative Action'](source/stylesheets/modules/_hero-alternative-action.scss)
-- [Hero Button](source/stylesheets/modules/_hero-button.scss)
-- [Masthead](source/stylesheets/modules/_masthead.scss)
-- [Phase Banner](source/stylesheets/modules/_phase-banner.scss)
-- [Related Items](source/stylesheets/modules/_related-items.scss)
-- [Skip Link](source/stylesheets/modules/_skip-link.scss)
-- [Sub Navigation](source/stylesheets/modules/_sub-navigation.scss)
+To make the site viewable in your browser:
 
+- `make serve`
+- Open your browser and go to http://localhost:4567
 
-## Usage
+## Contributing
 
-For now, please copy the Sass and Javsacript for the components that you require
-into your own project, and use your own asset pipeline to e.g. compile the Sass
-files into CSS.
+The `source` folder contains all the pages that you will want to change, eg: `index.html.erb`. Whenever you save a change, the site will automatically reload so you can see your changes at `http://localhost:4567`.
 
-Because each product team have their own tech stack, making these dependencies
-available in a more automated way that worked for everyone was not part of the
-MVP, but it's something we're looking at for the future.
+Once you have made any changes, do the following to save your changes to git and push to github:
 
-
-## Frontend Dependencies
-
-[GOV.UK Elements], [GOV.UK Frontend Toolkit], [GOV.UK Template] and [GaaP Analytics]
-are included using [NPM] and bundled in on build. You can include more [NPM]
-modules easily by installing them as a dependency and including paths to them.
-This works because within [config.rb](https://github.com/alphagov/govwifi-product-page/blob/master/config.rb#L77) sprockets is instructed to look within
-`node_modules/`.
-
-### Getting started with Google Analytics
-To get started with Google Analytics you will need an account and a tracking ID
-you can get these by talking to the GaaP programme team. The analytics ID is then
-set within [config.rb](https://github.com/alphagov/govwifi-product-page/blob/master/config.rb#L34).
-
-To learn about how to get started with event tracking head over to [GaaP Analytics].
-
-## Running Example Locally
-
-If you wish to run the example in your own browser, you'll need to run the
-following commands from the root of this project:
-
-- `bundle install` to install middleman and its dependencies
-- `npm install` to install the frontend dependencies
-- `bundle exec middleman server` - to start middleman's built in server
-- `open http://localhost:4567` - to open the example in your browser
-
-
-[GOV.UK Pay]: https://www.payments.service.gov.uk/
-[GOV.UK Notify]: https://www.notifications.service.gov.uk/
-[GOV.UK Registers]: https://registers.cloudapps.digital/
-
-[GOV.UK Elements]: https://github.com/alphagov/govuk_elements
-[GOV.UK Frontend Toolkit]: https://github.com/alphagov/govuk_frontend_toolkit
-[GOV.UK Template]: https://github.com/alphagov/govuk_template
-[GaaP Analytics]: https://github.com/alphagov/gaap-analytics
-[NPM]: https://npmjs.com
+- `git add -A`
+- `git commit -m "ADD A SHORT DESCRIPTION OF YOUR CHANGES"`
+- `git push`

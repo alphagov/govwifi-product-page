@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title><%= current_page.data.title && "#{current_page.data.title} – " %>GOV.UK Product Pages</title>
+    <title><%= current_page.data.title && "#{current_page.data.title} – " %>GOV.UK GovWifi</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -44,7 +44,7 @@
               GOV.UK
             </span>
             <span class="header__title">
-              Product Pages
+              GovWifi
               <span class="phase-banner">Beta</span>
             </span>
           </a>
@@ -57,9 +57,8 @@
             <ul>
               <%
                 {
-                  'About' => '/',
-                  'Supplementary Pages' => '/supplementary.html',
-                  'Support' => '/support.html'
+                  'Overview' => '/',
+                  'Documentary' => '/documentary.html',
                 }.each do |title, url|
               %>
                 <li<% if url == current_page.url %> class="active" "aria-current"="page"<% end %>>

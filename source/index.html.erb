@@ -11,9 +11,6 @@ title: Index Page Example
     </ol>
   </nav>
 
-
-
-
   <div class="hero hero--breaded">
     <div class="hero__content">
       <div class="hero__body">
@@ -24,14 +21,35 @@ title: Index Page Example
         <p class="hero__description">
           GovWifi allows Government employees to go online when working across Government buildings
         </p>
-        <a href="#" role="button" class="hero-button" data-click-events data-click-category="Hero" data-click-action="Button clicked">
-          Sign up your organisation
-        </a>
-        <span class="hero-alternative-action">
-          or <a href="#" data-click-events data-click-category="Hero" data-click-action="Internal link clicked">login</a> if your organisation is signed up
-        </span>
+      </div>
+    </div>
+
+    <div class="grid-row">
+      <div class="column-one-half">
+        <div class="column-three-quarters">
+          <h2 class="heading-l">For Users</h2>
+          <p class="body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in
+            vestibulum lectus. Suspendisse molestie mollis metus quis maximus.
+          </p>
+          <%= link_to "How to Sign Up", "#", class: "hero-button" %>
+        </div>
       </div>
 
+      <div class="column-one-half">
+        <div class="column-three-quarters">
+          <h2 class="heading-l">For Teams</h2>
+          <p class="body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in
+            vestibulum lectus. Suspendisse molestie mollis metus quis maximus.
+          </p>
+            <%= link_to "Sign up Organisation", "#", class: "hero-button" %>
+
+            <span class="hero-alternative-action">
+              or <%= link_to "login", "#" %> if your organisation is signed up
+            </span>
+        </div>
+      </div>
     </div>
   </div>
 </div>

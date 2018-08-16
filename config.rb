@@ -31,9 +31,9 @@ configure :development do
 end
 
 # Insert your Google Analytics ID below
-# configure :build do
-#   set :analytics, "'UA-XXXXXXXX-X'"
-# end
+configure :build do
+  set :analytics, ""
+end
 
 ###
 # Helpers

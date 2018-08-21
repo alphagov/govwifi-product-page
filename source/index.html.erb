@@ -6,7 +6,7 @@ title: Index Page Example
   <nav class="breadcrumbs breadcrumbs--inverse" aria-label="Breadcrumbs" data-click-events data-click-category="Header" data-click-action="Breadcrumb clicked">
     <ol itemscope itemtype="http://schema.org/BreadcrumbList">
       <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-        <a href="https://www.gov.uk/service-toolkit#components" itemprop="item"><span itemprop="name">Overview</span></a>
+        <a href="/" itemprop="item"><span itemprop="name">Overview</span></a>
       </li>
     </ol>
   </nav>
@@ -18,10 +18,14 @@ title: Index Page Example
           <div class="hero__inline-image">
             <img src="//placehold.it/646x492/005ea5/ffffff?text=A+supporting+image" alt="" role="presentation">
           </div>
-            <p class="hero__description"> Once signed up, you will connect automatically with <br>
-            GovWifi when entering any Government building.</p>
-            <a href="#" role="button" class="hero-button">
-              Get your GovWifi account</a>
+          <p class="hero__description">
+            GovWifi allows staff and visitors in government and <br>
+            public sector organisations to stay connected to a secure <br>
+            wifi service when they move between buildings.
+          </p>
+          <a href="https://www.gov.uk/government/collections/connect-to-govwifi" role="button" class="hero-button">
+            Connect to GovWifi now
+          </a>
       </div>
     </div>
   </div>
@@ -31,13 +35,7 @@ title: Index Page Example
 <div class="container">
   <div class="grid-row">
     <div class="column-two-thirds">
-
-      <section  class="content-section content-section">
-        <h2>What is GovWifi</h2>
-        <p>GovWifi allows staff and visitors in government and public sector organisations to stay connected to a secure wifi service when they move between buildings.</p>
-      </section>
-
-      <section class="content-section content-section--with-top-border">
+      <section class="content-section">
         <h2>Benefits</h2>
         <ul class="list list-bullet">
           <li>It’s free</li>
@@ -54,15 +52,35 @@ title: Index Page Example
 
       <section class="content-section content-section--with-top-border">
         <h2>Security</h2>
-        <p class="content-section__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+        <p class="content-section__body">GovWifi has processes in place to:</p>
+        <ul class="list list-bullet">
+          <li>protect user data</li>
+          <li>keep systems secure</li>
+          <li>manage risks around information</li>
+        </ul>
+        <br>
+
+        <p class="content-section__body">How we keep GovWifi secure:</p>
+        <ul class="list list-bullet">
+          <li>protective monitoring to record activity, and raise alerts</li>
+          <li>about any suspicious activity</li>
+          <li>Hosted in multiple physical locations for failover</li>
+          <li>Encryption at rest</li>
+          <li>Regular penetration testing</li>
+        </ul>
+      </section>
+
+      <section class="content-section content-section--with-top-border">
+        <h2>GDPR</h2>
+        <p class="content-section__body">
+          GovWifi doesn't keep any more data than it needs to.
+        </p>
       </section>
 
       <section class="content-section content-section--with-top-border">
         <h1 class="govuk-heading-xl">Sign up your organisation</h1>
-        <p>You can read the <a href=</documentation">documentation</a> and </p>
-        <a href="#" role="button" class="button">
-          Sign up
-        </a>
+        <p>You can read the <%= link_to "documentation", "https://govwifi-tech-docs.cloudapps.digital/" %>, or</p>
+        <%= link_to "Sign up", "https://admin-platform.wifi.service.gov.uk/users/sign_up", class: "button" %>
       </section>
 
     </div>

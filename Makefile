@@ -2,7 +2,7 @@ build:
 	docker-compose build
 
 serve: build
-	docker-compose run -p 4567:4567 app bundle exec middleman server
+	docker-compose run app bundle exec middleman server
 
 deploy: build
 	docker-compose run app sh -c "cf login -u ${CF_USER} -p ${CF_PASS} -a https://api.cloud.service.gov.uk -s production && cf push govwifi-product-page"

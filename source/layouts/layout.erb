@@ -45,7 +45,6 @@
             </span>
             <span class="header__title">
               GovWifi
-              <span class="phase-banner">Beta</span>
             </span>
           </a>
         </div>
@@ -58,8 +57,8 @@
               <%
                 {
                   'Overview' => '/index.html',
-                  'Documentation' => '/documentation.html',
-                  'Admin login' => '/adminlogin.html'
+                  'Documentation' => 'https://govwifi-tech-docs.cloudapps.digital/',
+                  'Admin' => 'https://admin-platform.wifi.service.gov.uk/users/sign_in'
                 }.each do |title, url|
               %>
                 <li<% if url == current_page.url %> class="active" "aria-current"="page"<% end %>>

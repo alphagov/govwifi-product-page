@@ -6,7 +6,7 @@ title: Index Page Example
   <nav class="breadcrumbs breadcrumbs--inverse" aria-label="Breadcrumbs" data-click-events data-click-category="Header" data-click-action="Breadcrumb clicked">
     <ol itemscope itemtype="http://schema.org/BreadcrumbList">
       <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-        <a href="https://www.gov.uk/service-toolkit#components" itemprop="item"><span itemprop="name">Overview</span></a>
+        <a href="/" itemprop="item"><span itemprop="name">Overview</span></a>
       </li>
     </ol>
   </nav>
@@ -20,8 +20,8 @@ title: Index Page Example
           </div>
             <p class="hero__description"> Once signed up, you will connect automatically with <br>
             GovWifi when entering any Government building.</p>
-            <a href="#" role="button" class="hero-button">
-              Get your GovWifi account</a>
+            <a href="https://www.gov.uk/government/collections/connect-to-govwifi" role="button" class="hero-button">
+              Connect to GovWifi now</a>
       </div>
     </div>
   </div>
@@ -59,10 +59,8 @@ title: Index Page Example
 
       <section class="content-section content-section--with-top-border">
         <h1 class="govuk-heading-xl">Sign up your organisation</h1>
-        <p>You can read the <a href=</documentation">documentation</a> and </p>
-        <a href="#" role="button" class="button">
-          Sign up
-        </a>
+        <p>You can read the <%= link_to "documentation", "https://govwifi-tech-docs.cloudapps.digital/" %>, or</p>
+        <%= link_to "Sign up", "https://admin-platform.wifi.service.gov.uk/users/sign_up", class: "button" %>
       </section>
 
     </div>

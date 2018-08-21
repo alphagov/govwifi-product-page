@@ -9,5 +9,7 @@ RUN bundle install
 
 COPY . .
 
+EXPOSE 4567
+
 RUN npm install --unsafe-perm
 RUN bundle exec middleman build

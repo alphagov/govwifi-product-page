@@ -32,10 +32,35 @@ title: Help with Connecting to GovWifi
     <div class="column-two-thirds">
       <h1 class="heading-large">Help with connecting to GovWifi</h1>
       <p>
-        Please see troublshooting advice below for your device or operating system:
+        Please choose from the list below for troubleshooting advice specific to your device or operating system:
       </p>
 
-      <%= partial "troubleshooting/android" %>
+      <%
+        troubleshooting_sections = [
+          { title: "Android", path: "android" },
+          { title: "Apple iOS", path: "apple_ios" },
+          { title: "Apple macOS", path: "apple_mac_os" },
+          { title: "Blackberry", path: "blackberry" },
+          { title: "Chrome OS", path: "chrome" },
+          { title: "Windows", path: "windows" },
+          { title: "General Troubleshooting", path: "general" }
+        ]
+      %>
+
+      <% troubleshooting_sections.each do |section| %>
+        <details class="govuk-details">
+          <summary class="govuk-details__summary">
+            <h2 style="display:inline-block;">
+              <span class="govuk-details__summary-text">
+                <%= section[:title] %>
+              </span>
+            </h2>
+          </summary>
+          <div class="govuk-details__text">
+            <%= partial "troubleshooting/#{section[:path]}" %>
+          </div>
+        </details>
+      <% end %>
     </div>
   </div>
 </div>

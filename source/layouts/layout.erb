@@ -56,9 +56,8 @@
             <ul>
               <%
                 {
-                  'Overview' => '/index.html',
                   'Documentation' => 'https://govwifi-tech-docs.cloudapps.digital/',
-                  'Admin' => 'https://admin-platform.wifi.service.gov.uk/users/sign_in'
+                  'Sign in' => 'https://admin-platform.wifi.service.gov.uk/users/sign_in'
                 }.each do |title, url|
               %>
                 <li<% if url == current_page.url %> class="active" "aria-current"="page"<% end %>>

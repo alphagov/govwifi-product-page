@@ -2,32 +2,11 @@
 title: Help with Connecting to GovWifi
 ---
 
-<nav class="breadcrumbs" aria-label="Breadcrumbs">
-  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
-    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-      <a href="/" itemprop="item"><span itemprop="name">Overview</span></a>
-    </li>
-    <li class="breadcrumbs__item breadcrumbs__item--active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-      <a href="#main" itemprop="item"><span itemprop="name">Troubleshooting</span></a>
-    </li>
-  </ol>
-</nav>
+<%= partial "shared/end_user_breadcrumbs", locals: { page: "Troubleshooting" } %>
 
 <div class="container">
   <div class="grid-row">
-    <div class="column-one-third">
-      <nav class="sub-navigation">
-        <ol itemscope itemtype="http://schema.org/ItemList">
-          <li class="sub-navigation__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-            <a href="supplementary/about-govwifi.html" itemprop="item"><span itemprop="name">Sign Up</span></a>
-          </li>
-
-          <li class="sub-navigation__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-            <a href="supplementary/before-you-start.html" itemprop="item"><span itemprop="name">Troubleshooting</span></a>
-          </li>
-        </ol>
-      </nav>
-    </div>
+    <%= partial "shared/end_user_nav" %>
 
     <div class="column-two-thirds">
       <h1 class="heading-large">Help with connecting to GovWifi</h1>

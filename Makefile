@@ -12,4 +12,9 @@ stop:
 	docker-compose kill
 	docker-compose rm -f
 
+live-serve:
+	bundle install --path vendor/bundle
+	npm install
+	bundle exec middleman server
+
 .PHONY: build deploy serve stop

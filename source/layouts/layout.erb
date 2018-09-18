@@ -54,18 +54,8 @@
 
           <nav id="navigation" class="header__navigation js-nav" aria-label="Top Level Navigation" aria-hidden="true" data-click-events data-click-category="Header" data-click-action="Navigation link clicked">
             <ul>
-              <%
-                {
-                  'Documentation' => 'https://govwifi-tech-docs.cloudapps.digital/',
-                  'Sign in' => 'https://admin-platform.wifi.service.gov.uk/users/sign_in'
-                }.each do |title, url|
-              %>
-                <li<% if url == current_page.url %> class="active" "aria-current"="page"<% end %>>
-                  <a href="<%= url == current_page.url ? "#main" : url %>">
-                    <%= title %>
-                  </a>
-                </li>
-              <% end %>
+              <li><%= link_to "Documentation", "https://docs.wifi.service.gov.uk" %></li>
+              <li><%= link_to "Sign in", "https://admin.wifi.service.gov.uk/users/sign_in" %></li>
             </ul>
           </nav>
         </div>

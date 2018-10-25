@@ -25,7 +25,7 @@ configure :development do
   activate :livereload
 end
 
-# Google analytics
+#  analytics
 # Analytics ID must be inside the single quotes as it’s string
 configure :development do
   set :analytics, ""
@@ -34,7 +34,7 @@ end
 
 # Insert your Google Analytics ID below
 configure :build do
-  set :analytics, "'UA-127779891-1'"
+  set :analytics, ""
 end
 
 ###

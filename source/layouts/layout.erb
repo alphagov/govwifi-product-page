@@ -1,6 +1,21 @@
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127779891-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-127779891-1', {
+        'linker': {
+          'domains': ['wifi.service.gov.uk','admin.wifi.service.gov.uk', 'docs.wifi.service.gov.uk']
+        }
+      });
+    </script>
+
     <meta charset="utf-8">
 
     <title><%= current_page.data.title && "#{current_page.data.title} – " %>GOV.UK GovWifi</title>
@@ -17,21 +32,7 @@
     <!--[if gte IE 9]><!--><%= stylesheet_link_tag :fonts, media: :all %><!--<![endif]-->
 
     <%= javascript_include_tag :application %>
-    <% if config.analytics.present? %>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', <%= config.analytics %>, 'auto');
-      ga('set', 'anonymizeIp', true);
-      ga('set', 'displayFeaturesTask', null);
-      ga('set', 'transport', 'beacon');
-
-      ga('send', 'pageview');
-    </script>
-    <% end %>
+    
   </head>
 
   <body>

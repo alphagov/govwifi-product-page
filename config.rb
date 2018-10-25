@@ -25,7 +25,7 @@ configure :development do
   activate :livereload
 end
 
-#  analytics
+# Google analytics
 # Analytics ID must be inside the single quotes as it’s string
 configure :development do
   set :analytics, ""

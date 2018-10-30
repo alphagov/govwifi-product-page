@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 
 COPY Gemfile Gemfile.lock .ruby-version ./
 
-RUN apk --update add g++ musl-dev make nodejs
+RUN apk --update add g++ musl-dev make nodejs nodejs-npm
 RUN bundle install
 
 COPY . .

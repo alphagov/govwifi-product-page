@@ -64,6 +64,11 @@ body {
   @extend %site-width-container;
 }
 
+.content-section--with-top-border {
+  padding-top: 5px;
+  border-top: 1px #dee0e2 solid;
+}
+
 a:link {
   color: $link-colour;
 }

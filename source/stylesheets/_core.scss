@@ -69,6 +69,17 @@ body {
   border-top: 1px #dee0e2 solid;
 }
 
+.hero__aside-image img {
+  max-width: 100%;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.hero__body {
+  float: left;
+  width: 65.00%;
+}
+
 a:link {
   color: $link-colour;
 }

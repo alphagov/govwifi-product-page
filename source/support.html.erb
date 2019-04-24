@@ -1,74 +1,64 @@
 ---
-title: Support Page Example
+title: Help and support - GovWifi
 ---
-
-<nav class="breadcrumbs" aria-label="Breadcrumbs">
-  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
-    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-      <a href="/" itemprop="item"><span itemprop="name">Components</span></a>
-    </li>
-    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-      <a href="/" itemprop="item"><span itemprop="name">Product Page</span></a>
-    </li>
-    <li class="breadcrumbs__item breadcrumbs__item--active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-      <a href="#main" itemprop="item"><span itemprop="name">Support</span></a>
-    </li>
-  </ol>
-</nav>
-
 <div class="container">
   <div class="grid-row">
-
-    <div class="column-two-thirds">
-      <h1 class="heading-large">Get support</h1>
-      <p>Do you have a problem or question? Please send a detailed description to our support team.</p>
-
-      <div class="panel panel-border-wide">
-        <p>
-          Check our <a href="#">system status</a> 
-          page to see if there are any known issues with this service.
-        </p>
-      </div>
-
-      <form method="post" class="full-width-form">
-        <div class="form-group">
-          <label class="form-label" for="subject">Subject</label>
-          <input type="text" class="form-control" id="subject" name="subject" />
-        </div>
-
-        <div class="form-group">
-          <label class="form-label" for="feedback">Description</label>
-          <textarea id="feedback" name="feedback" class="form-control" rows="10"></textarea>
-        </div>
-            
-        <div class="form-group">
-          <label class="form-label" for="name">Name</label>
-          <input type="text" id="name" name="name" class="form-control" />
-        </div>
-            
-        <div class="form-group">
-          <label class="form-label" for="email_address">Email address</label>
-          <input type="text" id="email_address" name="email_address" class="form-control" />
-        </div>
-            
-        <input class="button" type="submit" value="Send">
-      </form>
+    <div class="column-one-third">
+      <a href="#">A sidenav link</a>
     </div>
 
-    <div class="column-one-third">
-      <aside class="related-items">
-        <h2 class="related-items__title">Other ways to get in touch with the team</h2>
-        <ul class="related-items__list">
-          <li><a href="#">A link</a></li>
-          <li><a href="#">Another link</a></li>
-          <li><a href="#">A third link which is longer and is likely to span multiple lines</a></li>
-        </ul>
+    <div class="column-two-thirds">
+      <h1 class="heading-large">GovWifi support</h1>
+      <p>
+        GovWifi access in your building is provided by the participating
+        government or public sector organisation.
+      </p>
+      <p>
+        If you experience any problems with wifi access, please contact the
+        relevant organisation IT Support team.
+      </p>
 
-        <h2 class="related-items__title">Roadmap</h2>
-        <ul class="related-items__list">
-          <li><a href="#">A link</a></li>
+      <h2 class="heading-medium">Network problems</h2>
+      <p>
+        If you can’t see the GovWifi network in your wifi settings, you might be
+        in a building that doesn’t have GovWifi. Contact the organisation IT
+        Support team to check.
+      </p>
+      <p>
+        You can check which government or public sector
+        <%= link_to "organisations currently offer GovWifi.",
+        "https://www.wifi.service.gov.uk/about-govwifi/organisations-using-govwifi",
+        class: "govuk-link" %>
+      </p>
+
+      <h2 class="heading-medium">Government managed device problems</h2>
+      <p>
+        Some managed devices may tell you that you don’t have permission to
+        connect to GovWifi.
+      </p>
+      <p>
+        If you think you are using a managed device, contact your local IT team.
+        They’ll tell you if:
+        <ul class="list list-bullet">
+          <li>they can install a profile for GovWifi so that you can connect</li>
+          <li>you’re using a secure government device that’s not allowed to connect to GovWifi</li>
         </ul>
-      </aside>
+      </p>
+
+      <h2 class="heading-medium">Network administrator support</h2>
+      <p>
+        If you manage public sector IT services and require support setting up
+        a new or managing an existing GovWifi installation, please
+        <%= link_to "contact us", "https://admin.wifi.service.gov.uk/help", class: "govuk-link" %>
+      </p>
+      <p>
+        The Government Digital Service (GDS) maintains the service behind GovWifi
+        and helps network administrators to set up or manage existing GovWifi
+        installation in their organisation.
+      </p>
+      <p>
+        GDS provides operational support from 10am to 4pm, Monday to Friday.
+      </p>
     </div>
   </div>
 </div>

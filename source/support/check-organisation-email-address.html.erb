@@ -24,7 +24,7 @@ description: Help and support connecting to GovWifi
         <input style="margin-bottom:20px;" class="govuk-input" id="search-domains" type="text" placeholder="Search email domains">
       </div>
 
-      <%  array = ["police.uk", "nhs.uk", "cjsm.net", "nhs.net", "ejudiciary.net", "hmcts.net", "wmfs.net", "highwaysengland.co.uk", "deltservices.co.uk", "ukfi.co.uk","uksbs.co.uk",
+      <%  array_of_email_domains = ["police.uk", "nhs.uk", "cjsm.net", "nhs.net", "ejudiciary.net", "hmcts.net", "wmfs.net", "highwaysengland.co.uk", "deltservices.co.uk", "ukfi.co.uk","uksbs.co.uk",
       "slc.co.uk", "cefas.co.uk", "located.co.uk", "visitbritain.org", "nibsc.org", "visitengland.org", "ukri.org", "kent.fire-uk.org", "xentrall.org.uk", "naturalengland.org.uk",
       "sepa.org.uk", "nestcorporation.org.uk", "lgo.org.uk", "ukgi.org.uk", "marinemanagement.org.uk", "nao.org.uk", "socialworkengland.org.uk", "catered.org.uk", "acas.org.uk",
       "royalmint.com", "oilandpipelines.com", "srswales.com", "govfsl.com", "bbsrc.ac.uk", "ahrc.ac.uk", "epsrc.ac.uk", "esrc.ac.uk", "nerc.ac.uk", "stfc.ac.uk", "jrs.ac.uk","rcuk.ac.uk",
@@ -38,7 +38,7 @@ description: Help and support connecting to GovWifi
           </tr>
         </thead>
         <tbody class="govuk-table__body">
-          <% array.each do |email| %>
+          <% array_of_email_domains.each do |email| %>
             <tr class="govuk-table__row result-row">
               <td class="govuk-table__cell govuk-!-width-one-half" scope="row">
                 <%= '@'+email %>

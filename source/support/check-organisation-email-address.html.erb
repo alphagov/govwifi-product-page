@@ -24,12 +24,12 @@ description: Help and support connecting to GovWifi
         <input style="margin-bottom:20px;" class="govuk-input" id="search-domains" type="text" placeholder="Search email domains">
       </div>
 
-      <%  array_of_email_domains = ["police.uk", "nhs.uk", "cjsm.net", "nhs.net", "ejudiciary.net", "hmcts.net", "wmfs.net", "highwaysengland.co.uk", "deltservices.co.uk", "ukfi.co.uk","uksbs.co.uk",
+      <% email_domains = ["police.uk", "nhs.uk", "cjsm.net", "nhs.net", "ejudiciary.net", "hmcts.net", "wmfs.net", "highwaysengland.co.uk", "deltservices.co.uk", "ukfi.co.uk","uksbs.co.uk",
       "slc.co.uk", "cefas.co.uk", "located.co.uk", "visitbritain.org", "nibsc.org", "visitengland.org", "ukri.org", "kent.fire-uk.org", "xentrall.org.uk", "naturalengland.org.uk",
       "sepa.org.uk", "nestcorporation.org.uk", "lgo.org.uk", "ukgi.org.uk", "marinemanagement.org.uk", "nao.org.uk", "socialworkengland.org.uk", "catered.org.uk", "acas.org.uk",
       "royalmint.com", "oilandpipelines.com", "srswales.com", "govfsl.com", "bbsrc.ac.uk", "ahrc.ac.uk", "epsrc.ac.uk", "esrc.ac.uk", "nerc.ac.uk", "stfc.ac.uk", "jrs.ac.uk","rcuk.ac.uk",
       "ukri.ac.uk", "headoffice.mrc.ac.uk", "mrc.ac.uk", "nchsr.ac.uk", "gov.scot", "forestryengland.uk", "gov.uk", "madetech.com", "derbyhomes.org", "northyorkshire.pnn.police.uk",
-      "theccc.org.uk", "dudleymbc.org.uk"]%>
+      "theccc.org.uk", "dudleymbc.org.uk"] %>
 
       <table class="govuk-table">
         <thead class="govuk-table__head">
@@ -38,7 +38,7 @@ description: Help and support connecting to GovWifi
           </tr>
         </thead>
         <tbody class="govuk-table__body">
-          <% array_of_email_domains.each do |email| %>
+          <% email_domains.each do |email| %>
             <tr class="govuk-table__row result-row">
               <td class="govuk-table__cell govuk-!-width-one-half" scope="row">
                 <%= '@'+email %>
@@ -51,4 +51,32 @@ description: Help and support connecting to GovWifi
   </div>
 </div>
 
+<script>
+  var filterInput = document.getElementById('search-domains');
+  filterInput.addEventListener('keyup', filterResults);
 
+  function filterResults() {
+    var filterValue = filterInput.value.toUpperCase();
+    var rows = document.querySelectorAll('.result-row');
+
+    for(var i = 0; i < rows.length; i++) {
+      var text = rows[i].querySelectorAll('.govuk-table__cell')[0].innerHTML.toUpperCase();
+      rows[i].style.display = text.indexOf(filterValue) > -1 ? '' : 'none';
+    }
+
+    displayResultsMessage(rows);
+  }
+
+  function displayResultsMessage(results) {
+    var noResultsMessage = document.getElementById('no-results');
+    noResultsMessage.style.display = 'none';
+
+    var noResults = Array.from(results).every(
+      function(e) { return e.style.display == 'none'; }
+    );
+
+    if (noResults) {
+      noResultsMessage.style.display = 'block';
+    }
+  }
+</script>

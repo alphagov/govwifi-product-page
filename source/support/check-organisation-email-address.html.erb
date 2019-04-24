@@ -12,7 +12,7 @@ description: Help and support connecting to GovWifi
       <%= partial 'shared/support/sidebar' %>
     </div>
     <div class="column-two-thirds">
-      <h1 class="hero__title">Check your organisation email address</h1>
+      <h1>Check your organisation email address</h1>
       <p>You can <%= link_to "signup to GovWifi", "https://www.wifi.service.gov.uk/support/connect-to-govwifi", class: "govuk-link" %>
         using your government or public sector email address
       </p>
@@ -21,11 +21,9 @@ description: Help and support connecting to GovWifi
       </p>
       <p>You can check to see if your organisation email is eligible below:</p>
       <div class="govuk-form-group">
-        <label class="govuk-label" for="event-name">
-          Event name
-        </label>
-        <input class="govuk-input" id="event-name" name="event-name" type="text">
+        <input class="govuk-input" id="search-domains" type="text" placeholder="Search email domains">
       </div>
+
     </div>
   </div>
 </div>

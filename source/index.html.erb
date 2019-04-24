@@ -2,16 +2,13 @@
   <div class="hero">
     <div class="hero__content">
       <div class="hero__body">
-        <h1 class="hero__title">Offer GovWifi in your building or organisation</h1>
+        <h1 class="hero__title">Connect to the public sector guest wifi network</h1>
         <div class="hero__inline-image">
           <img src="/images/Product-illustration.png" alt="" role="presentation" width="100%">
         </div>
         <p class="hero__description">
-          Help users stay connected across organisations with GovWifi's single user login.
-        </p>
-        <%= link_to "See how to get started", "/get-started", class: "hero-button" %>
-        <p class="hero__user-text">
-          Or, <%= link_to "manage an existing GovWifi installation", 'https://admin.wifi.service.gov.uk/users/sign_in' %>.
+          GovWifi allows staff and visitors to connect to a single guest wifi network across multiple government and public sector
+          organisations through a single user login.
         </p>
       </div>
       <div class="hero__aside-image main-image">
@@ -23,43 +20,22 @@
 
 <div class="container">
   <div class="grid-row">
-    <div class="column-two-thirds">
-      <section class="content-section">
-        <h2> Users only need to sign up once<br></h2>
-        <p class="content-section__body">
-          Once users have signed up they’ll automatically be connected when visiting organisations that use GovWifi.
-        </p>
-      </section>
+    <div class="column-one-third">
+      <h2>Connect devices</h2>
+      <p>Sign up to automatically connect to the GovWifi network across the public sector.</p>
+      <%= link_to "Connect your device to GovWifi", "https://www.wifi.service.gov.uk/connect-to-govwifi", class: "govuk-link" %>
+    </div>
+
+    <div class="column-one-third">
+      <h2>Offer GovWifi</h2>
+      <p>Make GovWifi available in your organisation and keep your existing infrastructure or wifi provider.</p>
+      <%= link_to "Connect your organisation", "https://docs.wifi.service.gov.uk", class: "govuk-link" %>
+    </div>
+
+    <div class="column-one-third">
+      <h2>Manage GovWifi</h2>
+      <p>Access administrator account to manage an existing GovWifi installation in your organisation.</p>
+      <%= link_to "Network administrator login", "https://admin.wifi.service.gov.uk", class: "govuk-link" %>
     </div>
   </div>
 </div>
-
-<div class="container">
-  <div class="grid-row">
-    <div class="column-two-thirds">
-      <section class="content-section--with-top-border">
-        <h2>Keep your existing infrastructure</h2>
-        <p class="content-section__body">
-         You won't have to change your infrastructure or current Wifi provider.<br>
-         GovWifi just makes all participating wifi networks appear as one to users.
-        </p>
-        </section>
-
-
-        <section class="content-section--with-top-border">
-        <h2>Keep your users safe</h2>
-          <p>GovWifi is tested to keep users secure with features like:</p>
-          <ul class="list-bullet">
-            <li>protective monitoring to record activity, and raise alerts</li>
-            <li>Encryption at rest</li>
-            <li>Regular penetration testing</li>
-        </ul>
-      </section>
-
-
-      <section class="content-section--with-top-border">
-        <h2>The team</h2>
-          <p>
-          GovWifi is built and managed by a full-time team of
-            developers, designers and product managers at GDS. </p>
-      </section>

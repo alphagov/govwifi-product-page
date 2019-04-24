@@ -1,0 +1,33 @@
+---
+title: Check your organisation email address
+
+tags:
+
+description: Help and support connecting to GovWifi
+---
+
+<div class="container">
+  <div class="grid-row">
+    <div class="column-one-third">
+      <%= partial 'shared/support/sidebar' %>
+    </div>
+    <div class="column-two-thirds">
+      <h1 class="hero__title">Check your organisation email address</h1>
+      <p>You can <%= link_to "signup to GovWifi", "https://www.wifi.service.gov.uk/support/connect-to-govwifi", class: "govuk-link" %>
+        using your government or public sector email address
+      </p>
+      <p>If you don't have a government or public sector email address, you can
+        <%= link_to "connect to GovWifi as a visitor", "https://www.wifi.service.gov.uk/support/connect-visitors-to-govwifi", class: "govuk-link" %>
+      </p>
+      <p>You can check to see if your organisation email is eligible below:</p>
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="event-name">
+          Event name
+        </label>
+        <input class="govuk-input" id="event-name" name="event-name" type="text">
+      </div>
+    </div>
+  </div>
+</div>
+
+

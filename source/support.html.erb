@@ -4,7 +4,7 @@ title: Help and support - GovWifi
 <div class="container">
   <div class="grid-row">
     <div class="column-one-third">
-      <a href="#">A sidenav link</a>
+      <%= partial 'shared/support/sidebar' %>
     </div>
 
     <div class="column-two-thirds">
@@ -27,7 +27,7 @@ title: Help and support - GovWifi
       <p>
         You can check which government or public sector
         <%= link_to "organisations currently offer GovWifi.",
-        "https://www.wifi.service.gov.uk/about-govwifi/organisations-using-govwifi",
+        "/about-govwifi/organisations-using-govwifi",
         class: "govuk-link" %>
       </p>
 

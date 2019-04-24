@@ -1,0 +1,27 @@
+---
+title: Connect visitors to GovWifi
+---
+<div class="container">
+  <div class="grid-row">
+    <div class="column-one-third">
+      <%= partial '/shared/support/_sidebar' %>
+    </div>
+
+    <div class="column-two-thirds column-minimum">
+      <h1 class="heading-large">Connect visitors to GovWifi</h1>
+      <p>Visitors to participating government or public sector organisation buildings are also able to access GovWifi in available buildings.</p>
+      <p>If visitors do not have a <%= link_to "government or public sector email address", "/support/check-organisation-email-address" %>. they will need to contact the staff member they are visiting to get access to GovWifi.</p>
+      <p>The staff member will need to use their public sector email address to:</p>
+
+      <ul class="list list-bullet">
+        <li>send an email to <%= link_to "sponsor@wifi.service.gov.uk", "mailto: sponsor@wifi.service.gov.uk" %></li>
+        <li>leave the subject line blank</li>
+        <li>only include the email address of each visitor on separate lines within the email</li>
+      </ul>
+
+      <div class="govuk-inset-text">
+        <%= link_to "Connect to GovWifi with your government or public sector email address", "/connect-to-govwifi" %>
+      </div>
+    </div>
+  </div>
+</div>

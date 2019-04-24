@@ -21,9 +21,32 @@ description: Help and support connecting to GovWifi
       </p>
       <p>You can check to see if your organisation email is eligible below:</p>
       <div class="govuk-form-group">
-        <input class="govuk-input" id="search-domains" type="text" placeholder="Search email domains">
+        <input style="margin-bottom:20px;" class="govuk-input" id="search-domains" type="text" placeholder="Search email domains">
       </div>
 
+      <%  array = ["police.uk", "nhs.uk", "cjsm.net", "nhs.net", "ejudiciary.net", "hmcts.net", "wmfs.net", "highwaysengland.co.uk", "deltservices.co.uk", "ukfi.co.uk","uksbs.co.uk",
+      "slc.co.uk", "cefas.co.uk", "located.co.uk", "visitbritain.org", "nibsc.org", "visitengland.org", "ukri.org", "kent.fire-uk.org", "xentrall.org.uk", "naturalengland.org.uk",
+      "sepa.org.uk", "nestcorporation.org.uk", "lgo.org.uk", "ukgi.org.uk", "marinemanagement.org.uk", "nao.org.uk", "socialworkengland.org.uk", "catered.org.uk", "acas.org.uk",
+      "royalmint.com", "oilandpipelines.com", "srswales.com", "govfsl.com", "bbsrc.ac.uk", "ahrc.ac.uk", "epsrc.ac.uk", "esrc.ac.uk", "nerc.ac.uk", "stfc.ac.uk", "jrs.ac.uk","rcuk.ac.uk",
+      "ukri.ac.uk", "headoffice.mrc.ac.uk", "mrc.ac.uk", "nchsr.ac.uk", "gov.scot", "forestryengland.uk", "gov.uk", "madetech.com", "derbyhomes.org", "northyorkshire.pnn.police.uk",
+      "theccc.org.uk", "dudleymbc.org.uk"]%>
+
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header govuk-!-width-one-half">Organisation email domain name</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <% array.each do |email| %>
+            <tr class="govuk-table__row result-row">
+              <td class="govuk-table__cell govuk-!-width-one-half" scope="row">
+                <%= '@'+email %>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>

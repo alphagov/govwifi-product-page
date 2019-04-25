@@ -122,7 +122,7 @@ title: Connect to GovWifi using a Windows device - GovWifi
       <p>Step 1 - In your web browser, navigate to: <%= link_to "https://www.geotrust.com/resources/root_certificates/certificates/Geotrust_PCA_G3_Root.pem", "https://www.geotrust.com/resources/root_certificates/certificates/Geotrust_PCA_G3_Root.pem" %></p>
       <p>Step 2 - Go to your Start menu. Select 'Accessories' and choose 'Notepad'.  Copy everything from BEGIN CERTIFICATE to END CERTIFICATE into your notepad, and save the file on your C: drive as certificate.pem</p>
       <p>Step 3 - To install the certificate from the Command Prompt, go to your start menu, select 'Accessories' and right click on 'Command Prompt'. Choose 'Run as administrator'.</p>
-      <p>Step 4 - Copy (Ctrl + v) the text below:
+      <p>Step 4 - Copy (Ctrl + v) the text below:<br />
         <code>certutil -addstore -enterprise -f "Root" c:\certificate.pem</code>
       </p>
 

@@ -1,0 +1,15 @@
+.table-header {
+  background-color: $govuk-blue;
+  color: white;
+  padding-left: 15px;
+}
+
+.striped-table {
+  tr:nth-child(even) {
+    background-color: govuk-colour("grey-4");
+  }
+  td {
+    border: none;
+    padding-left: 15px;
+  }
+}

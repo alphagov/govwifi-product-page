@@ -27,12 +27,12 @@ description: Find all the public sector organisations where GovWifi is available
       <table class="govuk-table">
         <thead class="govuk-table__head">
           <tr class="govuk-table__row">
-            <th class="govuk-table__header govuk-!-width-one-half">Organisation</th>
+            <th class="govuk-table__header govuk-!-width-one-half table-header">Organisation</th>
           </tr>
         </thead>
-        <tbody class="govuk-table__body">
+        <tbody class="govuk-table__body striped-table">
           <% organisations.each do |organisation| %>
-            <tr class="govuk-table__row result-row results">
+            <tr class="govuk-table__row result-row result">
               <td class="govuk-table__cell govuk-!-width-one-half result-text" scope="row">
                 <%= organisation %>
               </td>

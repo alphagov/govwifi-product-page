@@ -48,6 +48,7 @@
 @import "modules/phase-banner";
 @import "modules/related-items";
 @import "modules/responsive-embed";
+@import "modules/striped-table";
 @import "modules/skip-link";
 @import "modules/sub-navigation";
 @import "modules/task-list";
@@ -73,20 +74,6 @@ body {
 .content-section--with-top-border {
   padding-top: 5px;
   border-top: 1px #dee0e2 solid;
-}
-
-.input-field-margin-bottom {
-  margin-bottom: 20px;
-}
-
-.no-results-found-margin-top {
-  margin-top: 15px;
-}
-
-.table-header {
-  background-color: $govuk-blue;
-  color: white;
-  padding-left: 15px;
 }
 
 .hero__aside-image img {

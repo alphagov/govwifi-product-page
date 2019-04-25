@@ -33,9 +33,6 @@
 @import "util/flexbox";
 @import "util/typography";
 
-@import "components/no-results-found";
-@import "components/input-field";
-
 @import "modules/breadcrumbs";
 @import "modules/content-section";
 @import "modules/full-width-form";
@@ -74,6 +71,14 @@ body {
 .content-section--with-top-border {
   padding-top: 5px;
   border-top: 1px #dee0e2 solid;
+}
+
+.input-field-margin-bottom {
+  margin-bottom: 20px;
+}
+
+.no-results-found-margin-top {
+  margin-top: 15px;
 }
 
 .hero__aside-image img {

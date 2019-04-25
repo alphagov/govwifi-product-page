@@ -1,0 +1,22 @@
+<% menu_items = [
+  { title: "Who we are", link: "#who-we-are" },
+  { title: "What data we need", link: "#what-data-we-need" },
+  { title: "Why we need it", link: "#why-we-need-it" },
+  { title: "What we do with it", link: "#what-we-do-with-it" },
+  { title: "How long we keep your data", link: "#how-long-we-keep-your-data" },
+  { title: "Children’s privacy protection", link: "#childrens-privacy-protection" },
+  { title: "Where it might go", link: "#where-it-might-go" },
+  { title: "What are your rights", link: "#what-are-your-rights" },
+  { title: "Changes to this notice", link: "#changes-to-this-notice" },
+  { title: "How to contact us", link: "#how-to-contact-us" }
+] %>
+
+<nav class="sub-navigation">
+  <ul>
+    <% menu_items.each do |menu_item| %>
+      <li class="sub-navigation__item <%= subnav_active(menu_item.fetch(:link)) %>">
+        <%= link_to menu_item.fetch(:title), menu_item.fetch(:link), class: "govuk-link" %>
+      </li>
+    <% end %>
+  </ul>
+</nav>

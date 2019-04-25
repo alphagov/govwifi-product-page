@@ -1,0 +1,13 @@
+// Sticky Element Component
+//
+// Example Usage:
+//
+// <span class="header__title">
+//   My Product <span class="sticky">Beta</span>
+// </span>
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}

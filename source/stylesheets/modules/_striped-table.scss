@@ -6,7 +6,7 @@
 
 .striped-table {
   tr:nth-child(even) {
-    background-color: govuk-colour("grey-4");
+    background-color: $light-grey;
   }
   td {
     border: none;

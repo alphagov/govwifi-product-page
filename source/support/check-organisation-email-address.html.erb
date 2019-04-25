@@ -9,7 +9,7 @@ description: Check your government or public sector email address to sign up to 
     </div>
     <div class="column-two-thirds">
       <h1>Check your organisation email address</h1>
-      <p>You can <%= link_to "signup to GovWifi", "/support/connect-to-govwifi", class: "govuk-link" %>
+      <p>You can <%= link_to "signup to GovWifi", "/connect-to-govwifi", class: "govuk-link" %>
         using your government or public sector email address
       </p>
       <p>If you don't have a government or public sector email address, you can
@@ -25,13 +25,13 @@ description: Check your government or public sector email address to sign up to 
       <table class="govuk-table">
         <thead class="govuk-table__head">
           <tr class="govuk-table__row">
-            <th class="govuk-table__header govuk-!-width-one-half">Organisation email domain name</th>
+            <th class="govuk-table__header govuk-!-width-one-half table-header">Organisation email domain</th>
           </tr>
         </thead>
         <tbody class="govuk-table__body">
           <% domains.each do |email| %>
-            <tr class="govuk-table__row result-row results">
-              <td class="govuk-table__cell govuk-!-width-one-half" scope="row">
+            <tr class="govuk-table__row result-row result">
+              <td class="govuk-table__cell govuk-!-width-one-half result-text" scope="row">
                 <%= '@' + email %>
               </td>
             </tr>

@@ -36,9 +36,6 @@ description: Help and support connecting to GovWifi
           <tr class="govuk-table__row">
             <th class="govuk-table__header govuk-!-width-one-half">Organisation email domain name</th>
           </tr>
-          <p class="govuk-body" id="no-results" style="display: none">
-            <strong>No results found</strong>
-          </p>
         </thead>
         <tbody class="govuk-table__body">
           <% email_domains.each do |email| %>
@@ -50,6 +47,9 @@ description: Help and support connecting to GovWifi
           <% end %>
         </tbody>
       </table>
+      <p style="margin-top:15px;" class="govuk-body" id="no-results" style="display: none">
+        <strong>No results found</strong>
+      </p>
     </div>
   </div>
 </div>

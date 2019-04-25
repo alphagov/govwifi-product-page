@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="<%= asset_path :images, 'favicon.ico' %>" type="image/x-icon" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="<%= current_page.data.description %>">
 
     <!--[if gt IE 8]><!--><%= stylesheet_link_tag :screen, media: 'screen' %><!--<![endif]-->
     <!--[if lte IE 8]><%= stylesheet_link_tag 'screen-old-ie', media: 'screen' %><![endif]-->
@@ -48,7 +49,7 @@
           <nav id="navigation" class="header__navigation js-nav" aria-label="Top Level Navigation" aria-hidden="true" data-click-events data-click-category="Header" data-click-action="Navigation link clicked">
             <ul>
               <li><%= link_to 'Documentation', 'https://docs.wifi.service.gov.uk' %></li>
-              <li><%= link_to 'Support', 'https://admin.wifi.service.gov.uk/help' %></li>
+              <li><%= link_to 'Support', '/support' %></li>
               <li><%= link_to 'Admin', 'https://admin.wifi.service.gov.uk/users/sign_in' %></li>
             </ul>
           </nav>

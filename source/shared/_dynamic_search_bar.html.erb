@@ -3,13 +3,11 @@
   filterInput.addEventListener('keyup', filterResults);
 
   function filterResults() {
-
     var filterValue = filterInput.value.toUpperCase();
-    var rows = document.querySelectorAll('.results');
+    var rows = document.querySelectorAll('.result');
 
     for(var i = 0; i < rows.length; i++) {
-      var text = rows[i].querySelectorAll('.govuk-table__cell')[0].innerHTML.toUpperCase();
-
+      var text = rows[i].querySelectorAll('.result-text')[0].innerHTML.toUpperCase();
       rows[i].style.display = text.indexOf(filterValue) > -1 ? '' : 'none';
     }
 

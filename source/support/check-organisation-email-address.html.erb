@@ -1,0 +1,47 @@
+---
+title: Check your organisation email address - GovWifi
+description: Check your government or public sector email address to sign up to GovWifi.
+---
+<div class="container">
+  <div class="grid-row">
+    <div class="column-one-third">
+      <%= partial 'shared/support/sidebar' %>
+    </div>
+    <div class="column-two-thirds">
+      <h1>Check your organisation email address</h1>
+      <p>You can <%= link_to "signup to GovWifi", "/connect-to-govwifi", class: "govuk-link" %>
+        using your government or public sector email address
+      </p>
+      <p>If you don't have a government or public sector email address, you can
+        <%= link_to "connect to GovWifi as a visitor", "support/connect-visitors-to-govwifi", class: "govuk-link" %>
+      </p>
+      <p>You can check to see if your organisation email is eligible below:</p>
+      <div class="govuk-form-group">
+        <input class="govuk-input input-field-margin-bottom" id="search-table" type="text" placeholder="Search email domains">
+      </div>
+
+      <% domains = data.domains.sort %>
+
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header govuk-!-width-one-half table-header">Organisation email domain</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <% domains.each do |email| %>
+            <tr class="govuk-table__row result-row result">
+              <td class="govuk-table__cell govuk-!-width-one-half result-text" scope="row">
+                <%= '@' + email %>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+      <p class="govuk-body no-results-found-margin-top" id="no-results" style="display: none">
+        <strong>No results found</strong>
+      </p>
+    </div>
+  </div>
+</div>
+<%= partial 'shared/dynamic_search_bar' %>

@@ -75,6 +75,20 @@ body {
   border-top: 1px #dee0e2 solid;
 }
 
+.input-field-margin-bottom {
+  margin-bottom: 20px;
+}
+
+.no-results-found-margin-top {
+  margin-top: 15px;
+}
+
+.table-header {
+  background-color: $govuk-blue;
+  color: white;
+  padding-left: 15px;
+}
+
 .hero__aside-image img {
   max-width: 100%;
   margin-top: 15px;

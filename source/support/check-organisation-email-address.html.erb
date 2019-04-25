@@ -1,10 +1,12 @@
 ---
-title: Check your organisation email address
+title: Check your organisation email address - GovWifi
 
 tags:
 
-description: Help and support connecting to GovWifi
+description: Check your government or public sector email address to sign up to GovWifi.
 ---
+
+<script src="javacripts/dynamic-search-bar.js"></script>
 
 <div class="container">
   <div class="grid-row">
@@ -21,7 +23,7 @@ description: Help and support connecting to GovWifi
       </p>
       <p>You can check to see if your organisation email is eligible below:</p>
       <div class="govuk-form-group">
-        <input style="margin-bottom:20px;" class="govuk-input" id="search-table" type="text" placeholder="Search email domains">
+        <input class="govuk-input input-field-margin-bottom" id="search-table" type="text" placeholder="Search email domains">
       </div>
 
       <% email_domains = ["police.uk", "nhs.uk", "cjsm.net", "nhs.net", "ejudiciary.net", "hmcts.net", "wmfs.net", "highwaysengland.co.uk", "deltservices.co.uk", "ukfi.co.uk","uksbs.co.uk",
@@ -39,18 +41,17 @@ description: Help and support connecting to GovWifi
         </thead>
         <tbody class="govuk-table__body">
           <% email_domains.each do |email| %>
-            <tr class="govuk-table__row result-row">
+            <tr class="govuk-table__row result-row" id="results">
               <td class="govuk-table__cell govuk-!-width-one-half" scope="row">
-                <%= '@'+email %>
+                <%= '@' + email %>
               </td>
             </tr>
           <% end %>
         </tbody>
       </table>
-      <p style="margin-top:15px;" class="govuk-body" id="no-results" style="display: none">
+      <p class="govuk-body no-results-found-margin-top" id="no-results" style="display: none">
         <strong>No results found</strong>
       </p>
     </div>
   </div>
 </div>
-<%= partial 'shared/support/dynamic-search-bar' %>

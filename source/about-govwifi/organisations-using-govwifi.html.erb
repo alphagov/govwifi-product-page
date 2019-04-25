@@ -18,6 +18,10 @@ description: Find all the public sector organisations where GovWifi is available
         <%= link_to "connect your device to GovWifi", "/connect-to-govwifi" %>
       </p>
 
+      <div class="govuk-form-group govuk-!-margin-bottom-4">
+        <input class="govuk-input" id="search-table" type="text" placeholder="Search organisations">
+      </div>
+
       <% organisations = data.organisations.sort %>
 
       <table class="govuk-table">
@@ -28,7 +32,7 @@ description: Find all the public sector organisations where GovWifi is available
         </thead>
         <tbody class="govuk-table__body">
           <% organisations.each do |organisation| %>
-            <tr class="govuk-table__row result-row" id="results">
+            <tr class="govuk-table__row result-row results">
               <td class="govuk-table__cell govuk-!-width-one-half" scope="row">
                 <%= organisation %>
               </td>
@@ -36,6 +40,11 @@ description: Find all the public sector organisations where GovWifi is available
           <% end %>
         </tbody>
       </table>
+      <p class="govuk-body govuk-!-margin-top-3" id="no-results" style="display: none">
+        <strong>No results found</strong>
+      </p>
     </div>
   </div>
 </div>
+
+<%= partial 'shared/dynamic_search_bar' %>

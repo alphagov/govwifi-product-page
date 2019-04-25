@@ -1,6 +1,8 @@
 @charset "utf-8";
 
 @import "govuk-frontend/components/inset-text/inset-text";
+@import "govuk-frontend/components/input/input";
+@import "govuk-frontend/overrides/spacing";
 
 @import "govuk_frontend_toolkit/stylesheets/colours";
 @import "govuk_frontend_toolkit/stylesheets/conditionals";
@@ -81,7 +83,7 @@ body {
 
 .hero__body {
   float: left;
-  width: 65.00%;
+  width: 65%;
 }
 
 a:link {

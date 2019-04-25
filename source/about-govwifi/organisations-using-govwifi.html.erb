@@ -18,7 +18,7 @@ description: Find all the public sector organisations where GovWifi is available
         <%= link_to "connect your device to GovWifi", "/connect-to-govwifi" %>
       </p>
 
-      <% organisations =  ["Made Tech", "GDS"]%>
+      <% organisation_names = data.organisations.names.sort %>
 
       <table class="govuk-table">
         <thead class="govuk-table__head">
@@ -27,10 +27,10 @@ description: Find all the public sector organisations where GovWifi is available
           </tr>
         </thead>
         <tbody class="govuk-table__body">
-          <% organisations.each do |organisation| %>
+          <% organisation_names.each do |name| %>
             <tr class="govuk-table__row result-row" id="results">
               <td class="govuk-table__cell govuk-!-width-one-half" scope="row">
-                <%= organisation %>
+                <%= name %>
               </td>
             </tr>
           <% end %>

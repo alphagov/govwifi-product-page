@@ -4,7 +4,7 @@
 
   function filterResults() {
     var filterValue = filterInput.value.toUpperCase();
-    var rows = document.querySelectorAll('#results');
+    var rows = document.querySelectorAll('.results');
 
     for(var i = 0; i < rows.length; i++) {
       var text = rows[i].querySelectorAll('.govuk-table__cell')[0].innerHTML.toUpperCase();

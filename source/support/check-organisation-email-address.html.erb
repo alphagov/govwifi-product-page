@@ -5,7 +5,6 @@ tags:
 
 description: Check your government or public sector email address to sign up to GovWifi.
 ---
-
 <div class="container">
   <div class="grid-row">
     <div class="column-one-third">
@@ -13,23 +12,18 @@ description: Check your government or public sector email address to sign up to 
     </div>
     <div class="column-two-thirds">
       <h1>Check your organisation email address</h1>
-      <p>You can <%= link_to "signup to GovWifi", "https://www.wifi.service.gov.uk/support/connect-to-govwifi", class: "govuk-link" %>
+      <p>You can <%= link_to "signup to GovWifi", "/support/connect-to-govwifi", class: "govuk-link" %>
         using your government or public sector email address
       </p>
       <p>If you don't have a government or public sector email address, you can
-        <%= link_to "connect to GovWifi as a visitor", "https://www.wifi.service.gov.uk/support/connect-visitors-to-govwifi", class: "govuk-link" %>
+        <%= link_to "connect to GovWifi as a visitor", "support/connect-visitors-to-govwifi", class: "govuk-link" %>
       </p>
       <p>You can check to see if your organisation email is eligible below:</p>
       <div class="govuk-form-group">
         <input class="govuk-input input-field-margin-bottom" id="search-table" type="text" placeholder="Search email domains">
       </div>
 
-      <% email_domains = ["police.uk", "nhs.uk", "cjsm.net", "nhs.net", "ejudiciary.net", "hmcts.net", "wmfs.net", "highwaysengland.co.uk", "deltservices.co.uk", "ukfi.co.uk","uksbs.co.uk",
-      "slc.co.uk", "cefas.co.uk", "located.co.uk", "visitbritain.org", "nibsc.org", "visitengland.org", "ukri.org", "kent.fire-uk.org", "xentrall.org.uk", "naturalengland.org.uk",
-      "sepa.org.uk", "nestcorporation.org.uk", "lgo.org.uk", "ukgi.org.uk", "marinemanagement.org.uk", "nao.org.uk", "socialworkengland.org.uk", "catered.org.uk", "acas.org.uk",
-      "royalmint.com", "oilandpipelines.com", "srswales.com", "govfsl.com", "bbsrc.ac.uk", "ahrc.ac.uk", "epsrc.ac.uk", "esrc.ac.uk", "nerc.ac.uk", "stfc.ac.uk", "jrs.ac.uk","rcuk.ac.uk",
-      "ukri.ac.uk", "headoffice.mrc.ac.uk", "mrc.ac.uk", "nchsr.ac.uk", "gov.scot", "forestryengland.uk", "gov.uk", "madetech.com", "derbyhomes.org", "northyorkshire.pnn.police.uk",
-      "theccc.org.uk", "dudleymbc.org.uk"] %>
+      <% domains = data.domains.sort %>
 
       <table class="govuk-table">
         <thead class="govuk-table__head">
@@ -38,8 +32,8 @@ description: Check your government or public sector email address to sign up to 
           </tr>
         </thead>
         <tbody class="govuk-table__body">
-          <% email_domains.each do |email| %>
-            <tr class="govuk-table__row result-row" id="results">
+          <% domains.each do |email| %>
+            <tr class="govuk-table__row result-row results">
               <td class="govuk-table__cell govuk-!-width-one-half" scope="row">
                 <%= '@' + email %>
               </td>

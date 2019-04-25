@@ -42,11 +42,11 @@ end
 ###
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def subnav_active(url)
+    current_page.url == url ? 'sub-navigation__item--active' : ''
+  end
+end
 
 # Build-specific configuration
 configure :build do

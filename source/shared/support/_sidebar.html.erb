@@ -1,28 +1,20 @@
+<% menu_items = [
+  { title: "Govwifi support", link: "/support/" },
+  { title: "Connect to GovWifi", link: "/connect-to-govwifi/" },
+  { title: "Connect visitors to GovWifi", link: "/support/connect-visitors-to-govwifi/" },
+  { title: "Connect an Android device", link: "/support/connect-to-govwifi-using-an-android-device/" },
+  { title: "Connect an iPhone or iPad", link: "/support/connect-to-govwifi-using-an-iphone-or-ipad/" },
+  { title: "Connect a Mac, iMac or Macbook", link: "/support/connect-to-govwifi-using-a-mac-imac-or-macbook/" },
+  { title: "Connect a Blackberry", link: "/support/connect-to-govwifi-using-a-blackberry/" },
+  { title: "Connect a Chromebook", link: "/support/connect-to-govwifi-using-a-chromebook/" }
+] %>
+
 <nav class="sub-navigation">
   <ul>
-    <li class="sub-navigation__item">
-      <%= link_to "Govwifi support", "/support", class: "govuk-link" %>
-    </li>
-    <li class="sub-navigation__item">
-      <a href="/connect-to-govwifi">Connect to GovWifi</a>
-    </li>
-    <li class="sub-navigation__item">
-      <a href="/support/connect-visitors-to-govwifi">Connect visitors to GovWifi</a>
-    </li>
-    <li class="sub-navigation__item">
-      <a href="/support/connect-to-govwifi-using-an-android-device">Connect an Android device</a>
-    </li>
-    <li class="sub-navigation__item">
-      <a href="/support/connect-to-govwifi-using-an-iphone-or-ipad">Connect an iPhone or iPad</a>
-    </li>
-    <li class="sub-navigation__item">
-      <a href="/support/connect-to-govwifi-using-a-mac-imac-or-macbook">Connect a Mac, iMac or Macbook</a>
-    </li>
-    <li class="sub-navigation__item">
-      <a href="/support/connect-to-govwifi-using-a-blackberry">Connect a Blackberry</a>
-    </li>
-    <li class="sub-navigation__item">
-      <a href="/support/connect-to-govwifi-using-a-chromebook">Connect a Chromebook</a>
-    </li>
+    <% menu_items.each do |menu_item| %>
+      <li class="sub-navigation__item <%= subnav_active(menu_item.fetch(:link)) %>">
+        <%= link_to "<span>#{menu_item.fetch(:title)}</span>", menu_item.fetch(:link), class: "govuk-link" %>
+      </li>
+    <% end %>
   </ul>
 </nav>

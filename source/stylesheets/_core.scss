@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 @import "govuk-frontend/components/inset-text/inset-text";
+@import "govuk-frontend/components/input/input";
 
 @import "govuk_frontend_toolkit/stylesheets/colours";
 @import "govuk_frontend_toolkit/stylesheets/conditionals";
@@ -71,6 +72,20 @@ body {
 .content-section--with-top-border {
   padding-top: 5px;
   border-top: 1px #dee0e2 solid;
+}
+
+.input-field-margin-bottom {
+  margin-bottom: 20px;
+}
+
+.no-results-found-margin-top {
+  margin-top: 15px;
+}
+
+.table-header {
+  background-color: $govuk-blue;
+  color: white;
+  padding-left: 15px;
 }
 
 .hero__aside-image img {

@@ -1,0 +1,41 @@
+---
+title: Organisations using GovWifi - GovWifi
+description: Find all the public sector organisations where GovWifi is available
+---
+
+<div class="container">
+  <div class="grid-row">
+    <div class="column-one-third">
+      <div>
+        <%= partial 'shared/product/sidebar' %>
+      </div>
+    </div>
+    <div class="column-two-thirds">
+      <h1 class="heading-large">Organisations using GovWifi</h1>
+      <p>
+        GovWifi is currently available in a wide range of government and public
+        sector organisations. Learn more about how to
+        <%= link_to "connect your device to GovWifi", "/connect-to-govwifi" %>
+      </p>
+
+      <% organisations =  ["Made Tech", "GDS"]%>
+
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header govuk-!-width-one-half">Organisation</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <% organisations.each do |organisation| %>
+            <tr class="govuk-table__row result-row" id="results">
+              <td class="govuk-table__cell govuk-!-width-one-half" scope="row">
+                <%= organisation %>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+---
+title: How GovWifi works - GovWifi
+description: Learn more about how the GovWifi authenication service works.
+---
+
+<div class="container">
+  <div class="grid-row">
+    <div class="column-one-third">
+      <div>
+        <%= partial 'shared/product/sidebar' %>
+      </div>
+    </div>
+    <div class="column-two-thirds">
+      <h1 class="heading-large">How does GovWifi work</h1>
+      <p>
+        Participating government and public organisations keep their existing wifi infrastructure and configure it to access the GovWifi authentication service.
+      </p>
+      <h2>Authentication</h2>
+      <p>
+        GovWifi uses RADIUS server technology to authenticate users’ usernames and passwords.
+      </p>
+      <p>
+        Each end user is protected with unique credentials and encryption keys when they log in to the wifi and access the internet.
+        These credentials are randomly generated so can’t be used to get into other systems if stolen.
+      </p>
+      <p>
+        Users’ devices are isolated from each other to stop the horizontal spread of malware and protect secure devices from less secure ones.
+        The network also identifies itself in a way that can’t be spoofed, adding to the safety measures that provide protection from potential attackers.
+      </p>
+      <div class="govuk-inset-text">
+        <p>
+          If you are trying to connect your device to GovWifi please follow these <%= link_to "sign up instructions.", "/connect-to-govwifi" %>
+        </p>
+      </div>
+      <h2>Offer GovWifi in your organisation</h2>
+      <p>
+        If you manage IT services in your organisation and would like to make GovWifi available in your buildings, please review our <%= link_to "administrator requirements", "https://docs.wifi.service.gov.uk/" %>.
+      </p>
+    </div>
+  </div>
+</div>

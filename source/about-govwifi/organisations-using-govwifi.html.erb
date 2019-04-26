@@ -18,24 +18,33 @@ description: Find all the public sector organisations where GovWifi is available
         <%= link_to "connect your device to GovWifi", "/about-govwifi/connect-to-govwifi" %>
       </p>
 
+      <div class="govuk-form-group govuk-!-margin-bottom-4">
+        <input class="govuk-input" id="search-table" type="text" placeholder="Search organisations">
+      </div>
+
       <% organisations = data.organisations.sort %>
 
       <table class="govuk-table">
         <thead class="govuk-table__head">
           <tr class="govuk-table__row">
-            <th class="govuk-table__header govuk-!-width-one-half">Organisation</th>
+            <th class="govuk-table__header govuk-!-width-one-half table-header">Organisation</th>
           </tr>
         </thead>
-        <tbody class="govuk-table__body">
+        <tbody class="govuk-table__body striped-table">
           <% organisations.each do |organisation| %>
-            <tr class="govuk-table__row result-row" id="results">
-              <td class="govuk-table__cell govuk-!-width-one-half" scope="row">
+            <tr class="govuk-table__row result-row result">
+              <td class="govuk-table__cell govuk-!-width-one-half result-text" scope="row">
                 <%= organisation %>
               </td>
             </tr>
           <% end %>
         </tbody>
       </table>
+      <p class="govuk-body govuk-!-margin-top-3" id="no-results" style="display: none">
+        <strong>No results found</strong>
+      </p>
     </div>
   </div>
 </div>
+
+<%= partial 'shared/dynamic_search_bar' %>

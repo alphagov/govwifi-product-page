@@ -16,8 +16,8 @@ description: Check your government or public sector email address to sign up to 
         <%= link_to "connect to GovWifi as a visitor", "support/connect-visitors-to-govwifi", class: "govuk-link" %>
       </p>
       <p>You can check to see if your organisation email is eligible below:</p>
-      <div class="govuk-form-group">
-        <input class="govuk-input input-field-margin-bottom" id="search-table" type="text" placeholder="Search email domains">
+      <div class="govuk-form-group govuk-!-margin-bottom-4">
+        <input class="govuk-input" id="search-table" type="text" placeholder="Search email domains">
       </div>
 
       <% domains = data.domains.sort %>
@@ -28,7 +28,7 @@ description: Check your government or public sector email address to sign up to 
             <th class="govuk-table__header govuk-!-width-one-half table-header">Organisation email domain</th>
           </tr>
         </thead>
-        <tbody class="govuk-table__body">
+        <tbody class="govuk-table__body striped-table">
           <% domains.each do |email| %>
             <tr class="govuk-table__row result-row result">
               <td class="govuk-table__cell govuk-!-width-one-half result-text" scope="row">
@@ -38,7 +38,7 @@ description: Check your government or public sector email address to sign up to 
           <% end %>
         </tbody>
       </table>
-      <p class="govuk-body no-results-found-margin-top" id="no-results" style="display: none">
+      <p class="govuk-body govuk-!-margin-top-3" id="no-results" style="display: none">
         <strong>No results found</strong>
       </p>
     </div>

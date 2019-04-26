@@ -2,3 +2,8 @@
   padding: 32px;
   background-color: $grey-3;
 }
+
+.govuk-inset-text {
+  @extend .govuk-inset-text;
+  font-size: 19px !important;
+}

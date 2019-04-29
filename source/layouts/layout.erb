@@ -66,9 +66,44 @@
       <div class="footer-wrapper">
         <div class="govuk-footer__navigation">
           <div class="govuk-footer__section">
-            <ul class="govuk-footer__list govuk-footer__list--columns-1 footer-link-padding">
+            <h2>About</h2>
+            <ul class="govuk-footer__list footer-link-padding">
               <li class="govuk-footer__list-item">
-                <a href="https://www.wifi.service.gov.uk/cookies" rel="cookie-policy" class="govuk-footer__link" >Cookies</a>
+                <%= link_to 'Our service', '/about-govwifi' %>
+              </li>
+              <li class="govuk-footer__list-item">
+                <%= link_to 'Terms and conditions', '/terms-and-conditions' %>
+              </li>
+              <li class="govuk-footer__list-item">
+                <%= link_to 'Performance', 'https://www.gov.uk/performance/govwifi' %>
+              </li>
+            </ul>
+          </div>
+          <div class="govuk-footer__section">
+            <h2>Connect</h2>
+            <ul class="govuk-footer__list footer-link-padding">
+              <li class="govuk-footer__list-item">
+                <%= link_to 'Connect to GovWifi', '/about-govwifi/connect-to-govwifi' %>
+              </li>
+              <li class="govuk-footer__list-item">
+                <%= link_to 'Organisations using GovWifi', '/about-govwifi/organisations-using-govwifi' %>
+              </li>
+              <li class="govuk-footer__list-item">
+                <%= link_to 'Support', '/support' %>
+              </li>
+            </ul>
+          </div>
+          <div class="govuk-footer__section">
+            <h2>Admin</h2>
+            <ul class="govuk-footer__list footer-link-padding">
+              <li class="govuk-footer__list-item">
+                <%= link_to 'Offer GovWifi in your organisation', 'https://docs.wifi.service.gov.uk/' %>
+              </li>
+              <li class="govuk-footer__list-item">
+                <%= link_to 'Manage GovWifi in your organisation', 'https://admin.wifi.service.gov.uk/users/sign_in' %>
+              </li>
+              <li class="govuk-footer__list-item">
+                <%= link_to 'Technical Documentation', 'https://docs.wifi.service.gov.uk/manage/#manage-govwifi' %>
               </li>
             </ul>
           </div>

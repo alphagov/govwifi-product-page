@@ -14,6 +14,7 @@ resources:
       repository: alphagov/govwifi-product-page
       access_token: ((github-access-token))
 
+
 jobs:
   - name: build
     interruptible: true
@@ -27,7 +28,6 @@ jobs:
 
       - task: build
         privileged: true
-        image: runner
         file: src/ci/tasks/build.yml
 
     on_failure:
@@ -66,4 +66,3 @@ update-status-commands:
     params:
       <<: *update-status-params-base
       status: success
-

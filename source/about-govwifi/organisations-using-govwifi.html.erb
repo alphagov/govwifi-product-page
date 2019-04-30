@@ -19,7 +19,7 @@ description: Find all the public sector organisations where GovWifi is available
       </p>
 
       <div class="govuk-form-group govuk-!-margin-bottom-4">
-        <input class="govuk-input" id="search-table" type="text" placeholder="Search organisations">
+        <input class="govuk-input" aria-label="Search organisations using the service" id="search-table" type="text" placeholder="Search organisations">
       </div>
 
       <% organisations = data.organisations.sort %>
@@ -48,3 +48,4 @@ description: Find all the public sector organisations where GovWifi is available
 </div>
 
 <%= partial 'shared/dynamic_search_bar' %>
+<%= partial 'shared/dynamic_search_bar_noscript' %>

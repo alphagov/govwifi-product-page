@@ -45,7 +45,7 @@
     margin: 0;
     padding: 0 $gutter-one-quarter 0 (11px + $gutter-one-quarter);
 
-    background-image: image-url('govuk_frontend_toolkit/images/separator.png');
+    background-image: image-url('govuk_frontend_toolkit/images/separator.jpg');
     background-repeat: no-repeat;
     background-size: 6px 11px;
     background-position: left center;
@@ -53,7 +53,7 @@
     white-space: nowrap;
 
     @include device-pixel-ratio(2) {
-      background-image: image-url('govuk_frontend_toolkit/images/separator-2x.png');
+      background-image: image-url('govuk_frontend_toolkit/images/separator-2x.jpg');
     }
 
     &,

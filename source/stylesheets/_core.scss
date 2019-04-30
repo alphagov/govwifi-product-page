@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+@import "govuk-frontend/components/breadcrumbs/breadcrumbs";
 @import "govuk-frontend/components/inset-text/inset-text";
 @import "govuk-frontend/components/input/input";
 @import "govuk-frontend/overrides/spacing";
@@ -95,7 +96,7 @@ body {
 }
 
 .privacy_policy_nav_colour {
-  background-color: govuk-colour("white")
+  background-color: govuk-colour("white");
 }
 
 a:link {

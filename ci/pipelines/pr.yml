@@ -22,9 +22,15 @@ resources:
     source:
       bucket: test-data-bucket-99
       versioned_file: test-data-bucket-99/organisations.yml
+      region_name: eu-west-2
 
 
 jobs:
+  - name: build-after-data-update
+    plan:
+      - get: data-update
+        trigger: true
+
   - name: build
     interruptible: true
     disable_manual_trigger: true

@@ -1,9 +1,20 @@
+resource_types:
+  - name: data-update
+    type: registry-image
+    source:
+      repository: concourse/s3-resource
+
 resources:
   - name: govwifi-product-page
     type: git
     source:
       uri: "https://github.com/alphagov/govwifi-product-page.git"
       branch: master
+  - name: data-update
+    type: s3
+    source:
+      bucket: test-data-bucket-99
+      versioned_file: test-data-bucket-99/organisations.yml
 
   - name: runner
     # See https://github.com/alphagov/govwifi-concourse-runner for a reference dockerfile

@@ -14,7 +14,8 @@ resources:
     type: s3
     source:
       bucket: test-data-bucket-99
-      versioned_file: test-data-bucket-99/organisations.yml
+      versioned_file: organisations.yml
+      region_name: eu-west-2
 
   - name: runner
     # See https://github.com/alphagov/govwifi-concourse-runner for a reference dockerfile
@@ -27,6 +28,9 @@ resources:
 jobs:
   - name: deploy
     plan:
+      - get: data-update
+        trigger: true
+        
       - get: src
         resource: govwifi-product-page
         trigger: true

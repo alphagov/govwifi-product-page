@@ -13,7 +13,7 @@ resources:
   - name: data-update
     type: s3
     source:
-      bucket: test-data-bucket-99
+      bucket: govwifi-production-product-page-data
       versioned_file: organisations.yml
       region_name: eu-west-2
 
@@ -30,7 +30,7 @@ jobs:
     plan:
       - get: data-update
         trigger: true
-        
+
       - get: src
         resource: govwifi-product-page
         trigger: true

@@ -1,20 +1,22 @@
-resource_types:
-  - name: data-update
-    type: registry-image
-    source:
-      repository: concourse/s3-resource
-
 resources:
   - name: govwifi-product-page
     type: git
     source:
       uri: "https://github.com/alphagov/govwifi-product-page.git"
       branch: master
-  - name: data-update
+
+  - name: organisations-list-update
     type: s3
     source:
       bucket: govwifi-production-product-page-data
       versioned_file: organisations.yml
+      region_name: eu-west-2
+
+  - name: whitelisted-emails-update
+    type: s3
+    source:
+      bucket: govwifi-production-product-page-data
+      versioned_file: domains.yml
       region_name: eu-west-2
 
   - name: runner
@@ -28,7 +30,10 @@ resources:
 jobs:
   - name: deploy
     plan:
-      - get: data-update
+      - get: organisations-list-update
+        trigger: true
+
+      - get: whitelisted-emails-update
         trigger: true
 
       - get: src

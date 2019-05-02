@@ -5,14 +5,14 @@ resources:
       uri: "https://github.com/alphagov/govwifi-product-page.git"
       branch: master
 
-  - name: organisations-list-update
+  - name: organisations-list
     type: s3
     source:
       bucket: govwifi-production-product-page-data
       versioned_file: organisations.yml
       region_name: eu-west-2
 
-  - name: whitelisted-emails-update
+  - name: whitelisted-emails
     type: s3
     source:
       bucket: govwifi-production-product-page-data
@@ -30,10 +30,10 @@ resources:
 jobs:
   - name: deploy
     plan:
-      - get: organisations-list-update
+      - get: organisations-list
         trigger: true
 
-      - get: whitelisted-emails-update
+      - get: whitelisted-emails
         trigger: true
 
       - get: src

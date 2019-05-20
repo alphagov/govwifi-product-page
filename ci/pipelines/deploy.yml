@@ -1,4 +1,17 @@
+groups:
+- name: deployer
+  jobs:
+  - deploy
+- name: self-update
+  jobs:
+  - self-update
+
 resources:
+  - name: tech-ops
+    type: git
+    source:
+      uri: https://github.com/alphagov/tech-ops.git
+
   - name: govwifi-product-page
     type: git
     source:
@@ -28,6 +41,23 @@ resources:
       tag: concourse-runner-latest
 
 jobs:
+  - name: self-update
+    serial: true
+    plan:
+    - get: tech-ops
+      params:
+        submodules: none
+    - get: govwifi-product-page
+      trigger: true
+    - task: set-pipelines
+      file: tech-ops/ci/tasks/self-updating-pipeline.yaml
+      input_mapping: {repository: govwifi-product-page}
+      params:
+        CONCOURSE_TEAM: govwifi
+        CONCOURSE_PASSWORD: ((readonly_local_user_password))
+        PIPELINE_PATH: ci/pipelines/deploy.yml
+        PIPELINE_NAME: product-page-deploy
+
   - name: deploy
     plan:
       - get: organisations-list

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+
+<url>
+  <loc>https://www.wifi.service.gov.uk/</loc>
+  <lastmod>2019-04-30T14:30:40+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.wifi.service.gov.uk/about-govwifi/connect-to-govwifi/</loc>
+  <lastmod>2019-05-01T14:33:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.wifi.service.gov.uk/about-govwifi/</loc>
+  <lastmod>2019-05-01T14:33:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.wifi.service.gov.uk/about-govwifi/how-govwifi-works/</loc>
+  <lastmod>2019-05-01T14:33:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.wifi.service.gov.uk/about-govwifi/organisations-using-govwifi/</loc>
+  <lastmod>2019-05-01T14:33:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.wifi.service.gov.uk/support/</loc>
+  <lastmod>2019-05-01T14:33:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.wifi.service.gov.uk/support/check-organisation-email-address/</loc>
+  <lastmod>2019-05-01T14:33:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.wifi.service.gov.uk/support/connect-to-govwifi-using-an-android-device/</loc>
+  <lastmod>2019-05-01T14:33:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.wifi.service.gov.uk/support/connect-to-govwifi-using-an-iphone-or-ipad/</loc>
+  <lastmod>2019-05-01T14:33:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.wifi.service.gov.uk/support/connect-to-govwifi-using-a-mac-imac-or-macbook/</loc>
+  <lastmod>2019-05-01T14:33:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.wifi.service.gov.uk/support/connect-to-govwifi-using-a-windows-device/</loc>
+  <lastmod>2019-05-01T14:33:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.wifi.service.gov.uk/support/connect-to-govwifi-using-a-chromebook/</loc>
+  <lastmod>2019-05-01T14:33:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.wifi.service.gov.uk/support/connect-to-govwifi-using-a-blackberry/</loc>
+  <lastmod>2019-05-01T14:33:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.wifi.service.gov.uk/offer-govwifi</loc>
+  <lastmod>2019-05-01T14:33:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

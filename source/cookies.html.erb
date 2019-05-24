@@ -16,32 +16,18 @@ title: Cookies
     <div class="grid-row">
       <div class="column-two-thirds">
         <h1 class="heading-large">Cookies</h1>
-        <p class="govuk-body">GOV.UK GovWifi puts small files (known as ‘cookies’) onto your computer.</p>
-        <p class="govuk-body">These cookies are used to remember you once you’ve logged in.</p>
+        <p class="govuk-body">GovWifi puts small files (known as ‘cookies’) onto your computer.</p>
+        <p class="govuk-body">Cookies are used to: </p>
+        <ul class="list list-bullet">
+          <li>keep your session open</li>
+          <li>avoid malicious requests</li>
+          <li>measure how you use the website so it can be updated and improved based on your needs</li>
+        </ul>
+
         <p class="govuk-body"> Find out how to <%= link_to "manage cookies.", 'https://ico.org.uk/your-data-matters/online/cookies/' %></p>
 
-        <h1 class="heading-medium">Session cookies</h1>
-        <p class="govuk-body"> We store session cookies on your computer to help keep your information secure while you use the service.</p>
-
-      <table>
-        <thead>
-          <tr>
-            <th scope="col">Name</th>
-            <th scope="col">Purpose</th>
-            <th scope="col">Expires</th>
-          </tr>
-        </thead>
-        <tbody>
-            <tr>
-              <td>_notify_admin_session</td>
-              <td>Used to keep you logged in</td>
-              <td>1 hour</td>
-            </tr>
-        </tbody>
-      </table>
-
         <h1 class="heading-medium">Measuring website usage (Google Analytics)</h1>
-        <p>We use Google Analytics software to collect anonymised information about how you use GOV.UK GovWifi. We do this to
+        <p>We use Google Analytics software to collect anonymised information about how you use GovWifi. We do this to
         help make sure the site is meeting the needs of its users and to help us make improvements.</p>
         <p>Google Analytics stores information about:</p>
 
@@ -67,14 +53,59 @@ title: Cookies
           </tr>
         </thead>
         <tbody>
-            <tr>
-              <td>_ga</td>
-              <td>This helps us count how many people visit GOV.UK GovWifi by tracking if you’ve visited before</td>
-              <td>3 years</td>
-            </tr>
+          <tr>
+            <td>_ga</td>
+            <td>This helps us count how many people visit GovWifi by tracking if you’ve visited before</td>
+            <td>2 years</td>
+          </tr>
+          <tr>
+            <td>_gid</td>
+            <td>his helps us count how many people visit GovWifi by tracking if you’ve visited before</td>
+            <td>3 days</td>
+          </tr>
         </tbody>
       </table>
 
-      </div>
+      <h1 class="heading-medium">Session cookies</h1>
+      <p>We store session cookies on your computer to help keep your information secure.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Purpose</th>
+            <th scope="col">Expires</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>_govwifi_admin_session</td>
+            <td>Used to keep you logged in</td>
+            <td>When the browsing session ends</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h1 class="heading-medium">Our introductory message</h1>
+      <p>You may see a pop-up welcome message when you first visit GovWifi.
+      We’ll store a cookie so that your computer knows you’ve seen it and knows not to show it again.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Purpose</th>
+            <th scope="col">Expires</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>seen_cookie_message</td>
+            <td>Saves a message to let us know that you have seen our cookie message</td>
+            <td>1 month</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
+</div>

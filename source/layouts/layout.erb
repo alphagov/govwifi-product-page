@@ -24,17 +24,16 @@
   </head>
 
   <body>
+    <%= partial 'shared/cookie_policy_script' %>
     <%= partial 'layouts/google_analytics_noscript' %>
 
     <a href="#main" class="skip-link">Skip to main content</a>
 
     <header class="header<% if current_page.url == '/' %> header--without-border<% end %>">
 
-      <div class="govuk-phase-banner">
-        <span class="govuk-phase-banner__text">
-          <p class='govuk-body banner_text'>GovWifi uses cookies to make the site simpler <a class="govuk-link" href="/cookies/">find out more about cookies</a></p>
-        </span>
-      </div>
+    <div class="app-cookie-banner js-cookie-banner cookie-banner" id='cookie-banner'>
+      <p class='cookie-banner-text header__container'>GovWifi uses cookies to make the site simpler <a class="govuk-link" href="/cookies/">find out more about cookies</a></p>
+    </div>
 
       <div class="header__container">
         <div class="header__brand">

@@ -24,6 +24,9 @@
   </head>
 
   <body>
+    <%= javascript_include_tag 'javascripts/check_cookie' %>
+
+    <%= partial 'shared/cookie_policy_banner' %>
     <%= partial 'layouts/google_analytics_noscript' %>
 
     <a href="#main" class="skip-link">Skip to main content</a>

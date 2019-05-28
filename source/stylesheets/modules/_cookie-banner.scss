@@ -1,10 +1,9 @@
 .cookie-banner-text {
   color: black;
   margin-top: 0px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 0;
 }
 
 .cookie-banner {
-  background-color: lightblue;
+  background-color: $lightest-blue;
 }

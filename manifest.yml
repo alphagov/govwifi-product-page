@@ -1,6 +1,8 @@
 ---
 applications:
-- name: gaap-product-pages
+- name: govwifi-product-page
   memory: 64M
+  instances: 2
   path: ./build
-  buildpack: staticfile_buildpack
+  buildpacks:
+   - staticfile_buildpack

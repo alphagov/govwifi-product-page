@@ -110,8 +110,9 @@ jobs:
             - -eu
             - -c
             - |
+              curl -sL https://deb.nodesource.com/setup_12.x | bash -
               apt-get update
-              apt-get install -y nodejs nodejs-npm
+              apt-get install -y nodejs
               npm install --unsafe-perm
               bundle install --without development
               bundle exec middleman build
@@ -155,8 +156,9 @@ jobs:
             - -eu
             - -c
             - |
+              curl -sL https://deb.nodesource.com/setup_12.x | bash -
               apt-get update
-              apt-get install -y nodejs nodejs-npm
+              apt-get install -y nodejs
               npm install --unsafe-perm
               bundle install --without development
               bundle exec middleman build

@@ -37,6 +37,8 @@ resources:
     type: s3
     source:
       bucket: govwifi-production-product-page-data
+      access_key_id: "((deploy-access-key-id))"
+      secret_access_key: "((deploy-secret-access-key))"
       versioned_file: organisations.yml
       region_name: eu-west-2
 
@@ -44,6 +46,8 @@ resources:
     type: s3
     source:
       bucket: govwifi-production-product-page-data
+      access_key_id: "((deploy-access-key-id))"
+      secret_access_key: "((deploy-secret-access-key))"
       versioned_file: domains.yml
       region_name: eu-west-2
 
@@ -83,10 +87,6 @@ jobs:
       - get: govwifi-product-page-pr
         trigger: true
         version: every
-      - get: organisations-list
-        trigger: true
-      - get: whitelisted-emails
-        trigger: true
       - put: govwifi-product-page-pr
         params:
           status: pending
@@ -161,6 +161,8 @@ jobs:
               apt-get install -y nodejs
               npm install --unsafe-perm
               bundle install --without development
+              cp ../whitelisted-emails/domains.yml data/domains.yml
+              cp ../organisations-list/organisations.yml data/organisations.yml
               bundle exec middleman build
               cp -r . ../bundled/
       - put: deploy-to-paas

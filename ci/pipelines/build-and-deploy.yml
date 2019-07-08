@@ -83,10 +83,6 @@ jobs:
       - get: govwifi-product-page-pr
         trigger: true
         version: every
-      - get: organisations-list
-        trigger: true
-      - get: whitelisted-emails
-        trigger: true
       - put: govwifi-product-page-pr
         params:
           status: pending
@@ -98,8 +94,8 @@ jobs:
           image_resource:
             type: docker-image
             source:
-              repository: gdsre/aws-ruby
-              tag: 2.6.1-3.0.1
+              repository: governmentpaas/cf-cli
+            version: {digest: "sha256:ffde094aad190bd81049840631154794e9bfc353a281791ebcd3082f70e469fe"}
           inputs:
             - name: govwifi-product-page-pr
               path: repo
@@ -110,9 +106,7 @@ jobs:
             - -eu
             - -c
             - |
-              curl -sL https://deb.nodesource.com/setup_12.x | bash -
-              apt-get update
-              apt-get install -y nodejs
+              apk --update add g++ musl-dev make nodejs nodejs-npm
               npm install --unsafe-perm
               bundle install --without development
               bundle exec middleman build
@@ -142,11 +136,13 @@ jobs:
           image_resource:
             type: docker-image
             source:
-              repository: gdsre/aws-ruby
-              tag: 2.6.1-3.0.1
+              repository: governmentpaas/cf-cli
+            version: {digest: "sha256:ffde094aad190bd81049840631154794e9bfc353a281791ebcd3082f70e469fe"}
           inputs:
             - name: govwifi-product-page
               path: repo
+            - name: whitelisted-emails
+            - name: organisations-list
           outputs:
             - name: bundled
           run:
@@ -156,11 +152,11 @@ jobs:
             - -eu
             - -c
             - |
-              curl -sL https://deb.nodesource.com/setup_12.x | bash -
-              apt-get update
-              apt-get install -y nodejs
+              apk --update add g++ musl-dev make nodejs nodejs-npm
               npm install --unsafe-perm
               bundle install --without development
+              cp ../whitelisted-emails/domains.yml data/domains.yml
+              cp ../organisations-list/organisations.yml data/organisations.yml
               bundle exec middleman build
               cp -r . ../bundled/
       - put: deploy-to-paas

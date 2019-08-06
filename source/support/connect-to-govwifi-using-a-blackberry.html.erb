@@ -3,40 +3,41 @@ title: Connect to GovWifi using a Blackberry - GovWifi
 description: Follow these instructions to connect your Blackberry to GovWifi
 ---
 
-<div class="container">
+<main class="govuk-width-container" role="main" id="main">
   <%= partial "shared/support/breadcrumbs", locals: { page: "Connect a Blackberry" } %>
+  <div class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third">
+        <%= partial '/shared/support/_sidebar' %>
+      </div>
 
-  <div class="grid-row">
-    <div class="column-one-third">
-      <%= partial '/shared/support/_sidebar' %>
-    </div>
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Connect to GovWifi using a Blackberry</h1>
+        <p class="govuk-body">If your device was made before October 2016, you're probably running the BlackBerry operating system (OS). Follow these instructions to connect to GovWifi.</p>
 
-    <div class="column-two-thirds column-minimum">
-      <h1 class="govuk-heading-l">Connect to GovWifi using a Blackberry</h1>
-      <p>If your device was made before October 2016, you're probably running the BlackBerry operating system (OS). Follow these instructions to connect to GovWifi.</p>
+        <h2 class="govuk-heading-m">Instructions</h2>
+        <p class="govuk-body">Once you have a GovWifi <%= link_to "username and password", "/about-govwifi/connect-to-govwifi", class: "govuk-link" %>, follow the steps below. Depending on your device, you may need to scroll down to see all the fields.</p>
+        <p class="govuk-body">Step 1 - Open your wifi settings. A list of wifi networks appears.</p>
+        <p class="govuk-body">Step 2 - Select <strong>GovWifi</strong>. A settings menu appears.</p>
+        <%= image_tag "troubleshooting/blackberry-step-2.jpg", class: "img-fluid" %>
+        <p class="govuk-body">Step 3 - Enter the username and password you received by email or text.</p>
+        <p class="govuk-body">Step 4 - Select <strong>Advanced Options</strong></p>
+        <%= image_tag "troubleshooting/blackberry-step-4.jpg", class: "img-fluid" %>
+        <p class="govuk-body">Step 5 - Scroll down. For <strong>Security Sub Type</strong>, select <strong>PEAP</strong>.</p>
+        <%= image_tag "troubleshooting/blackberry-step-5.jpg", class: "img-fluid" %>
+        <p class="govuk-body">Step 6 - For <strong>CA Certificate</strong>, select the third listing for <strong>GeoTrust Primary Certification Authority</strong>.</p>
+        <%= image_tag "troubleshooting/blackberry-step-6.jpg", class: "img-fluid" %>
+        <p class="govuk-body">Step 7 - Select <strong>Connect</strong> on the top right of the screen.</p>
+        <p class="govuk-body">You should now be connected to GovWifi.</p>
+        <p class="govuk-body"><strong>Support</strong></p>
+        <p class="govuk-body">You may get a message that says 'Wi-Fi Connection Status, Attempt 1 of 3, Connecting to network' and another that says ‘Acquiring IP address'.  You don't need to do anything.</p>
 
-      <h2 class="govuk-heading-m">Instructions</h2>
-      <p>Once you have a GovWifi <%= link_to "username and password", "/about-govwifi/connect-to-govwifi" %>, follow the steps below.  Depending on your device, you may need to scroll down to see all the fields.</p>
-      <p>Step 1 - Open your wifi settings. A list of wifi networks appears.</p>
-      <p>Step 2 - Select <strong>GovWifi</strong>. A settings menu appears.</p>
-      <%= image_tag "troubleshooting/blackberry-step-2.jpg", class: "img-fluid" %>
-      <p>Step 3 - Enter the username and password you received by email or text.</p>
-      <p>Step 4 - Select <strong>Advanced Options</strong></p>
-      <%= image_tag "troubleshooting/blackberry-step-4.jpg", class: "img-fluid" %>
-      <p>Step 5 - Scroll down. For <strong>Security Sub Type</strong>, select <strong>PEAP</strong>.</p>
-      <%= image_tag "troubleshooting/blackberry-step-5.jpg", class: "img-fluid" %>
-      <p>Step 6 - For <strong>CA Certificate</strong>, select the third listing for <strong>GeoTrust Primary Certification Authority</strong>.</p>
-      <%= image_tag "troubleshooting/blackberry-step-6.jpg", class: "img-fluid" %>
-      <p>Step 7 - Select <strong>Connect</strong> on the top right of the screen.</p>
-      <p>You should now be connected to GovWifi.</p>
-      <p><strong>Support</strong></p>
-      <p>You may get a message that says 'Wi-Fi Connection Status, Attempt 1 of 3, Connecting to network' and another that says ‘Acquiring IP address'.  You don't need to do anything.</p>
+        <%= image_tag "troubleshooting/blackberry-step-7-a.jpg", class: "img-fluid" %>
+        <%= image_tag "troubleshooting/blackberry-step-7-b.jpg", class: "img-fluid" %>
 
-      <%= image_tag "troubleshooting/blackberry-step-7-a.jpg", class: "img-fluid" %>
-      <%= image_tag "troubleshooting/blackberry-step-7-b.jpg", class: "img-fluid" %>
-
-      <h2 class="govuk-heading-m">BlackBerry Android</h2>
-      <p>If your BlackBerry device uses Android, follow the <%= link_to "Android instructions", "/support/connect-to-govwifi-using-an-android-device" %>.</p>
+        <h2 class="govuk-heading-m">BlackBerry Android</h2>
+        <p class="govuk-body">If your BlackBerry device uses Android, follow the <%= link_to "Android instructions", "/support/connect-to-govwifi-using-an-android-device", class: "govuk-link" %>.</p>
+      </div>
     </div>
   </div>
-</div>
+</main>

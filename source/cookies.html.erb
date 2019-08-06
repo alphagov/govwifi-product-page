@@ -1,6 +1,8 @@
 ---
 title: Cookies
 ---
+
+<main class="govuk-width-container" role="main" id="main">
   <nav class="govuk-breadcrumbs" aria-label="Breadcrumbs" data-click-events data-click-category="Header" data-click-action="Breadcrumb clicked">
     <ol class="govuk-breadcrumbs__list" itemscope itemtype="http://schema.org/BreadcrumbList">
       <li class="govuk-breadcrumbs__list-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
@@ -12,26 +14,26 @@ title: Cookies
     </ol>
   </nav>
 
-  <div class="container">
-    <div class="grid-row">
-      <div class="column-two-thirds">
+  <div class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
         <h1 class="govuk-heading-l">Cookies</h1>
         <p class="govuk-body">GovWifi puts small files (known as ‘cookies’) onto your computer.</p>
         <p class="govuk-body">Cookies are used to:</p>
-        <ul class="list list-bullet">
+        <ul class="govuk-list govuk-list--bullet">
           <li>keep your session open</li>
           <li>avoid malicious requests</li>
           <li>measure how you use the website so it can be updated and improved based on your needs</li>
         </ul>
 
-        <p class="govuk-body"> Find out how to <%= link_to "manage cookies.", 'https://ico.org.uk/your-data-matters/online/cookies/' %></p>
+        <p class="govuk-body"> Find out how to <%= link_to "manage cookies.", 'https://ico.org.uk/your-data-matters/online/cookies/', class: "govuk-link" %></p>
 
         <h1 class="govuk-heading-m">Measuring website usage (Google Analytics)</h1>
-        <p>We use Google Analytics software to collect anonymised information about how you use GovWifi. We do this to
+        <p class="govuk-body">We use Google Analytics software to collect anonymised information about how you use GovWifi. We do this to
         help make sure the site is meeting the needs of its users and to help us make improvements.</p>
-        <p>Google Analytics stores information about:</p>
+        <p class="govuk-body">Google Analytics stores information about:</p>
 
-        <ul class="list list-bullet">
+        <ul class="govuk-list govuk-list--bullet">
           <li>the pages you visit</li>
           <li>how long you spend on each page</li>
           <li>how you arrived at the site</li>
@@ -39,58 +41,58 @@ title: Cookies
           <li>the device and browser you’re using</li>
         </ul>
 
-        <p>We don’t collect or store your personal information (for example your name or address)
+        <p class="govuk-body">We don’t collect or store your personal information (for example your name or address)
         so this information can’t be used to identify who you are. </p>
-        <p>We don’t allow Google to use or share our analytics data. </p>
-        <p>Google Analytics sets the following cookies: </p>
+        <p class="govuk-body">We don’t allow Google to use or share our analytics data. </p>
+        <p class="govuk-body">Google Analytics sets the following cookies: </p>
 
-      <table>
-        <thead>
-          <tr>
-            <th scope="col">Name</th>
-            <th scope="col">Purpose</th>
-            <th scope="col">Expires</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>_ga</td>
-            <td>This helps us count how many people visit GovWifi by tracking if you’ve visited before</td>
-            <td>2 years</td>
-          </tr>
-          <tr>
-            <td>_gid</td>
-            <td>his helps us count how many people visit GovWifi by tracking if you’ve visited before</td>
-            <td>3 days</td>
-          </tr>
-        </tbody>
-      </table>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Name</th>
+              <th scope="col" class="govuk-table__header">Purpose</th>
+              <th scope="col" class="govuk-table__header">Expires</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">_ga</td>
+              <td class="govuk-table__cell">This helps us count how many people visit GovWifi by tracking if you’ve visited before</td>
+              <td class="govuk-table__cell">2 years</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">_gid</td>
+              <td class="govuk-table__cell">his helps us count how many people visit GovWifi by tracking if you’ve visited before</td>
+              <td class="govuk-table__cell">3 days</td>
+            </tr>
+          </tbody>
+        </table>
 
-      <h1 class="govuk-heading-m">Session cookies</h1>
-      <p>We store session cookies on your computer to help keep your information secure.</p>
+        <h1 class="govuk-heading-m">Session cookies</h1>
+        <p class="govuk-body">We store session cookies on your computer to help keep your information secure.</p>
 
-      <table>
-        <thead>
-          <tr>
-            <th scope="col">Name</th>
-            <th scope="col">Purpose</th>
-            <th scope="col">Expires</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>_govwifi_admin_session</td>
-            <td>Used to keep you logged in</td>
-            <td>When the browsing session ends</td>
-          </tr>
-        </tbody>
-      </table>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Name</th>
+              <th scope="col" class="govuk-table__header">Purpose</th>
+              <th scope="col" class="govuk-table__header">Expires</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">_govwifi_admin_session</td>
+              <td class="govuk-table__cell">Used to keep you logged in</td>
+              <td class="govuk-table__cell">When the browsing session ends</td>
+            </tr>
+          </tbody>
+        </table>
 
-      <h1 class="govuk-heading-m">Our introductory message</h1>
-      <p>You may see a pop-up welcome message when you first visit GovWifi.
-      We’ll store a cookie so that your computer knows you’ve seen it and knows not to show it again.</p>
+        <h1 class="govuk-heading-m">Our introductory message</h1>
+        <p class="govuk-body">You may see a pop-up welcome message when you first visit GovWifi.
+        We’ll store a cookie so that your computer knows you’ve seen it and knows not to show it again.</p>
 
-      <table>
+        <table>
         <thead>
           <tr>
             <th scope="col">Name</th>
@@ -106,5 +108,7 @@ title: Cookies
           </tr>
         </tbody>
       </table>
+      </div>
     </div>
   </div>
+</main>

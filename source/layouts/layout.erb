@@ -29,9 +29,9 @@
     <%= partial 'shared/cookie_policy_banner' %>
     <%= partial 'layouts/google_analytics_noscript' %>
 
-    <a href="#main" class="skip-link">Skip to main content</a>
+    <a href="#main" class="skip-link govuk-link">Skip to main content</a>
 
-    <header class="govuk-header" role="banner" data-module="govuk-header">
+    <header class="govuk-header app-header" role="banner" data-module="govuk-header">
       <div class="govuk-header__container govuk-width-container">
         <div class="govuk-header__logo">
           <a href="/" class="govuk-header__link govuk-header__link--homepage" data-click-events data-click-category="Header" data-click-action="Logo link clicked">
@@ -70,7 +70,7 @@
       </div>
     </header>
 
-    <div class="govuk-phase-banner">
+    <div class="govuk-phase-banner app-phase-banner govuk-width-container">
       <p class="govuk-phase-banner__content">
         <strong class="govuk-tag govuk-phase-banner__content__tag">Beta</strong>
         <span class="govuk-phase-banner__text">
@@ -79,43 +79,43 @@
       </p>
     </div>
 
-    <main role="main" id="main">
+    <div class="app-pane__content">
       <%= yield %>
-    </main>
+    </div>
 
-    <footer class="group js-footer" id="footer" role="contentinfo">
-      <div class="footer-wrapper">
+    <footer class="govuk-footer" id="footer" role="contentinfo">
+      <div class="govuk-width-container">
         <div class="govuk-footer__navigation govuk-!-margin-bottom-6">
-          <div class="column-one-third govuk-!-margin-bottom-5">
-            <h2>About</h2>
+          <div class="govuk-footer__section">
+            <h2 class="govuk-footer__heading govuk-heading-m">About</h2>
             <ul class="govuk-footer__list footer-link-padding">
               <li class="govuk-footer__list-item">
-                <%= link_to 'Our service', '/about-govwifi' %>
+                <%= link_to 'Our service', '/about-govwifi', class: 'govuk-footer__link' %>
               </li>
               <li class="govuk-footer__list-item">
-                <%= link_to 'Terms and conditions', '/terms-and-conditions' %>
+                <%= link_to 'Terms and conditions', '/terms-and-conditions', class: 'govuk-footer__link' %>
               </li>
               <li class="govuk-footer__list-item">
-                <%= link_to 'Service performance', 'https://www.gov.uk/performance/govwifi' %>
+                <%= link_to 'Service performance', 'https://www.gov.uk/performance/govwifi', class: 'govuk-footer__link' %>
               </li>
             </ul>
           </div>
-          <div class="column-one-third govuk-!-margin-bottom-5">
-            <h2>Connect</h2>
+          <div class="govuk-footer__section">
+            <h2 class="govuk-footer__heading govuk-heading-m">Connect</h2>
             <ul class="govuk-footer__list footer-link-padding">
               <li class="govuk-footer__list-item">
-                <%= link_to 'Connect to GovWifi', '/about-govwifi/connect-to-govwifi' %>
+                <%= link_to 'Connect to GovWifi', '/about-govwifi/connect-to-govwifi', class: 'govuk-footer__link' %>
               </li>
               <li class="govuk-footer__list-item">
-                <%= link_to 'Organisations using GovWifi', '/about-govwifi/organisations-using-govwifi' %>
+                <%= link_to 'Organisations using GovWifi', '/about-govwifi/organisations-using-govwifi', class: 'govuk-footer__link' %>
               </li>
               <li class="govuk-footer__list-item">
                 <%= link_to 'Service status', 'https://status.wifi.service.gov.uk/', class: "govuk-footer__link" %>
               </li>
             </ul>
           </div>
-          <div class="column-one-third govuk-!-margin-bottom-5">
-            <h2>Admin</h2>
+          <div class="govuk-footer__section">
+            <h2 class="govuk-footer__heading govuk-heading-m">Admin</h2>
             <ul class="govuk-footer__list footer-link-padding">
               <li class="govuk-footer__list-item">
                 <%= link_to 'Offer GovWifi in your organisation', 'https://docs.wifi.service.gov.uk/', class: "govuk-footer__link" %>
@@ -129,24 +129,32 @@
             </ul>
           </div>
         </div>
-        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
-        <div class="footer-meta">
-          <div class="footer-meta-inner">
-          <nav class="footer-nav">
-              <ul>
-                <li>Built by the <a href="https://www.gov.uk/government/organisations/government-digital-service">Government Digital Service</a></li>
-                <li><a href="/privacy-notice">Privacy notice</a></li>
-                <li><a href="/cookies">Cookies</a></li>
-              </ul>
-            </nav>
-            <div class="open-government-licence">
-              <p class="logo"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a></p>
-                <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>
-            </div>
-          </div>
+        <hr class="govuk-footer__section-break">
+        <div class="govuk-footer__meta">
+          <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+            <h2 class="govuk-visually-hidden">Support links</h2>
+            <ul class="govuk-footer__inline-list">
+              <li class="govuk-footer__inline-list-item">
+                Built by the <a href="https://www.gov.uk/government/organisations/government-digital-service" class="govuk-footer__link">Government Digital Service</a>
+              </li>
+              <li class="govuk-footer__inline-list-item">
+                <a class="govuk-footer__link" href="/privacy-notice">Privacy notice</a>
+              </li>
+              <li class="govuk-footer__inline-list-item">
+                <a class="govuk-footer__link" href="/cookies">Cookies</a>
+              </li>
+            </ul>
 
-          <div class="copyright">
-            <a href="http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/"><%= content_for?(:crown_copyright_message) ? yield(:crown_copyright_message) : "© Crown copyright" %></a>
+            <svg role="presentation" focusable="false" class="govuk-footer__licence-logo" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 483.2 195.7" height="17" width="41">
+              <path fill="currentColor" d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145" />
+            </svg>
+            <span class="govuk-footer__licence-description">
+              All content is available under the
+              <a class="govuk-footer__link" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated
+            </span>
+          </div>
+          <div class="govuk-footer__meta-item">
+            <a class="govuk-footer__link govuk-footer__copyright-logo" href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">© Crown copyright</a>
           </div>
         </div>
       </div>

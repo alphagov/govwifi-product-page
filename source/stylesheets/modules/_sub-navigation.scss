@@ -23,10 +23,6 @@
 // </nav>
 
 .sub-navigation {
-  @include govuk-media-query($from: tablet) {
-    margin-top: $govuk-gutter * 1.5;
-  }
-
   ol,
   ul {
     list-style: none;

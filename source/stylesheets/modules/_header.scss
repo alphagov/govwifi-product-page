@@ -49,38 +49,6 @@ $active-nav-color: #1d8feb;
 //  }
 //}
 
-.header__container {
-  @include govuk-width-container;
-  @include govuk-clearfix;
-  zoom: 1;
-
-  padding: 9px 0 6px;
-
-  @include screen {
-    border-bottom: 10px solid $govuk-brand-colour;
-    margin-bottom: -10px;
-  }
-}
-
-.header.header--full-width {
-  margin-bottom: 0;
-
-  @include screen {
-    border-bottom: 10px solid $govuk-brand-colour;
-  }
-
-  .header__container {
-    border-bottom: none;
-    width: auto;
-    max-width: none;
-    margin: 0 $govuk-gutter-half;
-
-    @include govuk-media-query($from: tablet) {
-      margin: 0 $govuk-gutter;
-    }
-  }
-}
-
 .header--without-border {
   border-bottom: none;
   margin-bottom: 0;

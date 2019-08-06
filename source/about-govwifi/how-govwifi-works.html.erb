@@ -3,37 +3,34 @@ title: How GovWifi works - GovWifi
 description: Learn more about how the GovWifi authenication service works.
 ---
 
-<div class="container">
+<main class="govuk-width-container" role="main" id="main">
   <%= partial "shared/product/breadcrumbs", locals: { page: "How GovWifi Works" } %>
-
-  <div class="grid-row">
-    <div class="column-one-third">
-      <div>
-        <%= partial 'shared/product/sidebar' %>
+  <div class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third">
+          <%= partial 'shared/product/sidebar' %>
       </div>
-    </div>
-    <div class="column-two-thirds">
-      <h1 class="govuk-heading-l">How GovWifi works</h1>
-      <p>
-        Participating government and public organisations keep their existing wifi infrastructure and configure it to access the GovWifi authentication service.
-      </p>
-      <h2>Authentication</h2>
-      <p>
-        GovWifi uses RADIUS server technology to authenticate users’ usernames and passwords.
-      </p>
-      <p>
-        Each end user is protected with unique credentials and encryption keys when they log in to the wifi and access the internet.
-        These credentials are randomly generated so can’t be used to get into other systems if stolen.
-      </p>
-      <p>
-        Users’ devices are isolated from each other to stop the horizontal spread of malware and protect secure devices from less secure ones.
-        The network also identifies itself in a way that can’t be spoofed, adding to the safety measures that provide protection from potential attackers.
-      </p>
-      <div class="govuk-inset-text">
-        <p>
-          Follow our <%= link_to "sign up instructions", "/about-govwifi/connect-to-govwifi", class: "bold" %>  to connect to GovWifi.
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">How GovWifi works</h1>
+        <p class="govuk-body">
+          Participating government and public organisations keep their existing wifi infrastructure and configure it to access the GovWifi authentication service.
         </p>
+        <h2 class="govuk-heading-m">Authentication</h2>
+        <p class="govuk-body">
+          GovWifi uses RADIUS server technology to authenticate users’ usernames and passwords.
+        </p>
+        <p class="govuk-body">
+          Each end user is protected with unique credentials and encryption keys when they log in to the wifi and access the internet.
+          These credentials are randomly generated so can’t be used to get into other systems if stolen.
+        </p>
+        <p class="govuk-body">
+          Users’ devices are isolated from each other to stop the horizontal spread of malware and protect secure devices from less secure ones.
+          The network also identifies itself in a way that can’t be spoofed, adding to the safety measures that provide protection from potential attackers.
+        </p>
+        <div class="govuk-inset-text">
+          Follow our <strong><%= link_to "sign up instructions", "/about-govwifi/connect-to-govwifi", class: "govuk-link" %></strong> to connect to GovWifi.
+        </div>
       </div>
     </div>
   </div>
-</div>
+</main>

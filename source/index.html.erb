@@ -2,50 +2,67 @@
 title: Public sector guest wifi - GovWifi
 description: GovWifi allows staff and visitors to use a single user login to connect to guest wifi across multiple government and public sector organisations.
 ---
-
-<div class="masthead">
-  <div class="hero">
-    <div class="hero__content">
-      <div class="hero__body">
-        <h1 class="hero__title">Public sector guest wifi</h1>
-        <div class="hero__inline-image">
-          <img src="/images/Product-illustration.png" alt="" role="presentation" width="100%">
+<main role="main" id="main">
+  <div class="masthead">
+    <div class="hero">
+      <div class="hero__content govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <div class="hero__body">
+            <h1 class="hero__title govuk-heading-xl">Public sector guest wifi</h1>
+            <div class="hero__inline-image">
+              <img src="/images/Product-illustration.png" alt="" role="presentation" width="100%">
+            </div>
+            <p class="hero__description govuk-body">
+              GovWifi is a wifi authentication service allowing staff and visitors to use a single username and password to connect to guest wifi across the public sector.
+            </p>
+            <a href="https://www.wifi.service.gov.uk/about-govwifi/connect-to-govwifi/" role="button" class="hero-button govuk-button govuk-button--start" data-click-events="" data-click-category="Hero" data-click-action="Button clicked">
+              Connect to GovWifi
+              <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+                <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+              </svg>
+            </a>
+          </div>
         </div>
-        <p class="hero__description">
-          GovWifi is a wifi authentication service allowing staff and visitors to use a single username and password to connect to guest wifi across the public sector.
-        </p>
-        <a href="https://www.wifi.service.gov.uk/about-govwifi/connect-to-govwifi/" role="button" class="hero-button" data-click-events="" data-click-category="Hero" data-click-action="Button clicked">
-                    Connect to GovWifi
-       </a>
-      </div>
-      <div class="hero__aside-image main-image">
-        <img src="/images/Product-illustration.png" alt="govwifi-image" role="presentation" width="100%">
+        <div class="govuk-grid-column-one-third">
+          <div class="hero__aside-image main-image">
+            <img src="/images/Product-illustration.png" alt="govwifi-image" role="presentation" width="100%">
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="container">
-  <div class="grid-row">
-    <div class="column-one-third">
-      <h2>Connect a device</h2>
-      <p>Sign up to connect your device to the GovWifi network across the public sector.</p>
-      <%= link_to "Connect a device", "/about-govwifi/connect-to-govwifi/", class: "govuk-link bold" %>
-    </div>
+  <div class="govuk-width-container">
+    <div class="govuk-main-wrapper govuk-main-wrapper--l">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-third">
+          <h2 class="govuk-heading-l">Connect a device</h2>
+          <p class="govuk-body">Sign up to connect your device to the GovWifi network across the public sector.</p>
+          <p class="govuk-body govuk-!-margin-bottom-0">
+            <strong><%= link_to "Connect a device", "/about-govwifi/connect-to-govwifi/", class: "govuk-link" %></strong>
+          </p>
+        </div>
 
-    <div class="column-one-third">
-      <h2>Offer GovWifi</h2>
-      <p>Make GovWifi available in your organisation and keep your existing infrastructure and wifi provider.</p>
-      <%= link_to "Offer GovWifi", "https://docs.wifi.service.gov.uk", class: "govuk-link bold" %>
-    </div>
+        <div class="govuk-grid-column-one-third">
+          <h2 class="govuk-heading-l">Offer GovWifi</h2>
+          <p class="govuk-body">Make GovWifi available in your organisation and keep your existing infrastructure and
+            wifi provider.</p>
+          <p class="govuk-body govuk-!-margin-bottom-0">
+            <strong><%= link_to "Offer GovWifi", "https://docs.wifi.service.gov.uk", class: "govuk-link" %></strong>
+          </p>
+        </div>
 
-    <div class="column-one-third">
-      <h2>Manage GovWifi</h2>
-      <p>Manage an existing GovWifi installation in your organisation as an administrator.</p>
-      <%= link_to "Network administrator login", "https://admin.wifi.service.gov.uk", class: "govuk-link bold" %>
+        <div class="govuk-grid-column-one-third">
+          <h2 class="govuk-heading-l">Manage GovWifi</h2>
+          <p class="govuk-body">Manage an existing GovWifi installation in your organisation as an administrator.</p>
+          <p class="govuk-body govuk-!-margin-bottom-0">
+            <strong><%= link_to "Network administrator login", "https://admin.wifi.service.gov.uk", class: "govuk-link" %></strong>
+          </p>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+</main>
 
 <script type="application/ld+json">
 {

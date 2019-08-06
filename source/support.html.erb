@@ -2,40 +2,40 @@
 title: Help and support - GovWifi
 description: Help and support connecting to GovWifi
 ---
-<div class="container">
+
+<main class="govuk-width-container" role="main" id="main">
   <%= partial "shared/support/breadcrumbs", locals: { page: "GovWifi support" } %>
-
-  <div class="grid-row">
-    <div class="column-one-third">
-      <%= partial 'shared/support/sidebar' %>
-    </div>
-
-    <div class="column-two-thirds">
-      <h1 class="govuk-heading-l">GovWifi support</h1>
-
-      <h2 class="govuk-heading-m">User support</h2>
-      <p>
-        Use the left-hand navigation bar to view our device specific instructions for <%= link_to "connecting to GovWifi",
-        "/about-govwifi/connect-to-govwifi/" %> for the first time.
-      </p>
-        <p>
-        For additional support, please contact the IT support desk in your building. They will be able to check your device and also ensure the local network is working. 
-      </p>
-      <h4 class="heading-s">Username or password reminder</h4>
-      <p>
-        If you need a GovWifi username or password reminder, please send a blank email from the email address you registered with to <%= link_to "signup@wifi.service.gov.uk", "mailto: signup@wifi.service.gov.uk" %>.
-      </p>
-      <h4 class="heading-s">Check GovWifi service status</h4>
-      <p>
-        You can check the <%= link_to "status of our central authentication service", "https://status.wifi.service.gov.uk", class: "govuk-link" %>.
-      </p>
-      <p>
-        If our service is operating normally and you are still having difficulty connecting to GovWifi, please contact the IT support desk in your building.
-      </p> 
-      <h2 class="govuk-heading-m">Network administrator support</h2>
-      <p>
-        We provide network administrator guidance on how to install and manage GovWifi in your organisation in our <%= link_to "technical documentation", "https://docs.wifi.service.gov.uk/", class: "govuk-link" %>.
-      </p>
+  <div class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third">
+        <%= partial 'shared/support/sidebar' %>
+      </div>
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">GovWifi support</h1>
+        <h2 class="govuk-heading-m">User support</h2>
+        <p class="govuk-body">
+          Use the left-hand navigation bar to view our device specific instructions for <%= link_to "connecting to GovWifi",
+          "/about-govwifi/connect-to-govwifi/", class: "govuk-link" %> for the first time.
+        </p>
+        <p class="govuk-body">
+          For additional support, please contact the IT support desk in your building. They will be able to check your device and also ensure the local network is working.
+        </p>
+        <h4 class="govuk-heading-s">Username or password reminder</h4>
+        <p class="govuk-body">
+          If you need a GovWifi username or password reminder, please send a blank email from the email address you registered with to <%= link_to "signup@wifi.service.gov.uk", "mailto: signup@wifi.service.gov.uk", class: "govuk-link" %>.
+        </p>
+        <h4 class="govuk-heading-s">Check GovWifi service status</h4>
+        <p class="govuk-body">
+          You can check the <%= link_to "status of our central authentication service", "https://status.wifi.service.gov.uk", class: "govuk-link" %>.
+        </p>
+        <p class="govuk-body">
+          If our service is operating normally and you are still having difficulty connecting to GovWifi, please contact the IT support desk in your building.
+        </p>
+        <h2 class="govuk-heading-m">Network administrator support</h2>
+        <p class="govuk-body">
+          We provide network administrator guidance on how to install and manage GovWifi in your organisation in our <%= link_to "technical documentation", "https://docs.wifi.service.gov.uk/", class: "govuk-link" %>.
+        </p>
+      </div>
     </div>
   </div>
-</div>
+</main>

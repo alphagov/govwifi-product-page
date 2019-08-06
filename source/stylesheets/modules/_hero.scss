@@ -62,11 +62,13 @@
   }
 
   &__title {
-    @include govuk-font(48, $weight: bold);
+    color: inherit;
   }
 
   &__description {
-    @include govuk-font(24);
+    font-size: 1.5rem;
+    line-height: 1.25;
+    color: govuk-colour("white")
   }
 
   &__title,
@@ -99,11 +101,6 @@
     @include govuk-media-query($from: tablet) {
       display: block;
       visibility: visible;
-    }
-
-    img {
-      max-width: 100%;
-      margin-top: $govuk-gutter-half;
     }
   }
 

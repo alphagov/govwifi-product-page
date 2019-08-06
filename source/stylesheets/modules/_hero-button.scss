@@ -32,47 +32,15 @@ $path: false !default;
   @return $url;
 }
 
-a.hero-button {
-  //@include button($white);
-  @include govuk-font(24, $weight: bold);
-  @include hero-box-shadow(0 2px 0 darken(govuk-colour("blue"), 10%));
+.masthead {
+  .hero {
+    .hero-button {
+      background: white;
+      color: $govuk-brand-colour;
+    }
 
-  background-image: hero-file-url("images/hero-button/arrow.png");
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: 95% 50%;
-
-  padding: 0.3684210526em 2.1578947368em 0.2105263158em 0.8421052632em; // 5px 34px 3px 13px
-  margin: 0 0.416666667em 0.416666667em 0; // 0 10px 10px 0
-
-  display: block;
-  text-align: center;
-
-  @include govuk-device-pixel-ratio($ratio: 2) {
-    background-image: hero-file-url("images/hero-button/arrow@2x.png");
-  }
-
-  @include govuk-media-query($from: tablet) {
-    display: inline-block;
-    text-align: left;
-  }
-
-  &,
-  &:link,
-  &:visited {
-    color:  $govuk-link-colour	;
-  }
-
-  &:hover,
-  &:active {
-    background-color: govuk-colour("white");
-  }
-
-  &:hover {
-    color:  $govuk-link-hover-colour;
-  }
-
-  &:active {
-    color:  $govuk-link-active-colour;
+    .hero-button:hover {
+      background: $lightest-blue;
+    }
   }
 }

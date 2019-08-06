@@ -9,7 +9,7 @@
   <ul class="govuk-list">
     <% menu_items.each do |menu_item| %>
       <li class="sub-navigation__item <%= subnav_active(menu_item.fetch(:link)) %>">
-        <%= link_to menu_item.fetch(:title), menu_item.fetch(:link), class: "govuk-link" %>
+        <%= link_to menu_item.fetch(:title), menu_item.fetch(:link), class: "govuk-link govuk-link--no-visited-state" %>
       </li>
     <% end %>
   </ul>

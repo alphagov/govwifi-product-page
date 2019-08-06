@@ -1,9 +1,6 @@
-.cookie-banner-text {
-  color: black;
-  margin-top: 0px;
-  padding: 10px 0;
-}
-
 .cookie-banner {
-  background-color: $lightest-blue;
+  background-color: govuk-colour("white");
+  line-height: 1.25;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }

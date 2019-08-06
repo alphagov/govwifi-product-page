@@ -49,14 +49,17 @@ $active-nav-color: #1d8feb;
 //  }
 //}
 
+.app-header {
+  border-bottom: 10px solid #1d70b8;
+
+  &__container {
+    border: none;
+  }
+}
+
 .header--without-border {
   border-bottom: none;
   margin-bottom: 0;
-
-  .header__container {
-    border-bottom: none;
-    margin-bottom: 0;
-  }
 }
 
 .header__brand {

@@ -144,7 +144,7 @@ jobs:
             - name: whitelisted-emails
             - name: organisations-list
           outputs:
-            - name: bundled
+            - name: build
           run:
             path: sh
             dir: repo
@@ -158,9 +158,10 @@ jobs:
               cp ../whitelisted-emails/domains.yml data/domains.yml
               cp ../organisations-list/organisations.yml data/organisations.yml
               bundle exec middleman build
-              cp -r . ../bundled/
+              cp -r build/* ../build
+              cp manifest.yml ../build
       - put: deploy-to-paas
         params:
-          manifest: bundled/manifest.yml
+          manifest: build/manifest.yml
           show_app_log: true
-          path: bundled
+          path: build

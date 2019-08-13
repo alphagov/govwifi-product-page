@@ -23,10 +23,6 @@
 // </nav>
 
 .sub-navigation {
-  @include media(tablet) {
-    margin-top: $gutter * 1.5;
-  }
-
   ol,
   ul {
     list-style: none;
@@ -35,28 +31,31 @@
   }
 
   &__item {
-    @include core-16;
+    @include govuk-font(16);
 
-    border-bottom: 1px $grey-3 solid;
     display: block;
-    padding: $gutter-one-third 0;
+    padding: 5px 5px 5px 0;
+    margin-bottom: 5px;
 
-    a:link {
+    .app-subnav__link {
       text-decoration: none;
+      padding: 2px 0;
     }
 
-    a:hover,
-    a:active {
+    .app-subnav__link:not(:focus):hover {
       text-decoration: underline;
     }
   }
 
   &__item--active {
-    @include bold-16;
+    @include govuk-font(16, $weight: bold);
+    border-left: 4px solid $govuk-brand-colour;
+    margin-left: -14px;
+    padding-left: 10px;
 
     a:link,
     a:visited {
-      color: $govuk-blue;
+      color: $govuk-brand-colour;
     }
   }
 }

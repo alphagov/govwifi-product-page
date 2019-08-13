@@ -1,47 +1,13 @@
 @charset "utf-8";
 
-@import "govuk-frontend/components/breadcrumbs/breadcrumbs";
-@import "govuk-frontend/components/inset-text/inset-text";
-@import "govuk-frontend/components/input/input";
-@import "govuk-frontend/overrides/spacing";
-@import "govuk-frontend/components/footer/footer";
-
-@import "govuk_frontend_toolkit/stylesheets/colours";
-@import "govuk_frontend_toolkit/stylesheets/conditionals";
-@import "govuk_frontend_toolkit/stylesheets/css3";
-@import "govuk_frontend_toolkit/stylesheets/device-pixels";
-@import "govuk_frontend_toolkit/stylesheets/font_stack";
-@import "govuk_frontend_toolkit/stylesheets/grid_layout";
-@import "govuk_frontend_toolkit/stylesheets/helpers";
-@import "govuk_frontend_toolkit/stylesheets/measurements";
-@import "govuk_frontend_toolkit/stylesheets/typography";
-@import "govuk_frontend_toolkit/stylesheets/url-helpers";
-
-@import "govuk_frontend_toolkit/stylesheets/design-patterns/buttons";
-
-@import "govuk-elements-sass/public/sass/elements/helpers";
-@import "govuk-elements-sass/public/sass/elements/buttons";
-@import "govuk-elements-sass/public/sass/elements/elements-typography";
-@import "govuk-elements-sass/public/sass/elements/forms";
-@import "govuk-elements-sass/public/sass/elements/layout";
-@import "govuk-elements-sass/public/sass/elements/lists";
-@import "govuk-elements-sass/public/sass/elements/panels";
-@import "govuk-elements-sass/public/sass/elements/tables";
-
-@import "govuk_template/source/assets/stylesheets/styleguide/colours";
-@import "govuk_template/source/assets/stylesheets/accessibility";
-@import "govuk_template/source/assets/stylesheets/footer";
+@import "govuk-frontend/govuk/all";
 
 @import "util/printable";
 @import "util/flexbox";
 @import "util/typography";
 @import "util/colours";
 
-@import "modules/breadcrumbs";
-@import "modules/content-section";
 @import "modules/full-width-form";
-@import "modules/govuk-logo";
-@import "modules/header";
 @import "modules/hero";
 @import "modules/hero-alternative-action";
 @import "modules/hero-button";
@@ -61,34 +27,18 @@ html,
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
-  @include core-19;
+  font-family: "GDS Transport", Arial, sans-serif;
 }
 
 // scss-lint:disable IdSelector
 #main {
   display: block;
-  margin-bottom: $gutter * 3;
 }
 // scss-lint:enable IdSelector
-
-.container {
-  @extend %site-width-container;
-}
 
 .content-section--with-top-border {
   padding-top: 5px;
   border-top: 1px #dee0e2 solid;
-}
-
-.hero__aside-image img {
-  max-width: 100%;
-  margin-top: 15px;
-  margin-left: 20px;
-}
-
-.hero__body {
-  float: left;
-  width: 65%;
 }
 
 .mobile_image_size {
@@ -100,18 +50,22 @@ body {
   background-color: govuk-colour("white");
 }
 
+a.long-link {
+  word-wrap: break-word;
+}
+
 a:link {
-  color: $link-colour;
+  color: $govuk-link-colour;
 }
 
 a:visited {
-  color: $link-visited-colour;
+  color: $govuk-link-visited-colour;
 }
 
 a:hover {
-  color: $link-hover-colour;
+  color: $govuk-link-hover-colour;
 }
 
 a:active {
-  color: $link-active-colour;
+  color: $govuk-link-active-colour;
 }

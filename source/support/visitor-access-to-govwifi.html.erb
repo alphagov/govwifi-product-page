@@ -2,57 +2,54 @@
 title: Visitor access - GovWifi
 description: GovWifi access for non-public sector staff
 ---
-<div class="container">
+
+<main class="govuk-width-container" role="main" id="main">
   <%= partial "shared/support/breadcrumbs", locals: { page: "Connect to GovWifi as a visitor" } %>
-
-  <div class="grid-row">
-    <div class="column-one-third">
-      <%= partial '/shared/support/_sidebar' %>
-    </div>
-
-    <div class="column-two-thirds column-minimum">
-      <h1 class="heading-large">Connect to GovWifi as a visitor</h1>
-      <p>
-        If you do not have a <%= link_to "public sector staff email address", "/support/check-organisation-email-address" %>,
-        you can connect to GovWifi as a visitor.
-      </p>
-      
-      <div class="govuk-inset-text">
-         By connecting to GovWifi, you accept our <a href="https://www.wifi.service.gov.uk/privacy-notice">privacy notice</a> and <a href="https://www.wifi.service.gov.uk/terms-and-conditions">terms and conditions</a>.  
+  <div class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third">
+        <%= partial '/shared/support/_sidebar' %>
       </div>
 
-      <div>
-      <h2>1. Get sponsored by public sector staff</h2>
-      <p>
-        You will need a public sector staff member to sponsor your access to GovWifi.
-      </p>
-      <p>The staff member will need to use their public sector staff email address to:</p>
-      <ul class="list list-bullet">
-        <li>send an email to <%= link_to "sponsor@wifi.service.gov.uk", "mailto:sponsor@wifi.service.gov.uk" %></li>
-        <li>leave the subject line blank</li>
-        <li>only include the email address of each visitor on separate lines within the email</li>
-      </ul>
-      </div>
-       
-       <p>Once this has been done, you will receive an email containing your GovWifi username and password.</p> 
-       <p>If you do not receive the username and password confirmation e-mail within a few minutes of signing up, please check your spam/junk e-mail folder.</p>
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Connect to GovWifi as a visitor</h1>
+        <p class="govuk-body">
+          If you do not have a <%= link_to "public sector staff email address", "/support/check-organisation-email-address", class: "govuk-link" %>,
+          you can connect to GovWifi as a visitor.
+        </p>
 
-     <div>
-     <h2>2. Connect your device to GovWifi</h2>
-        <p>When you are in a <%= link_to "organisation that offers GovWifi",
-        "/about-govwifi/organisations-using-govwifi" %>, follow the steps below to connect your device:</p>
-        <ul class="list list-bullet">
-          <li>go to your device wifi settings and select GovWifi.</li>
-	  <li>enter the GovWifi username and password you received by email.</li>
-	  <li>your password is case sensitive. It’s 3 words without spaces. The first letter of each word is capitalised.</li>
-          <li>you can use the same username and password on all the devices you connect to GovWifi.</li> 
+        <div class="govuk-inset-text">
+          By connecting to GovWifi, you accept our <a class="govuk-link" href="https://www.wifi.service.gov.uk/privacy-notice">privacy notice</a> and <a class="govuk-link" href="https://www.wifi.service.gov.uk/terms-and-conditions">terms and conditions</a>.
+        </div>
+
+        <h2 class="govuk-heading-m">1. Get sponsored by public sector staff</h2>
+        <p class="govuk-body">
+          You will need a public sector staff member to sponsor your access to GovWifi.
+        </p>
+        <p class="govuk-body">The staff member will need to use their public sector staff email address to:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>send an email to <%= link_to "sponsor@wifi.service.gov.uk", "mailto:sponsor@wifi.service.gov.uk", class: "govuk-link" %></li>
+          <li>leave the subject line blank</li>
+          <li>only include the email address of each visitor on separate lines within the email</li>
         </ul>
+
+        <p class="govuk-body">Once this has been done, you will receive an email containing your GovWifi username and password.</p>
+        <p class="govuk-body">If you do not receive the username and password confirmation e-mail within a few minutes of signing up, please check your spam/junk e-mail folder.</p>
+
+        <h2 class="govuk-heading-m">2. Connect your device to GovWifi</h2>
+        <p class="govuk-body">When you are in a <%= link_to "organisation that offers GovWifi",
+          "/about-govwifi/organisations-using-govwifi", class: "govuk-link" %>, follow the steps below to connect your device:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>go to your device wifi settings and select GovWifi.</li>
+          <li>enter the GovWifi username and password you received by email.</li>
+          <li>your password is case sensitive. It’s 3 words without spaces. The first letter of each word is capitalised.</li>
+          <li>you can use the same username and password on all the devices you connect to GovWifi.</li>
+        </ul>
+
+        <p class="govuk-body">
+          Please review our <a class="govuk-link" href="https://www.wifi.service.gov.uk/support">support guides</a> for device specific instructions.
+        </p>
       </div>
-      
-      <p>
-        Please review our <a href="https://www.wifi.service.gov.uk/support">support guides</a> for device specific instructions.
-      </p>
-      
     </div>
   </div>
-</div>
+</main>

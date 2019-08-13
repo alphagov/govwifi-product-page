@@ -3,55 +3,50 @@ title: Connect to GovWifi - GovWifi
 description: Use your public sector staff email address to connect devices to GovWifi.
 ---
 
-<div class="container">
+<main class="govuk-width-container" role="main" id="main">
   <%= partial "shared/product/breadcrumbs", locals: { page: "Connect to GovWifi" } %>
-
-  <div class="grid-row">
-    <div class="column-one-third">
-      <div>
-        <%= partial 'shared/product/sidebar' %>
+  <div class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third">
+          <%= partial 'shared/product/sidebar' %>
       </div>
-    </div>
-    <div class="column-two-thirds">
-      <h1 class="heading-large">Connect a device to GovWifi</h1>
-      <p>
-        You need a <%= link_to "public sector staff email address",
-        "/support/check-organisation-email-address" %> to sign up for a GovWifi account.
-      </p>
-      <p>
-        If you do not have a public sector staff email address, you can <%= link_to "connect to GovWifi as a visitor",
-        "/support/visitor-access-to-govwifi" %>.
-      </p>
-      <div class="govuk-inset-text">
-        If you manage IT services in a public sector organisation and would like to make GovWifi available in your buildings, please review our <%= link_to "network administrator guidance", "https://docs.wifi.service.gov.uk/"%>.  
-      </div>
-      <div>
-        <h2>1. Sign up for a GovWifi account</h2>
-        <p>Create a GovWifi account by using your public sector staff email address to:</p>
-        <ul class="list list-bullet">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Connect a device to GovWifi</h1>
+        <p class="govuk-body">
+          You need a <%= link_to "public sector staff email address",
+          "/support/check-organisation-email-address" %> to sign up for a GovWifi account.
+        </p>
+        <p class="govuk-body">
+          If you do not have a public sector staff email address, you can <%= link_to "connect to GovWifi as a visitor",
+          "/support/visitor-access-to-govwifi" %>.
+        </p>
+        <div class="govuk-inset-text">
+          If you manage IT services in a public sector organisation and would like to make GovWifi available in your buildings, please review our <%= link_to "network administrator guidance", "https://docs.wifi.service.gov.uk/"%>.
+        </div>
+        <h2 class="govuk-heading-m">1. Sign up for a GovWifi account</h2>
+        <p class="govuk-body">Create a GovWifi account by using your public sector staff email address to:</p>
+        <ul class="govuk-list govuk-list--bullet">
           <li>send a blank email to <%= link_to "signup@wifi.service.gov.uk", "mailto:signup@wifi.service.gov.uk" %></li>
           <li>leave the subject line blank</li>
         </ul>
-      </div>
-      <p>We will email your username and password confirmation in reply.</p> 
-      <p>If you do not receive the username and password confirmation e-mail within a few minutes of signing up, please check your spam/junk e-mail folder.</p>
- 	   <div>
-        <h2>2. Connect your device to GovWifi</h2>
-      <p>By connecting to GovWifi, you accept our <a href="https://www.wifi.service.gov.uk/privacy-notice">privacy notice</a> and <a href="https://www.wifi.service.gov.uk/terms-and-conditions">terms and conditions</a>.</p>
-      <p> When you are in a <%= link_to "organisation that offers GovWifi","/about-govwifi/organisations-using-govwifi" %>, follow the steps below to connect your device:</p>
-        <ul class="list list-bullet">
+        <p class="govuk-body">We will email your username and password confirmation in reply.</p>
+        <p class="govuk-body">If you do not receive the username and password confirmation e-mail within a few minutes of signing up, please check your spam/junk e-mail folder.</p>
+        <h2 class="govuk-heading-m">2. Connect your device to GovWifi</h2>
+        <p class="govuk-body">By connecting to GovWifi, you accept our <a class="govuk-link" href="https://www.wifi.service.gov.uk/privacy-notice">privacy notice</a> and <a href="https://www.wifi.service.gov.uk/terms-and-conditions">terms and conditions</a>.</p>
+        <p class="govuk-body"> When you are in a <%= link_to "organisation that offers GovWifi","/about-govwifi/organisations-using-govwifi" %>, follow the steps below to connect your device:</p>
+        <ul class="govuk-list govuk-list--bullet">
           <li>go to your device wifi settings and select GovWifi.</li>
-		  <li>enter the GovWifi username and password you received by email.</li>
-		  <li>your password is case sensitive. It’s 3 words without spaces. The first letter of each word is capitalised.</li>
-		  <li>you can use the same username and password on all the devices you connect to GovWifi.</li> 
+          <li>enter the GovWifi username and password you received by email.</li>
+          <li>your password is case sensitive. It’s 3 words without spaces. The first letter of each word is capitalised.</li>
+          <li>you can use the same username and password on all the devices you connect to GovWifi.</li>
         </ul>
+        <p class="govuk-body">
+          Please review our <a href="https://www.wifi.service.gov.uk/support" class="govuk-link">support guides</a> for device specific instructions.
+        </p>
       </div>
-      <p>
-        Please review our <a href="https://www.wifi.service.gov.uk/support">support guides</a> for device specific instructions.
-      </p>
     </div>
   </div>
-</div>
+</main>
 
 <script type="application/ld+json">
 {

@@ -3,135 +3,136 @@ title: Connect to GovWifi using a Windows device - GovWifi
 description: Follow these instructions to connect your Windows device to GovWifi
 ---
 
-<div class="container">
+<main class="govuk-width-container" role="main" id="main">
   <%= partial "shared/support/breadcrumbs", locals: { page: "Connect a Windows device" } %>
+  <div class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third">
+        <%= partial '/shared/support/_sidebar' %>
+      </div>
 
-  <div class="grid-row">
-    <div class="column-one-third">
-      <%= partial '/shared/support/_sidebar' %>
-    </div>
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Connect to GovWifi using a Windows device</h1>
+        <h2 class="govuk-heading-m">Instructions</h2>
+        <h3 class="govuk-heading-s">Contents</h3>
 
-    <div class="column-two-thirds column-minimum">
-      <h1 class="heading-large">Connect to GovWifi using a Windows device</h1>
-      <h2 class="heading-medium">Instructions</h2>
-      <h3 class="heading-small">Contents</h3>
+        <ul class="govuk-list">
+          <li><%= link_to "Connect using Windows 8 or 10", "#connect-windows-8", class: "govuk-link" %></li>
+          <li><%= link_to "Support for Windows 8 and 10", "#support-windows-8", class: "govuk-link" %></li>
+          <li><%= link_to "Connect using Windows 7", "#connect-windows-7", class: "govuk-link" %></li>
+          <li><%= link_to "Support for Windows 7", "#support-windows-7", class: "govuk-link" %></li>
+        </ul>
 
-      <ul class="list">
-        <li><%= link_to "Connect using Windows 8 or 10", "#connect-windows-8", class: "govuk-link" %></li>
-        <li><%= link_to "Support for Windows 8 and 10", "#support-windows-8", class: "govuk-link" %></li>
-        <li><%= link_to "Connect using Windows 7", "#connect-windows-7", class: "govuk-link" %></li>
-        <li><%= link_to "Support for Windows 7", "#support-windows-7", class: "govuk-link" %></li>
-      </ul>
+        <p class="govuk-body">Different versions of Windows work in slightly different ways. If you don't know which version of Windows your device is running, read <%= link_to "Microsoft's guidance", "https://support.microsoft.com/en-gb/help/13443/windows-which-operating-system", class: "govuk-link" %>.</p>
 
-      <p>Different versions of Windows work in slightly different ways. If you don't know which version of Windows your device is running, read <%= link_to "Microsoft's guidance", "https://support.microsoft.com/en-gb/help/13443/windows-which-operating-system" %>.</p>
+        <h3 class="govuk-heading-s" id="connect-windows-8">Connect using Windows 8 or 10</h3>
 
-      <h3 id="connect-windows-8">Connect using Windows 8 or 10</h3>
+        <p class="govuk-body">Once you have a GovWifi <%= link_to "username and password", "/about-govwifi/connect-to-govwifi", class: "govuk-link" %>, follow the steps below.</p>
+        <p class="govuk-body">Step 1 - Select the wifi icon in the system tray at the bottom right of your screen. You'll see all the nearby wifi networks.</p>
 
-      <p>Once you have a GovWifi <%= link_to "username and password", "/about-govwifi/connect-to-govwifi" %>, follow the steps below.</p>
-      <p>Step 1 - Select the wifi icon in the system tray at the bottom right of your screen. You'll see all the nearby wifi networks.</p>
+        <%= image_tag "troubleshooting/windows-step-1.jpg", class: "img-fluid" %>
 
-      <%= image_tag "troubleshooting/windows-step-1.jpg", class: "img-fluid" %>
+        <p class="govuk-body">Step 2 - Select <strong>GovWifi.</strong></p>
+        <p class="govuk-body">Step 3 - Select <strong>Connect</strong>.</p>
 
-      <p>Step 2 - Select <strong>GovWifi.</strong></p>
-      <p>Step 3 - Select <strong>Connect</strong>.</p>
+        <%= image_tag "troubleshooting/windows-step-3.jpg", class: "img-fluid" %>
 
-      <%= image_tag "troubleshooting/windows-step-3.jpg", class: "img-fluid" %>
+        <div class="govuk-inset-text">If it says <strong>"can't connect to network"</strong>, your device may have an incorrect or expired username and password for GovWifi. To fix this issue, follow the <%= link_to "instructions to forget the network", "#forget", class: "govuk-link" %> and then try again.</div>
 
-      <div class="govuk-inset-text">If it says <strong>"can't connect to network"</strong>, your device may have an incorrect or expired username and password for GovWifi. To fix this issue, follow the <%= link_to "instructions to forget the network", "#forget" %> and then try again.</div>
+        <p class="govuk-body">Step 4 - Enter the GovWifi username and password that you received via email or text message.</p>
+        <p class="govuk-body">Your password is case sensitive. It's 3 words without spaces. The first letter of each word is capitalised.</p>
 
-      <p>Step 4 - Enter the GovWifi username and password that you received via email or text message.</p>
-      <p>Your password is case sensitive. It's 3 words without spaces. The first letter of each word is capitalised.</p>
+        <p class="govuk-body">Step 5 - Select <strong>OK.</strong></p>
+        <%= image_tag "troubleshooting/windows-step-5.jpg", class: "img-fluid" %>
 
-      <p>Step 5 - Select <strong>OK.</strong></p>
-      <%= image_tag "troubleshooting/windows-step-5.jpg", class: "img-fluid" %>
+        <p class="govuk-body">Step 6 - When you see <strong>Continue connecting</strong>, select <strong>Show certificate details.</strong></p>
+        <%= image_tag "troubleshooting/windows-step-6.jpg", class: "img-fluid" %>
 
-      <p>Step 6 - When you see <strong>Continue connecting</strong>, select <strong>Show certificate details.</strong></p>
-      <%= image_tag "troubleshooting/windows-step-6.jpg", class: "img-fluid" %>
+        <p class="govuk-body">Step 7 - Check that the <strong>Server thumbprint</strong> matches: </p>
+        <p class="govuk-body"><strong>76 29 76 AA 3D CE A8 5C D8 3D 72 0A B8 10 32 93 74 A5 15 5A</strong></p>
+        <p class="govuk-body">Step 8 - If it matches, select <strong>Connect</strong>.</p>
+        <p class="govuk-body">You should now be connected to GovWifi.</p>
 
-      <p>Step 7 - Check that the <strong>Server thumbprint</strong> matches: </p>
-      <p><strong>76 29 76 AA 3D CE A8 5C D8 3D 72 0A B8 10 32 93 74 A5 15 5A</strong></p>
-      <p>Step 8 - If it matches, select <strong>Connect</strong>.</p>
-      <p>You should now be connected to GovWifi.</p>
+        <h2 class="govuk-heading-m" id="support-windows-8">Support for Windows 8 and 10</h2>
+        <h3 class="govuk-heading-s" id="forget">Forget the network</h3>
 
-      <h2 id="support-windows-8">Support for Windows 8 and 10</h2>
-      <h3 id="forget">Forget the network</h3>
+        <p class="govuk-body">If your device says it <strong>can't connect to network</strong>, it may be trying to connect with an incorrect or expired username and password for GovWifi. You need to tell your device to forget your GovWifi connection.</p>
 
-      <p>If your device says it <strong>can't connect to network</strong>, it may be trying to connect with an incorrect or expired username and password for GovWifi. You need to tell your device to forget your GovWifi connection.</p>
+        <p class="govuk-body">Step 1 - Go to <strong>Settings, WiFi</strong> and select <strong>Manage known networks.</strong></p>
+        <%= image_tag "troubleshooting/windows-8-step-1.jpg", class: "img-fluid" %>
 
-      <p>Step 1 - Go to <strong>Settings, WiFi</strong> and select <strong>Manage known networks.</strong></p>
-      <%= image_tag "troubleshooting/windows-8-step-1.jpg", class: "img-fluid" %>
+        <p class="govuk-body">Step 2 - Select <strong>GovWifi.</strong></p>
+        <%= image_tag "troubleshooting/windows-8-step-2.jpg", class: "img-fluid" %>
 
-      <p>Step 2 - Select <strong>GovWifi.</strong></p>
-      <%= image_tag "troubleshooting/windows-8-step-2.jpg", class: "img-fluid" %>
+        <p class="govuk-body">Step 3 - Select <strong>Forget.</strong></p>
 
-      <p>Step 3 - Select <strong>Forget.</strong></p>
+        <h3 class="govuk-heading-s">Check your website access</h3>
+        <p class="govuk-body">If GovWifi doesn't let you access websites which you'd normally be able to access, follow the <%= link_to "instructions to forget the network", "#forget", class: "govuk-link" %> and reconnect.</p>
 
-      <h3>Check your website access</h3>
-      <p>If GovWifi doesn't let you access websites which you'd normally be able to access, follow the <%= link_to "instructions to forget the network", "#forget" %> and reconnect.</p>
+        <h2 class="govuk-heading-m" id="connect-windows-7">Connect using Windows 7</h2>
 
-      <h2 id="connect-windows-7">Connect using Windows 7</h2>
+        <p class="govuk-body">Once you have a GovWifi <%= link_to "username and password", "/about-govwifi/connect-to-govwifi", class: "govuk-link" %>, follow the steps below.</p>
 
-      <p>Once you have a GovWifi <%= link_to "username and password", "/about-govwifi/connect-to-govwifi" %>, follow the steps below.</p>
+        <p class="govuk-body">Step 1 - Open the <strong>Control Panel</strong>, and select <strong>Network and Sharing Center</strong>.</p>
+        <%= image_tag "troubleshooting/windows-7-step-1.jpg", class: "img-fluid" %>
 
-      <p>Step 1 - Open the <strong>Control Panel</strong>, and select <strong>Network and Sharing Center</strong>.</p>
-      <%= image_tag "troubleshooting/windows-7-step-1.jpg", class: "img-fluid" %>
+        <p class="govuk-body">Step 2 - Select <strong>Set up a new connection or network</strong>.</p>
+        <%= image_tag "troubleshooting/windows-7-step-2.jpg", class: "img-fluid" %>
 
-      <p>Step 2 - Select <strong>Set up a new connection or network</strong>.</p>
-      <%= image_tag "troubleshooting/windows-7-step-2.jpg", class: "img-fluid" %>
+        <p class="govuk-body">Step 3 - Select <strong>Manually connect to a wireless network</strong>.</p>
+        <%= image_tag "troubleshooting/windows-7-step-3.jpg", class: "img-fluid" %>
 
-      <p>Step 3 - Select <strong>Manually connect to a wireless network</strong>.</p>
-      <%= image_tag "troubleshooting/windows-7-step-3.jpg", class: "img-fluid" %>
+        <p class="govuk-body">Step 4 - For the <strong>Network name</strong>, enter <strong>GovWifi</strong> and for the <strong>Security type</strong>, select <strong>WPA2-Enterprise</strong>. The network name is case sensitive so make sure you enter capital G and capital W.</p>
 
-      <p>Step 4 - For the <strong>Network name</strong>, enter <strong>GovWifi</strong> and for the <strong>Security type</strong>, select <strong>WPA2-Enterprise</strong>.  The network name is case sensitive so make sure you enter capital G and capital W.</p>
+        <p class="govuk-body">Step 5 - Select <strong>Next.</strong></p>
+        <%= image_tag "troubleshooting/windows-7-step-5.jpg", class: "img-fluid" %>
 
-      <p>Step 5 - Select <strong>Next.</strong></p>
-      <%= image_tag "troubleshooting/windows-7-step-5.jpg", class: "img-fluid" %>
+        <p class="govuk-body">Step 6 - Select <strong>Change connection settings.</strong></p>
+        <%= image_tag "troubleshooting/windows-7-step-6.jpg", class: "img-fluid" %>
 
-      <p>Step 6 - Select <strong>Change connection settings.</strong></p>
-      <%= image_tag "troubleshooting/windows-7-step-6.jpg", class: "img-fluid" %>
+        <p class="govuk-body">Step 7 - Select the <strong>Security</strong> tab and select <strong>Settings</strong>.</p>
+        <%= image_tag "troubleshooting/windows-7-step-7.jpg", class: "img-fluid" %>
 
-      <p>Step 7 - Select the <strong>Security</strong> tab and select <strong>Settings</strong>.</p>
-      <%= image_tag "troubleshooting/windows-7-step-7.jpg", class: "img-fluid" %>
+        <p class="govuk-body">Step 8 - Tick the <strong>Connect to these servers box</strong>. In the text box below it, enter <strong>wifi.service.gov.uk</strong>.</p>
 
-      <p>Step 8 - Tick the <strong>Connect to these servers box</strong>. In the text box below it, enter <strong>wifi.service.gov.uk</strong>.</p>
+        <p class="govuk-body">Step 9 - In the <strong>Trusted Root Certification Authorities</strong> list, select <strong>GeoTrust Primary Certification Authority - G3.</strong></p>
 
-      <p>Step 9 - In the <strong>Trusted Root Certification Authorities</strong> list, select <strong>GeoTrust Primary Certification Authority - G3.</strong></p>
+        <p class="govuk-body">Step 10 - Tick <strong>Enable Identity Privacy</strong> and enter <strong>anonymous</strong> to prevent your device from broadcasting your GovWifi username.</p>
 
-      <p>Step 10 - Tick <strong>Enable Identity Privacy</strong> and enter <strong>anonymous</strong> to prevent your device from broadcasting your GovWifi username.</p>
+        <p class="govuk-body">Step 11 - Select <strong>Configure.</strong></p>
+        <%= image_tag "troubleshooting/windows-7-step-11.jpg", class: "img-fluid" %>
 
-      <p>Step 11 - Select <strong>Configure.</strong></p>
-      <%= image_tag "troubleshooting/windows-7-step-11.jpg", class: "img-fluid" %>
+        <p class="govuk-body">Step 12 - Untick <strong>Automatically use my Windows logon name</strong>.</p>
 
-      <p>Step 12 - Untick <strong>Automatically use my Windows logon name</strong>.</p>
+        <p class="govuk-body">Step 13 - Select <strong>OK</strong>, then <strong>OK</strong> again to go back to the <strong>GovWifi Wireless Network Properties</strong> window.</p>
+        <%= image_tag "troubleshooting/windows-7-step-13.jpg", class: "img-fluid" %>
 
-      <p>Step 13 - Select <strong>OK</strong>, then <strong>OK</strong> again to go back to the <strong>GovWifi Wireless Network Properties</strong> window.</p>
-      <%= image_tag "troubleshooting/windows-7-step-13.jpg", class: "img-fluid" %>
+        <p class="govuk-body">Step 14 - Select <strong>Advanced settings</strong>.</p>
+        <%= image_tag "troubleshooting/windows-7-step-14.jpg", class: "img-fluid" %>
+        <p class="govuk-body">Step 15 - Select <strong>User authentication</strong> from the dropdown menu under <strong>Specify authentication mode</strong>, then select <strong>Save credentials</strong>.</p>
 
-      <p>Step 14 - Select <strong>Advanced settings</strong>.</p>
-      <%= image_tag "troubleshooting/windows-7-step-14.jpg", class: "img-fluid" %>
-      <p>Step 15 - Select <strong>User authentication</strong> from the dropdown menu under <strong>Specify authentication mode</strong>, then select <strong>Save credentials</strong>.</p>
+        <%= image_tag "troubleshooting/windows-7-step-15.jpg", class: "img-fluid" %>
 
-      <%= image_tag "troubleshooting/windows-7-step-15.jpg", class: "img-fluid" %>
+        <p class="govuk-body">Step 16 - Enter your GovWifi <strong>username</strong> and <strong>password</strong>.</p>
+        <p class="govuk-body">Your password is case sensitive. It's 3 short words without spaces. The first letter of each word is capitalised.</p>
+        <p class="govuk-body">Step 17 - Select <strong>OK</strong> to close all windows.</p>
+        <p class="govuk-body">Step 18 - Select the wifi logo at the bottom right of your screen and select <strong>GovWifi</strong>.</p>
+        <p class="govuk-body">You should now be connected to GovWifi.</p>
 
-      <p>Step 16 - Enter your GovWifi <strong>username</strong> and <strong>password</strong>.</p>
-      <p>Your password is case sensitive. It's 3 short words without spaces. The first letter of each word is capitalised.</p>
-      <p>Step 17 - Select <strong>OK</strong> to close all windows.</p>
-      <p>Step 18 - Select the wifi logo at the bottom right of your screen and select <strong>GovWifi</strong>.</p>
-      <p>You should now be connected to GovWifi.</p>
+        <h2 class="govuk-heading-m" id="support-windows-7">Support for Windows 7</h2>
+        <p class="govuk-body">If you can't see 'GeoTrust Primary Certification Authority - G3' in the Trusted Root Certification Authorities list you might not have the right certificate installed on your device. If you manage your own device, you can download it from the web.</p>
 
-      <h2 id="support-windows-7">Support for Windows 7</h2>
-      <p>If you can't see 'GeoTrust Primary Certification Authority - G3' in the Trusted Root Certification Authorities list you might not have the right certificate installed on your device. If you manage your own device, you can download it from the web.</p>
+        <p class="govuk-body">Step 1 - In your web browser, navigate to: <%= link_to "https://www.geotrust.com/resources/root_certificates/certificates/Geotrust_PCA_G3_Root.pem", "https://www.geotrust.com/resources/root_certificates/certificates/Geotrust_PCA_G3_Root.pem", class: "govuk-link long-link" %></p>
+        <p class="govuk-body">Step 2 - Go to your Start menu. Select 'Accessories' and choose 'Notepad'.  Copy everything from <code>BEGIN CERTIFICATE</code> to <code>END CERTIFICATE</code> into your notepad, and save the file on your C: drive as <code>certificate.pem</code></p>
+        <p class="govuk-body">Step 3 - To install the certificate from the Command Prompt, go to your start menu, select 'Accessories' and right click on 'Command Prompt'. Choose 'Run as administrator'.</p>
+        <p class="govuk-body">Step 4 - Copy (Ctrl + v) the text below:<br />
+          <code>certutil -addstore -enterprise -f "Root" c:\certificate.pem</code>
+        </p>
 
-      <p>Step 1 - In your web browser, navigate to: <%= link_to "https://www.geotrust.com/resources/root_certificates/certificates/Geotrust_PCA_G3_Root.pem", "https://www.geotrust.com/resources/root_certificates/certificates/Geotrust_PCA_G3_Root.pem" %></p>
-      <p>Step 2 - Go to your Start menu. Select 'Accessories' and choose 'Notepad'.  Copy everything from <code>BEGIN CERTIFICATE</code> to <code>END CERTIFICATE</code> into your notepad, and save the file on your C: drive as <code>certificate.pem</code></p>
-      <p>Step 3 - To install the certificate from the Command Prompt, go to your start menu, select 'Accessories' and right click on 'Command Prompt'. Choose 'Run as administrator'.</p>
-      <p>Step 4 - Copy (Ctrl + v) the text below:<br />
-        <code>certutil -addstore -enterprise -f "Root" c:\certificate.pem</code>
-      </p>
-
-      <p>Step 5 - Right click in the Command Prompt window and select 'Paste'. Press return.</p>
-      <p>You should now be able to select the right certificate when you try connecting to GovWifi again.</p>
-      <p>Ask your local IT team if you need help downloading or installing the certificate.</p>
+        <p class="govuk-body">Step 5 - Right click in the Command Prompt window and select 'Paste'. Press return.</p>
+        <p class="govuk-body">You should now be able to select the right certificate when you try connecting to GovWifi again.</p>
+        <p class="govuk-body">Ask your local IT team if you need help downloading or installing the certificate.</p>
+      </div>
     </div>
   </div>
-</div>
+</main>

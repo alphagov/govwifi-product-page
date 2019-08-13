@@ -1,12 +1,12 @@
 .table-header {
-  background-color: $govuk-blue;
+  background-color: $govuk-brand-colour;
   color: white;
   padding-left: 15px;
 }
 
 .striped-table {
   tr:nth-child(even) {
-    background-color: $light-grey;
+    background-color: govuk-colour("light-grey");
   }
   td {
     border: none;

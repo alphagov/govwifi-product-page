@@ -14,47 +14,33 @@
 $hero-button-arrow-width: 26px;
 $hero-button-arrow-height: 30px;
 
-a.hero-button {
-  @include button($white);
-  @include bold-24;
-  @include box-shadow(0 2px 0 darken($govuk-blue, 10%));
+@mixin hero-box-shadow($shadow) {
+  -webkit-box-shadow: $shadow; // Chrome 4.0 to 9.0, Safari 3.1 to 5.0, Mobile Safari 3.2 to 4.3, Android Browser 2.1 to 3.0
+  -moz-box-shadow: $shadow; // Firefox 3.5 to 3.6
+  box-shadow: $shadow;
+}
 
-  background-image: file-url("images/hero-button/arrow.png");
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: 95% 50%;
+$path: false !default;
 
-  padding: 0.3684210526em 2.1578947368em 0.2105263158em 0.8421052632em; // 5px 34px 3px 13px
-  margin: 0 0.416666667em 0.416666667em 0; // 0 10px 10px 0
-
-  display: block;
-  text-align: center;
-
-  @include device-pixel-ratio(2) {
-    background-image: file-url("images/hero-button/arrow@2x.png");
+@function hero-file-url($file) {
+  $url: '';
+  @if $path {
+    $url: url($path + $file);
+  } @else {
+    $url: image-url($file);
   }
+  @return $url;
+}
 
-  @include media(tablet) {
-    display: inline-block;
-    text-align: left;
-  }
+.masthead {
+  .hero {
+    .hero-button {
+      background: white;
+      color: $govuk-brand-colour;
+    }
 
-  &,
-  &:link,
-  &:visited {
-    color: $link-colour;
-  }
-
-  &:hover,
-  &:active {
-    background-color: $white;
-  }
-
-  &:hover {
-    color: $link-hover-colour;
-  }
-
-  &:active {
-    color: $link-active-colour;
+    .hero-button:hover {
+      background: $lightest-blue;
+    }
   }
 }

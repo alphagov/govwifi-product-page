@@ -1,9 +1,4 @@
 .grey-text-box {
   padding: 32px;
-  background-color: $grey-3;
-}
-
-.govuk-inset-text {
-  @extend .govuk-inset-text;
-  font-size: 19px !important;
+  background-color: govuk-colour('light-grey');
 }

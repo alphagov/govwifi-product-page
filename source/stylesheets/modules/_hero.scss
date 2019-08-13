@@ -33,14 +33,14 @@
 //  </div>
 
 .hero {
-  @extend %site-width-container;
+  @include govuk-width-container;
   margin-top: 0;
   margin-bottom: 0;
-  color: $white;
-  padding: $gutter-half 0;
+  color: govuk-colour("white");
+  padding: $govuk-gutter-half 0;
 
-  @include media(tablet) {
-    padding: $gutter 0;
+  @include govuk-media-query($from: tablet) {
+    padding: $govuk-gutter 0;
   }
 
   &--breaded {
@@ -49,39 +49,41 @@
 
   a:link,
   a:visited {
-    color: $white;
+    color: govuk-colour("white");
   }
 
   a:hover,
   a:active {
-    color: $light-blue-25;
+    color: govuk-colour("light-blue");
   }
 
   a:focus {
-    color: $black;
+    color: govuk-colour("black");
   }
 
   &__title {
-    @include bold-48;
+    color: inherit;
   }
 
   &__description {
-    @include core-24;
+    font-size: 1.5rem;
+    line-height: 1.25;
+    color: govuk-colour("white")
   }
 
   &__title,
   &__description {
-    margin-bottom: $gutter-half;
+    margin-bottom: $govuk-gutter-half;
 
-    @include media(tablet) {
-      margin-bottom: $gutter;
+    @include govuk-media-query($from: tablet) {
+      margin-bottom: $govuk-gutter;
     }
   }
 
   &__inline-image {
     text-align: center;
 
-    @include media(tablet) {
+    @include govuk-media-query($from: tablet) {
       display: none;
       visibility: hidden;
     }
@@ -96,38 +98,18 @@
     display: none;
     visibility: hidden;
 
-    @include media(tablet) {
+    @include govuk-media-query($from: tablet) {
       display: block;
       visibility: visible;
-    }
-
-    img {
-      max-width: 100%;
-      margin-top: $gutter-half;
     }
   }
 
   &__content {
-    @extend %grid-row;
-  }
-
-  &__body,
-  &__aside-image {
-    @include grid-column(1 / 2);
+    @extend .govuk-grid-row;
   }
 
   &__user-text {
     margin-top: 15px;
     margin-bottom: 0px;
-  }
-
-  @include media(desktop) {
-    &__body {
-      @include grid-column(2 / 3);
-    }
-
-    &__aside-image {
-      @include grid-column(1 / 3);
-    }
   }
 }

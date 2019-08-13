@@ -10,5 +10,13 @@
 // </div>
 
 .masthead {
-  background-color: $govuk-blue;
+  background-color: $govuk-brand-colour;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+
+  @include govuk-media-query($from: tablet) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }

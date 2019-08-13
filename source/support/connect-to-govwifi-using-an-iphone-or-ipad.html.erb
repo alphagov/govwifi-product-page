@@ -3,52 +3,53 @@ title: Connect to GovWifi using an iPhone or iPad - GovWifi
 description: Follow these instructions to connect your iPhone or iPad to GovWifi
 ---
 
-<div class="container">
+<main class="govuk-width-container" role="main" id="main">
   <%= partial "shared/support/breadcrumbs", locals: { page: "Connect an iPhone or iPad" } %>
-
-  <div class="grid-row">
-    <div class="column-one-third">
-      <%= partial '/shared/support/_sidebar' %>
-    </div>
-
-    <div class="column-two-thirds column-minimum">
-      <h1 class="heading-large">Connect to GovWifi using an iPhone or iPad</h1>
-      <h2 class="heading-medium">Instructions</h2>
-      <p>Once you have a GovWifi <%= link_to "username and password", "/about-govwifi/connect-to-govwifi" %>, follow the steps below.  Depending on your device, you may need to scroll down to see all the fields.</p>
-
-      <p>Step 1 - Go to wifi settings and select <strong>GovWifi</strong>.</p>
-      <div class="d-flex justify-content-center">
-        <%= image_tag "troubleshooting/ios-step-1.jpg" %>
+  <div class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third">
+        <%= partial '/shared/support/_sidebar' %>
       </div>
 
-      <p>Step 2 - Enter the GovWifi username and password you received by email or text message.</p>
-      <p>Your password is case sensitive. It's 3 words without spaces. The first letter of each word is capitalised.</p>
-      <p>Step 3 - You'll be asked to confirm that the network presents the correct certificate. This protects you against fake networks which may harm your privacy.</p>
-      <p>The correct certificate is shown below. It's called <strong>wifi.service.gov.uk</strong> and is issued by <strong>GeoTrust DV SSL SHA256 CA</strong>.</p>
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Connect to GovWifi using an iPhone or iPad</h1>
+        <h2 class="govuk-heading-m">Instructions</h2>
+        <p class="govuk-body">Once you have a GovWifi <%= link_to "username and password", "/about-govwifi/connect-to-govwifi", class: "govuk-link" %>, follow the steps below. Depending on your device, you may need to scroll down to see all the fields.</p>
 
-      <div class="d-flex justify-content-center">
-        <%= image_tag "troubleshooting/ios-step-3.jpg", class:"mobile_image_size"%>
+        <p class="govuk-body">Step 1 - Go to wifi settings and select <strong>GovWifi</strong>.</p>
+        <div class="d-flex justify-content-center">
+          <%= image_tag "troubleshooting/ios-step-1.jpg", class: "img-fluid" %>
+        </div>
+
+        <p class="govuk-body">Step 2 - Enter the GovWifi username and password you received by email or text message.</p>
+        <p class="govuk-body">Your password is case sensitive. It's 3 words without spaces. The first letter of each word is capitalised.</p>
+        <p class="govuk-body">Step 3 - You'll be asked to confirm that the network presents the correct certificate. This protects you against fake networks which may harm your privacy.</p>
+        <p class="govuk-body">The correct certificate is shown below. It's called <strong>wifi.service.gov.uk</strong> and is issued by <strong>GeoTrust DV SSL SHA256 CA</strong>.</p>
+
+        <div class="d-flex justify-content-center">
+          <%= image_tag "troubleshooting/ios-step-3.jpg", class: "img-fluid"%>
+        </div>
+
+        <p class="govuk-body">Step 4 - Select <strong>More Details</strong> and scroll down.</p>
+
+        <div class="d-flex justify-content-center">
+          <%= image_tag("troubleshooting/ios-step-4.jpg", class: "img-fluid") %>
+        </div>
+
+        <p class="govuk-body govuk-!-margin-top-7">Step 5 - Check that the SHA-1 Fingerprint matches <strong>76 29 76 AA 3D CE A8 5C D8 3D 72 0A B8 10 32 93 74 A5 15 5A</strong>.</p>
+
+        <p class="govuk-body">Step 6 - Select <strong>< Certificate</strong> in the top left to go back to the previous screen.</p>
+
+        <div class="d-flex justify-content-center"><%= image_tag("troubleshooting/ios-step-5.jpg", class: "img-fluid") %></div>
+
+        <p class="govuk-body">Step 7 - Select <strong>Trust</strong> in the top right to connect to GovWifi.</p>
+        <p class="govuk-body">You should now be connected to GovWifi.</p>
+
+        <h2 class="govuk-heading-m">Support</h2>
+        <p class="govuk-body">If your device shows the message 'Not trusted', it means your phone doesn't recognise this wifi network yet. Check that the certificate is called wifi.service.gov.uk and that it is issued by GeoTrust DV SSL SHA256 CA</p>
+
+        <p class="govuk-body">If it is, select Trust so your phone recognises the wifi network.</p>
       </div>
-
-      <p>Step 4 - Select <strong>More Details</strong> and scroll down.</p>
-
-      <div class="d-flex justify-content-center">
-        <%= image_tag("troubleshooting/ios-step-4.jpg", class: "mobile_image_size") %>
-      </div>
-
-      <p class="govuk-body govuk-!-margin-top-7">Step 5 - Check that the SHA-1 Fingerprint matches <strong>76 29 76 AA 3D CE A8 5C D8 3D 72 0A B8 10 32 93 74 A5 15 5A</strong>.</p>
-
-      <p>Step 6 - Select <strong>< Certificate</strong> in the top left to go back to the previous screen.</p>
-
-      <div class="d-flex justify-content-center"><%= image_tag("troubleshooting/ios-step-5.jpg", class: "mobile_image_size") %></div>
-
-      <p>Step 7 - Select <strong>Trust</strong> in the top right to connect to GovWifi.</p>
-      <p>You should now be connected to GovWifi.</p>
-
-      <h2 class="heading-medium">Support</h2>
-      <p>If your device shows the message 'Not trusted', it means your phone doesn't recognise this wifi network yet. Check that the certificate is called wifi.service.gov.uk and that it is issued by GeoTrust DV SSL SHA256 CA</p>
-
-      <p>If it is, select Trust so your phone recognises the wifi network.</p>
     </div>
   </div>
-</div>
+</main>

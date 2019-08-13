@@ -2,54 +2,57 @@
 title: Check your organisation email address - GovWifi
 description: Check your government or public sector email address to sign up to GovWifi.
 ---
-<div class="container">
+
+<main class="govuk-width-container" role="main" id="main">
   <%= partial "shared/support/breadcrumbs", locals: { page: "Check your organisation email address" } %>
-
-  <div class="grid-row">
-    <div class="column-one-third">
-      <%= partial 'shared/support/sidebar' %>
-    </div>
-    <div class="column-two-thirds">
-      <h1>Check your organisation email address</h1>
-      <p>You can <%= link_to "signup to GovWifi", "/about-govwifi/connect-to-govwifi", class: "govuk-link" %>
-        using your public sector staff email address.
-      </p>
-      <p>If you don't have a public sector staff email address, you can
-        <%= link_to "connect to GovWifi as a visitor", "support/visitor-access-to-govwifi", class: "govuk-link" %>.
-      </p>
-      
-       <div class="govuk-inset-text">
-         If your public sector staff email address is currently ineligible, please <a href="https://admin.wifi.service.gov.uk/help/new/user_support">contact us</a> to register your public sector organisation email domain.  
+  <div class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third">
+        <%= partial 'shared/support/sidebar' %>
       </div>
-      
-      <p>You can check to see if your public sector staff email address is eligible below:</p>
-      <div class="govuk-form-group govuk-!-margin-bottom-4">
-        <input class="govuk-input" aria-label="Search for eligible organisation emails" id="search-table" type="text" placeholder="Search email domains">
-      </div>
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Check your organisation email address</h1>
+        <p class="govuk-body">You can <%= link_to "signup to GovWifi", "/about-govwifi/connect-to-govwifi", class: "govuk-link" %>
+          using your public sector staff email address.
+        </p>
+        <p class="govuk-body">If you don't have a public sector staff email address, you can
+          <%= link_to "connect to GovWifi as a visitor", "support/visitor-access-to-govwifi", class: "govuk-link" %>.
+        </p>
 
-      <% domains = data.domains.sort %>
+        <div class="govuk-inset-text">
+          If your public sector staff email address is currently ineligible, please <a href="https://admin.wifi.service.gov.uk/help/new/user_support" class="govuk-link">contact us</a> to register your public sector organisation email domain.
+        </div>
 
-      <table class="govuk-table">
-        <thead class="govuk-table__head">
-          <tr class="govuk-table__row">
-            <th class="govuk-table__header govuk-!-width-one-half table-header">Organisation email domain</th>
-          </tr>
-        </thead>
-        <tbody class="govuk-table__body striped-table">
-          <% domains.each do |email| %>
-            <tr class="govuk-table__row result-row result">
-              <td class="govuk-table__cell govuk-!-width-one-half result-text" scope="row">
-                <%= '@' + email %>
-              </td>
+        <p class="govuk-body">You can check to see if your public sector staff email address is eligible below:</p>
+        <div class="govuk-form-group govuk-!-margin-bottom-4">
+          <input class="govuk-input" aria-label="Search for eligible organisation emails" id="search-table" type="text" placeholder="Search email domains">
+        </div>
+
+        <% domains = data.domains.sort %>
+
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header govuk-!-width-one-half table-header">Organisation email domain</th>
             </tr>
-          <% end %>
-        </tbody>
-      </table>
-      <p class="govuk-body govuk-!-margin-top-3" id="no-results" style="display: none">
-        <strong>No results found</strong>
-      </p>
+          </thead>
+          <tbody class="govuk-table__body striped-table">
+            <% domains.each do |email| %>
+              <tr class="govuk-table__row result-row result">
+                <td class="govuk-table__cell govuk-!-width-one-half result-text" scope="row">
+                  <%= '@' + email %>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+        <p class="govuk-body govuk-!-margin-top-3" id="no-results" style="display: none">
+          <strong>No results found</strong>
+        </p>
+      </div>
     </div>
   </div>
-</div>
+</main>
+
 <%= partial 'shared/dynamic_search_bar' %>
 <%= partial 'shared/dynamic_search_bar_noscript' %>

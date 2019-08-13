@@ -3,54 +3,51 @@ title: Organisations using GovWifi - GovWifi
 description: Find all the public sector organisations where GovWifi is available
 ---
 
-<div class="container">
+<main class="govuk-width-container" role="main" id="main">
   <%= partial "shared/product/breadcrumbs", locals: { page: "Organisations using GovWifi" } %>
-
-  <div class="grid-row">
-    <div class="column-one-third">
-      <div>
+  <div class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third">
         <%= partial 'shared/product/sidebar' %>
       </div>
-    </div>
-    <div class="column-two-thirds">
-      <h1 class="heading-large">Organisations using GovWifi</h1>
-      <p>
-        GovWifi is currently available in a wide range of government and public
-        sector organisations.
-      </p>
-      <p>
-        If you manage IT services in your organisation and would like to make GovWifi available in your buildings,
-        please review our <%= link_to "technical requirements", "https://docs.wifi.service.gov.uk/"%>.
-      </p>
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Organisations using GovWifi</h1>
+        <p class="govuk-body">
+          GovWifi is currently available in a wide range of government and public sector organisations.
+        </p>
+        <p class="govuk-body">
+          If you manage IT services in your organisation and would like to make GovWifi available in your buildings,
+          please review our <%= link_to "technical requirements", "https://docs.wifi.service.gov.uk/"%>.
+        </p>
+        <div class="govuk-form-group govuk-!-margin-bottom-4">
+          <input class="govuk-input" aria-label="Search organisations using the service" id="search-table" type="text" placeholder="Search organisations">
+        </div>
 
-      <div class="govuk-form-group govuk-!-margin-bottom-4">
-        <input class="govuk-input" aria-label="Search organisations using the service" id="search-table" type="text" placeholder="Search organisations">
-      </div>
+        <% organisations = data.organisations.sort %>
 
-      <% organisations = data.organisations.sort %>
-
-      <table class="govuk-table">
-        <thead class="govuk-table__head">
-          <tr class="govuk-table__row">
-            <th class="govuk-table__header govuk-!-width-one-half table-header">Organisation</th>
-          </tr>
-        </thead>
-        <tbody class="govuk-table__body striped-table">
-          <% organisations.each do |organisation| %>
-            <tr class="govuk-table__row result-row result">
-              <td class="govuk-table__cell govuk-!-width-one-half result-text" scope="row">
-                <%= organisation %>
-              </td>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header govuk-!-width-one-half table-header">Organisation</th>
             </tr>
-          <% end %>
-        </tbody>
-      </table>
-      <p class="govuk-body govuk-!-margin-top-3" id="no-results" style="display: none">
-        <strong>No results found</strong>
-      </p>
+          </thead>
+          <tbody class="govuk-table__body striped-table">
+            <% organisations.each do |organisation| %>
+              <tr class="govuk-table__row result-row result">
+                <td class="govuk-table__cell govuk-!-width-one-half result-text" scope="row">
+                  <%= organisation %>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+        <p class="govuk-body govuk-!-margin-top-3" id="no-results" style="display: none">
+          <strong>No results found</strong>
+        </p>
+      </div>
     </div>
   </div>
-</div>
+</main>
 
 <%= partial 'shared/dynamic_search_bar' %>
 <%= partial 'shared/dynamic_search_bar_noscript' %>

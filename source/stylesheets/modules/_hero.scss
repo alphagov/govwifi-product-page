@@ -108,23 +108,8 @@
     @extend .govuk-grid-row;
   }
 
-  &__body,
-  &__aside-image {
-    //@include grid-column(1 / 2);
-  }
-
   &__user-text {
     margin-top: 15px;
     margin-bottom: 0px;
-  }
-
-  @include govuk-media-query($from: desktop) {
-    &__body {
-      //@include grid-column(2 / 3);
-    }
-
-    &__aside-image {
-      //@include grid-column(1 / 3);
-    }
   }
 }

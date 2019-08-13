@@ -12,8 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="<%= current_page.data.description %>">
 
-    <!--[if gt IE 8]><!--><%= stylesheet_link_tag :screen, media: 'screen' %><!--<![endif]-->
-    <!--[if lte IE 8]><%= stylesheet_link_tag 'screen-old-ie', media: 'screen' %><![endif]-->
+    <!--[if gt IE 8]><!--><%= stylesheet_link_tag :manifest, media: 'screen' %><!--<![endif]-->
+    <!--[if lte IE 8]><%= stylesheet_link_tag 'manifest-old-ie', media: 'screen' %><![endif]-->
     <%= stylesheet_link_tag :print, media: 'print' %>
 
     <%= javascript_include_tag :application %>

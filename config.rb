@@ -47,8 +47,8 @@ helpers do
     current_page.url == url ? 'sub-navigation__item--active' : ''
   end
 
-  def get_nav_active_class(url)
-    'govuk-header__navigation-item--active' if current_page.url.start_with? url
+  def get_nav_active_class(url, root_scope)
+    'govuk-header__navigation-item--active' if current_page.url.start_with? (root_scope or url)
   end
 end
 

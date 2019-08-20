@@ -1,5 +1,5 @@
 <% nav_items = [
-   { title: "Connect a device", scope: "/about-govwifi/", link: "/about-govwifi/"},
+   { title: "Connect a device", root: "/about-govwifi/", link: "/about-govwifi/connect-to-govwifi"},
    { title: "Offer GovWifi", link: "https://docs.wifi.service.gov.uk/" },
    { title: "Support", link: "/support/" },
    { title: "Admin", link: "https://admin.wifi.service.gov.uk/" }
@@ -20,7 +20,7 @@
     aria-label="Top Level Navigation"
     >
     <% nav_items.each do |nav_item| %>
-    <li class="govuk-header__navigation-item <%= get_nav_active_class(nav_item.fetch(:link)) %>">
+    <li class="govuk-header__navigation-item <%= get_nav_active_class(nav_item.fetch(:link), nav_item.fetch(:root, nil)) %>">
       <%= link_to nav_item.fetch(:title), nav_item.fetch(:link), class: "govuk-header__link"  %>
     </li>
     <% end %>

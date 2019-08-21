@@ -13,8 +13,19 @@ $govuk-assets-path: "/";
   text-align: left;
 }
 
-.footer-link-padding {
-  padding-top: 20px;
-  padding-left: 0px;
-  font-size: 16px;
+// covers the top border (present on all other pages) on the homepage
+.masthead {
+  margin-top: -10px;
+}
+
+// remove the default 5px vertical padding on the nav as it
+// pushes it down in an uncentered fashion
+.govuk-header__navigation--end {
+  padding: 0;
+}
+
+// let the beta phase banner breathe and align it
+.govuk-phase-banner__content__tag {
+  margin-left: 5px;
+  vertical-align: top;
 }

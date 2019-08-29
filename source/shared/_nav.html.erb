@@ -1,0 +1,28 @@
+<% nav_items = [
+   { title: "Connect a device", root: "/about-govwifi/", link: "/about-govwifi/connect-to-govwifi"},
+   { title: "Offer GovWifi", link: "https://docs.wifi.service.gov.uk/" },
+   { title: "Support", link: "/support/" },
+   { title: "Admin", link: "https://admin.wifi.service.gov.uk/" }
+] %>
+
+<button
+  type="button"
+  role="button"
+  class="govuk-header__menu-button govuk-js-header-toggle"
+  aria-controls="navigation"
+  aria-label="Show or hide Top Level Navigation">
+  Menu
+</button>
+<nav>
+  <ul
+    id="navigation"
+    class="govuk-header__navigation govuk-header__navigation--end"
+    aria-label="Top Level Navigation"
+    >
+    <% nav_items.each do |nav_item| %>
+    <li class="govuk-header__navigation-item <%= get_nav_active_class(nav_item.fetch(:link), nav_item.fetch(:root, nil)) %>">
+      <%= link_to nav_item.fetch(:title), nav_item.fetch(:link), class: "govuk-header__link"  %>
+    </li>
+    <% end %>
+  </ul>
+</nav>

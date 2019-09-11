@@ -1,0 +1,9 @@
+#accessibility-statement {
+  p, ul {
+    @extend %govuk-body-m;
+  }
+
+  a {
+    @extend %govuk-link;
+  }
+}

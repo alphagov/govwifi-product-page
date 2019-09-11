@@ -85,7 +85,7 @@ We plan to fix all of the problems listed below in time for September 2020 when 
 This website was last tested in September 2019. The test was carried
 out by GDS developers using a combination of automated and manual tests.
 
-* we used Lighthouse to audit each page for accessibility issues;
+* we used [Lighthouse](https://developers.google.com/web/tools/lighthouse/) to audit each page for accessibility issues;
 * we tested a sample of GovWifi product and documentation pages;
 * we tested successful and unsuccessful end user journeys.
 

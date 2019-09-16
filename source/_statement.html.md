@@ -67,6 +67,4 @@ When testing GovWifi, we:
 ## What we’re doing to improve accessibility
 We have recorded these issues in our backlog and will be handling them as part of our normal workflow. The website will be fully accessible by 20 September 2020.
 
-We have plans to commission an independent audit of our service at a future date.
-
 This statement was prepared on 11 September 2019. It was last updated on 11 September 2019.

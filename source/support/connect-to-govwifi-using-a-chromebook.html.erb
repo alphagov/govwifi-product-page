@@ -15,23 +15,43 @@ description: Follow these instructions to connect your Chromebook to GovWifi
         <h1 class="govuk-heading-l">Connect to GovWifi using a Chromebook</h1>
         <h2 class="govuk-heading-m">Instructions</h2>
         <p class="govuk-body">Once you have a GovWifi <%= link_to "username and password", "/about-govwifi/connect-to-govwifi", class: "govuk-link" %>, follow the steps below.</p>
-        <p class="govuk-body">Step 1 - Select the wifi icon in the bottom right of the screen. A list of wifi connections will appear.</p>
-        <p class="govuk-body">Step 2 - Select <strong>GovWifi</strong>. A settings menu appears.</p>
-        <%= image_tag "troubleshooting/chrome-step-2.jpg", class: "img-fluid" %>
-        <p class="govuk-body">Step 3 - For <strong>EAP method</strong>, select <strong>PEAP</strong>.</p>
-        <p class="govuk-body">Step 4 - For <strong>Phase-2 authentication</strong>, select <strong>Automatic</strong>.</p>
-        <p class="govuk-body">Step 5 - For <strong>Server CA certificate</strong>, select <strong>Default</strong>.</p>
-        <p class="govuk-body">Step 6 - For <strong>Identity</strong>, enter the GovWifi username you received by email or text.</p>
-        <p class="govuk-body">Step 7 - For <strong>Password</strong>, enter the GovWifi password you received by email or text.</p>
-        <p class="govuk-body">Your password is case sensitive. It's 3 words without spaces. The first letter of each word is capitalised.</p>
-        <p class="govuk-body">Step 8 - Leave <strong>Anonymous identity</strong> blank.</p>
-        <p class="govuk-body">Step 9 - Select <strong>Connect</strong>.</p>
+        <ol class="govuk-list govuk-list--number">
+          <li>
+            <p class="govuk-body">Select the wifi icon in the bottom right of the screen. A list of wifi connections will appear.</p>
+          </li>
+          <li>
+            <p class="govuk-body">Select <strong>GovWifi</strong>. A settings menu appears.</p>
+            <%= image_tag "troubleshooting/chrome-step-2.jpg", alt: 'Screenshot of the WiFi network settings dialog on Chromebooks', class: "img-fluid" %>
+          </li>
+          <li>
+            <p class="govuk-body">For <strong>EAP method</strong>, select <strong>PEAP</strong>.</p>
+          </li>
+          <li>
+            <p class="govuk-body">For <strong>Phase-2 authentication</strong>, select <strong>Automatic</strong>.</p>
+          </li>
+          <li>
+            <p class="govuk-body">For <strong>Server CA certificate</strong>, select <strong>Default</strong>.</p>
+          </li>
+          <li>
+            <p class="govuk-body">For <strong>Identity</strong>, enter the GovWifi username you received by email or text.</p>
+          </li>
+          <li>
+            <p class="govuk-body">For <strong>Password</strong>, enter the GovWifi password you received by email or text.</p>
+            <p class="govuk-inset-text">Your password is case sensitive. It's 3 words without spaces. The first letter of each word is capitalised.</p></li>
+          </li>
+          <li>
+            <p class="govuk-body">Leave <strong>Anonymous identity</strong> blank.</p>
+          </li>
+          <li>
+            <p class="govuk-body">Select <strong>Connect</strong>.</p>
+          </li>
+        </ol>
         <p class="govuk-body">You should now be connected to GovWifi.</p>
 
         <h2 class="govuk-heading-m">Support</h2>
         <p class="govuk-body">If you get a message that says 'Failed to connect to the network GovWifi: Out of range’ it may be because you’re already connected to a different network. You'll need to disconnect from the other network for GovWifi to work.</p>
 
-        <%= image_tag "troubleshooting/chrome-network-connection.jpg", class: "img-fluid" %>
+        <%= image_tag "troubleshooting/chrome-network-connection.jpg", class: "img-fluid", alt: "Network connection error dialog on Chromebooks" %>
 
         <p class="govuk-body">To disconnect, select the wireless symbol in the bottom right of your screen. A list of wifi networks will appear. Right click on the network name your device is currently connected to. Select the option to disconnect, and then try connecting to GovWifi again.</p>
       </div>

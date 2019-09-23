@@ -47,7 +47,7 @@ The side navigation on the administrative platform sometimes does not accurately
 
 Some menu entries do not appear in an active state when a user browses their content. This fails WCAG 2.1 AA success criterion 3.2.3 (consistent navigation).
 
-We'll make all these elements fully accessible by 20 September 2020.
+We'll make all these elements fully accessible by September 2020.
 
 ## How we tested this website
 This website was last tested in September 2019. The test was carried out by GDS developers using a combination of automated and manual tests.
@@ -65,6 +65,6 @@ When testing GovWifi, we:
 * tested successful and unsuccessful end user journeys
 
 ## What we’re doing to improve accessibility
-We have recorded these issues in our backlog and will be handling them as part of our normal workflow. The website will be fully accessible by 20 September 2020.
+We have recorded these issues in our backlog and will be handling them as part of our normal workflow. The website will be fully accessible by September 2020.
 
 This statement was prepared on 11 September 2019. It was last updated on 11 September 2019.

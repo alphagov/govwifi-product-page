@@ -1,0 +1,21 @@
+#accessibility-statement {
+  p, ul {
+    @extend .govuk-body;
+  }
+
+  a {
+    @extend %govuk-link;
+  }
+
+  table {
+    @extend .govuk-table;
+
+    thead {
+      @extend .govuk-table__header;
+    }
+
+    td {
+      @extend .govuk-table__cell;
+    }
+  }
+}

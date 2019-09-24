@@ -3,7 +3,7 @@ title: Connect to GovWifi using a Windows device - GovWifi
 description: Follow these instructions to connect your Windows device to GovWifi
 ---
 
-<main class="govuk-width-container" role="main" id="main">
+<div class="govuk-width-container">
   <%= partial "shared/support/breadcrumbs", locals: { page: "Connect a Windows device" } %>
   <div class="govuk-main-wrapper">
     <div class="govuk-grid-row">
@@ -11,7 +11,7 @@ description: Follow these instructions to connect your Windows device to GovWifi
         <%= partial '/shared/support/_sidebar' %>
       </div>
 
-      <div class="govuk-grid-column-two-thirds">
+      <main class="govuk-grid-column-two-thirds" role="main" id="main">
         <h1 class="govuk-heading-l">Connect to GovWifi using a Windows device</h1>
         <p class="govuk-body">Different versions of Windows work in slightly different ways. If you don't know which version of Windows your device is running, read <%= link_to "Microsoft's guidance", "https://support.microsoft.com/en-gb/help/13443/windows-which-operating-system", class: "govuk-link" %>.</p>
 
@@ -183,7 +183,7 @@ description: Follow these instructions to connect your Windows device to GovWifi
         </ol>
         <p class="govuk-body">You should now be able to select the right certificate when you try connecting to GovWifi again.</p>
         <p class="govuk-body">Ask your local IT team if you need help downloading or installing the certificate.</p>
-      </div>
+      </main>
     </div>
   </div>
-</main>
+</div>

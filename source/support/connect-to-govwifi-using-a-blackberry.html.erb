@@ -3,7 +3,7 @@ title: Connect to GovWifi using a Blackberry - GovWifi
 description: Follow these instructions to connect your Blackberry to GovWifi
 ---
 
-<main class="govuk-width-container" role="main" id="main">
+<div class="govuk-width-container">
   <%= partial "shared/support/breadcrumbs", locals: { page: "Connect a Blackberry" } %>
   <div class="govuk-main-wrapper">
     <div class="govuk-grid-row">
@@ -11,7 +11,7 @@ description: Follow these instructions to connect your Blackberry to GovWifi
         <%= partial '/shared/support/_sidebar' %>
       </div>
 
-      <div class="govuk-grid-column-two-thirds">
+      <main class="govuk-grid-column-two-thirds" role="main" id="main">
         <h1 class="govuk-heading-l">Connect to GovWifi using a Blackberry</h1>
         <p class="govuk-body">If your device was made before October 2016, you're probably running the BlackBerry operating system (OS). Follow these instructions to connect to GovWifi.</p>
 
@@ -53,7 +53,7 @@ description: Follow these instructions to connect your Blackberry to GovWifi
 
         <h2 class="govuk-heading-m">BlackBerry Android</h2>
         <p class="govuk-body">If your BlackBerry device uses Android, follow the <%= link_to "Android instructions", "/support/connect-to-govwifi-using-an-android-device", class: "govuk-link" %>.</p>
-      </div>
+      </main>
     </div>
   </div>
-</main>
+</div>

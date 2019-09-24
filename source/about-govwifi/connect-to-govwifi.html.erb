@@ -3,14 +3,14 @@ title: Connect to GovWifi - GovWifi
 description: Use your public sector staff email address to connect devices to GovWifi.
 ---
 
-<main class="govuk-width-container" role="main" id="main">
+<div class="govuk-width-container">
   <%= partial "shared/product/breadcrumbs", locals: { page: "Connect to GovWifi" } %>
   <div class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-one-third">
           <%= partial 'shared/product/sidebar' %>
       </div>
-      <div class="govuk-grid-column-two-thirds">
+      <main class="govuk-grid-column-two-thirds" role="main" id="main">
         <h1 class="govuk-heading-l">Connect a device to GovWifi</h1>
         <p class="govuk-body">
           You need a <%= link_to "public sector staff email address",
@@ -43,10 +43,10 @@ description: Use your public sector staff email address to connect devices to Go
         <p class="govuk-body">
           Please review our <a href="/support" class="govuk-link">support guides</a> for device specific instructions.
         </p>
-      </div>
+      </main>
     </div>
   </div>
-</main>
+</div>
 
 <script type="application/ld+json">
 {

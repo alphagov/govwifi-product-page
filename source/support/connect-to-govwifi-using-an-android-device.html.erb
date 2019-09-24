@@ -3,7 +3,7 @@ title: Connect to GovWifi using an Android device - GovWifi
 description: Follow these instructions to connect your Android device to GovWifi
 ---
 
-<main class="govuk-width-container" role="main" id="main">
+<div class="govuk-width-container">
   <%= partial "shared/support/breadcrumbs", locals: { page: "Connect a Android device" } %>
   <div class="govuk-main-wrapper">
     <div class="govuk-grid-row">
@@ -11,7 +11,7 @@ description: Follow these instructions to connect your Android device to GovWifi
         <%= partial '/shared/support/_sidebar' %>
       </div>
 
-      <div class="govuk-grid-column-two-thirds">
+      <main class="govuk-grid-column-two-thirds" role="main" id="main">
         <h1 class="govuk-heading-l">Connect to GovWifi using an Android device</h1>
         <h2 class="govuk-heading-m">Instructions</h2>
         <p class="govuk-body">Once you have a GovWifi <%= link_to "username and password", "/about-govwifi/connect-to-govwifi", class: "govuk-link" %>, follow the steps below. Depending on your device, you may need to scroll down to see all the fields.</p>
@@ -54,7 +54,7 @@ description: Follow these instructions to connect your Android device to GovWifi
         <h2 class="govuk-heading-m">Support</h2>
         <p class="govuk-body">GovWifi access in your building is provided by the participating government or public sector organisation.</p>
         <p class="govuk-body">If you experience any problems with wifi access, please contact the relevant organisation IT Support team.</p>
-      </div>
+      </main>
     </div>
   </div>
-</main>
+</div>

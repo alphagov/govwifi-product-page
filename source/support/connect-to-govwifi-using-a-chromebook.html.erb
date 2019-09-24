@@ -3,7 +3,7 @@ title: Connect to GovWifi using a Chromebook - GovWifi
 description: Follow these instructions to connect your Chromebook to GovWifi
 ---
 
-<main class="govuk-width-container" role="main" id="main">
+<div class="govuk-width-container">
   <%= partial "shared/support/breadcrumbs", locals: { page: "Connect a Chromebook" } %>
   <div class="govuk-main-wrapper">
     <div class="govuk-grid-row">
@@ -11,7 +11,7 @@ description: Follow these instructions to connect your Chromebook to GovWifi
         <%= partial '/shared/support/_sidebar' %>
       </div>
 
-      <div class="govuk-grid-column-two-thirds">
+      <main class="govuk-grid-column-two-thirds" role="main" id="main">
         <h1 class="govuk-heading-l">Connect to GovWifi using a Chromebook</h1>
         <h2 class="govuk-heading-m">Instructions</h2>
         <p class="govuk-body">Once you have a GovWifi <%= link_to "username and password", "/about-govwifi/connect-to-govwifi", class: "govuk-link" %>, follow the steps below.</p>
@@ -54,7 +54,7 @@ description: Follow these instructions to connect your Chromebook to GovWifi
         <%= image_tag "troubleshooting/chrome-network-connection.jpg", class: "img-fluid", alt: "Network connection error dialog on Chromebooks" %>
 
         <p class="govuk-body">To disconnect, select the wireless symbol in the bottom right of your screen. A list of wifi networks will appear. Right click on the network name your device is currently connected to. Select the option to disconnect, and then try connecting to GovWifi again.</p>
-      </div>
+      </main>
     </div>
   </div>
-</main>
+</div>

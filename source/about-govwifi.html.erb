@@ -3,14 +3,14 @@ title: What is GovWifi? - GovWifi
 description: GovWifi is an authentication service that makes all participating government and public sector guest wifi networks appear as one.
 ---
 
-<main class="govuk-width-container" role="main" id="main">
+<div class="govuk-width-container">
   <%= partial "shared/product/breadcrumbs", locals: { page: "What is GovWifi" } %>
   <div class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-one-third">
         <%= partial 'shared/product/sidebar' %>
       </div>
-      <div class="govuk-grid-column-two-thirds">
+      <main class="govuk-grid-column-two-thirds" role="main" id="main">
         <h1 class="govuk-heading-l">What is GovWifi?</h1>
         <p class="govuk-body">
           GovWifi is a wifi authentication service running in the cloud that makes all the various participating public sector guest wifi networks appear as one.
@@ -37,7 +37,7 @@ description: GovWifi is an authentication service that makes all participating g
         <div class="govuk-inset-text">
           <strong><%= link_to "Learn more about how to connect your device to GovWifi", "/about-govwifi/connect-to-govwifi", class: "govuk-link" %></strong>
         </div>
-      </div>
+      </main>
     </div>
   </div>
-</main>
+</div>

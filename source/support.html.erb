@@ -3,14 +3,14 @@ title: Help and support - GovWifi
 description: Help and support connecting to GovWifi
 ---
 
-<main class="govuk-width-container" role="main" id="main">
+<div class="govuk-width-container">
   <%= partial "shared/support/breadcrumbs", locals: { page: "GovWifi support" } %>
   <div class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-one-third">
         <%= partial 'shared/support/sidebar' %>
       </div>
-      <div class="govuk-grid-column-two-thirds">
+      <main class="govuk-grid-column-two-thirds" role="main" id="main">
         <h1 class="govuk-heading-l">GovWifi support</h1>
         <h2 class="govuk-heading-m">User support</h2>
         <p class="govuk-body">
@@ -35,7 +35,7 @@ description: Help and support connecting to GovWifi
         <p class="govuk-body">
           We provide network administrator guidance on how to install and manage GovWifi in your organisation in our <%= link_to "technical documentation", "https://docs.wifi.service.gov.uk/", class: "govuk-link" %>.
         </p>
-      </div>
+      </main>
     </div>
   </div>
-</main>
+</div>

@@ -3,7 +3,7 @@ title: Visitor access - GovWifi
 description: GovWifi access for non-public sector staff
 ---
 
-<main class="govuk-width-container" role="main" id="main">
+<div class="govuk-width-container">
   <%= partial "shared/support/breadcrumbs", locals: { page: "Connect to GovWifi as a visitor" } %>
   <div class="govuk-main-wrapper">
     <div class="govuk-grid-row">
@@ -11,7 +11,7 @@ description: GovWifi access for non-public sector staff
         <%= partial '/shared/support/_sidebar' %>
       </div>
 
-      <div class="govuk-grid-column-two-thirds">
+      <main class="govuk-grid-column-two-thirds" role="main" id="main">
         <h1 class="govuk-heading-l">Connect to GovWifi as a visitor</h1>
         <p class="govuk-body">
           If you do not have a <%= link_to "public sector staff email address", "/support/check-organisation-email-address", class: "govuk-link" %>,
@@ -49,7 +49,7 @@ description: GovWifi access for non-public sector staff
         <p class="govuk-body">
           Please review our <a class="govuk-link" href="/support">support guides</a> for device specific instructions.
         </p>
-      </div>
+      </main>
     </div>
   </div>
-</main>
+</div>

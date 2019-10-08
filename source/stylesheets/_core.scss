@@ -3,7 +3,6 @@
 @import "govuk-frontend/govuk/all";
 
 @import "util/printable";
-@import "util/flexbox";
 @import "util/typography";
 @import "util/colours";
 
@@ -45,10 +44,6 @@ body {
 .mobile_image_size {
   height: 100%;
   width: 165%;
-}
-
-.privacy_policy_nav_colour {
-  background-color: govuk-colour("white");
 }
 
 a.long-link {

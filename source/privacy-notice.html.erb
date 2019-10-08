@@ -3,13 +3,13 @@ title: Privacy notice - GovWifi
 description: Find details about the GovWifi privacy policy and how we collect and process your data.
 ---
 
-<main class="govuk-width-container" role="main" id="main">
+<div class="govuk-width-container">
   <div class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-one-third sticky">
         <%= partial 'shared/privacy_notice_sidebar' %>
       </div>
-      <div class="govuk-grid-column-two-thirds">
+      <main class="govuk-grid-column-two-thirds" role="main" id="main">
         <h1 class="govuk-heading-l">GovWifi privacy notice</h1>
         <h2 class="govuk-heading-m" id="who-we-are">Who we are</h2>
         <p class="govuk-body">
@@ -90,7 +90,7 @@ description: Find details about the GovWifi privacy policy and how we collect an
           We design, build and run our systems to make sure that your data is as safe as possible at any stage, both while it’s processed and when it’s stored.
         </p>
         <p class="govuk-body">
-          GDS will not process your personal data, or transfer it, outside of the <%= link_to "European Economic Area (EEA)", "https://www.gov.uk/eu-eea" %>.
+          GDS will not process your personal data, or transfer it, outside of the <%= link_to "European Economic Area (EEA)", "https://www.gov.uk/eu-eea", class: "govuk-link" %>.
         </p>
         <h2 class="govuk-heading-m " id="how-we-protect-your-data-and-keep-it-secure">How we protect your data and keep it secure</h2>
         <p class="govuk-body">
@@ -178,7 +178,7 @@ description: Find details about the GovWifi privacy policy and how we collect an
           <br/>
           01625 545860
         </p>
-      </div>
+      </main>
     </div>
   </div>
-</main>
+</div>

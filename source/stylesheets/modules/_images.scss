@@ -1,8 +1,8 @@
 .img-fluid {
-  max-width: 100%;
+  box-sizing: border-box;
+  padding: govuk-spacing(6);
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;
   height: auto;
-}
-
-.main-image {
-  margin-top: 30px;
 }

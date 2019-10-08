@@ -63,12 +63,18 @@
 
   &__title {
     color: inherit;
+    display: inline-block;
   }
 
   &__description {
     font-size: 1.5rem;
     line-height: 1.25;
-    color: govuk-colour("white")
+    color: govuk-colour("white");
+    clear: both;
+
+    @include govuk-media-query($from: tablet) {
+      clear: none;
+    }
   }
 
   &__title,
@@ -80,27 +86,13 @@
     }
   }
 
-  &__inline-image {
-    text-align: center;
-
-    @include govuk-media-query($from: tablet) {
-      display: none;
-      visibility: hidden;
-    }
-
-    img {
-      width: 100%;
-      max-width: 320px;
-    }
-  }
-
   &__aside-image {
-    display: none;
-    visibility: hidden;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: $govuk-gutter-half;
 
     @include govuk-media-query($from: tablet) {
-      display: block;
-      visibility: visible;
+      float: right;
     }
   }
 

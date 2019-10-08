@@ -3,7 +3,7 @@ title: Connect to GovWifi using an Android device - GovWifi
 description: Follow these instructions to connect your Android device to GovWifi
 ---
 
-<main class="govuk-width-container" role="main" id="main">
+<div class="govuk-width-container">
   <%= partial "shared/support/breadcrumbs", locals: { page: "Connect a Android device" } %>
   <div class="govuk-main-wrapper">
     <div class="govuk-grid-row">
@@ -11,29 +11,50 @@ description: Follow these instructions to connect your Android device to GovWifi
         <%= partial '/shared/support/_sidebar' %>
       </div>
 
-      <div class="govuk-grid-column-two-thirds">
+      <main class="govuk-grid-column-two-thirds" role="main" id="main">
         <h1 class="govuk-heading-l">Connect to GovWifi using an Android device</h1>
         <h2 class="govuk-heading-m">Instructions</h2>
         <p class="govuk-body">Once you have a GovWifi <%= link_to "username and password", "/about-govwifi/connect-to-govwifi", class: "govuk-link" %>, follow the steps below. Depending on your device, you may need to scroll down to see all the fields.</p>
 
-        <p class="govuk-body">Step 1 - Open your wifi settings. A list of wifi networks appears.</p>
-        <p class="govuk-body">Step 2 - Select <strong>GovWifi</strong>. A settings menu appears.</p>
-        <p class="govuk-body">Step 3 - For <strong>EAP method</strong>, select <strong>PEAP</strong>.</p>
-        <p class="govuk-body">Step 4 - For <strong>Phase 2 authentication</strong>, select <strong>MSCHAPV2</strong>.</p>
-        <p class="govuk-body">Step 5 - For <strong>CA Certificate</strong>, ensure <strong>(unspecified)</strong> or <strong>Do not validate</strong> is selected.</p>
-        <p class="govuk-body">Step 6 - If your device asks for your <strong>Domain</strong>, enter wifi.service.gov.uk</p>
-        <p class="govuk-body">Step 7 - For <strong>Identity</strong>, enter the GovWifi username you received by email or text.</p>
-        <p class="govuk-body">Step 8 - Leave <strong>Anonymous identity</strong> blank.</p>
-        <p class="govuk-body">Step 9 - Scroll down. For <strong>Password</strong>, enter the GovWifi password you received by email or text.  </p>
-        <p class="govuk-body">Your password is case sensitive. It’s 3 words without spaces. The first letter of each word is capitalised.</p>
-        <p class="govuk-body">Step 10 - Select <strong>Connect</strong>.</p>
-
+        <ol class="govuk-list govuk-list--number">
+          <li>
+            <p class="govuk-body">Open your wifi settings. A list of wifi networks appears.</p>
+          </li>
+          <li>
+            <p class="govuk-body">Select <strong>GovWifi</strong>. A settings menu appears.</p>
+          </li>
+          <li>
+            <p class="govuk-body">For <strong>EAP method</strong>, select <strong>PEAP</strong>.</p>
+          </li>
+          <li>
+            <p class="govuk-body">For <strong>Phase 2 authentication</strong>, select <strong>MSCHAPV2</strong>.</p>
+          </li>
+          <li>
+            <p class="govuk-body">For <strong>CA Certificate</strong>, ensure <strong>(unspecified)</strong> or <strong>Do not validate</strong> is selected.</p>
+          </li>
+          <li>
+            <p class="govuk-body">If your device asks for your <strong>Domain</strong>, enter wifi.service.gov.uk</p>
+          </li>
+          <li>
+            <p class="govuk-body">For <strong>Identity</strong>, enter the GovWifi username you received by email or text.</p>
+          </li>
+          <li>
+            <p class="govuk-body">Leave <strong>Anonymous identity</strong> blank.</p>
+          </li>
+          <li>
+            <p class="govuk-body">Scroll down.</p>
+            <%= partial 'shared/copy/password_instructions' %>
+          </li>
+          <li>
+            <p class="govuk-body">Select <strong>Connect</strong>.</p>
+          </li>
+        </ol>
         <p class="govuk-body">You should now be connected to GovWifi.</p>
 
         <h2 class="govuk-heading-m">Support</h2>
         <p class="govuk-body">GovWifi access in your building is provided by the participating government or public sector organisation.</p>
         <p class="govuk-body">If you experience any problems with wifi access, please contact the relevant organisation IT Support team.</p>
-      </div>
+      </main>
     </div>
   </div>
-</main>
+</div>

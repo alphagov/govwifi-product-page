@@ -33,16 +33,6 @@ The content listed below is non-accessible for the following reasons.
 
 ### Non compliance with the accessibility regulations
 
-The alternative text for some images is not descriptive enough, so the information in them is not sufficient for people using a screen reader. This fails WCAG 2.1 AA success criterion 1.1.1 (non-text content).
-
-Some pages have multiple H1 elements. This fails WCAG 2.1 AA success criterion 1.3.1 (info and relationships).
-
-There are sometimes 2 images used - one for mobile and another for desktop. This fails WCAG 2.1 AA success criterion 1.3.3 (sensory characteristics).
-
-The side navigation sometimes restricts the view of half of the page on a mobile device in portrait orientation. This fails WCAG 2.1 AA success criterion 1.3.4 (orientation).
-
-When a user chooses to skip to the page’s main content, sometimes the navigation only skips the top menu, not the side menu. This fails WCAG 2.1 AA success criterion 2.4.1 (bypass blocks).
-
 The side navigation on the administrative platform sometimes does not accurately show where a user is on the website. This fails WCAG 2.1 AA success criterion 2.4.7 (focus visible).
 
 Some menu entries do not appear in an active state when a user browses their content. This fails WCAG 2.1 AA success criterion 3.2.3 (consistent navigation).

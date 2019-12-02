@@ -32,12 +32,11 @@ description: Follow these instructions to connect your Mac, iMac or Macbook to G
           </li>
           <li>
             <p>Select <strong>Show Certificate.</strong></p>
-            <%= image_tag "troubleshooting/mac-os-step-5.jpg", class: "govuk-!-width-full", alt: "Screenshot of Verytify Certificate dialog details on macOS" %>
             <div class="govuk-warning-text">
               <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
               <strong class="govuk-warning-text__text">
                 <span class="govuk-warning-text__assistive">Warning</span>
-                Check that the certificate is called wifi.service.gov.uk and it's issued by the GeoTrust DV SSL SHA256 CA.
+                Check that the certificate is called wifi.service.gov.uk and it's issued by GeoTrust RSA CA 2018.
               </strong>
             </div>
           </li>
@@ -50,6 +49,8 @@ description: Follow these instructions to connect your Mac, iMac or Macbook to G
           </li>
         </ol>
         <p class="govuk-body">You should now be connected to GovWifi.</p>
+
+        <p class="govuk-body">If you are using a device managed by your organisation, your permissions might be restricted and you might not be able to trust the new GovWifi certificate. Follow <%= link_to "these instructions", "/support/update-govwifi-server-certificate/#no-permissions-to-trust-certificate", class: "govuk-link" %> to get access.</p>
       </main>
     </div>
   </div>

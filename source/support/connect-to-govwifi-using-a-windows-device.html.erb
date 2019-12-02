@@ -41,7 +41,10 @@ description: Follow these instructions to connect your Windows device to GovWifi
             </p>
             <%= image_tag "troubleshooting/windows-step-3.jpg", class: "img-fluid", alt: "Screenshot of Wifi panel with credentials open on Windows 8/10" %>
             <p class="govuk-inset-text">
-              If it says <strong>"can't connect to network"</strong>, your device may have an incorrect or expired username and password for GovWifi. To fix this issue, follow the <%= link_to "instructions to forget the network", "#forget", class: "govuk-link" %> and then try again.</p>
+              If it says <strong>"can't connect to network"</strong>, your device may have an incorrect or expired
+              username and password for GovWifi or may be expecting an older certificate. To fix this issue, follow
+              the <%= link_to "instructions to forget the network", "#forget", class: "govuk-link" %> and then try
+              again.</p>
           </li>
           <li>
             <%= partial 'shared/copy/password_instructions' %>
@@ -52,11 +55,10 @@ description: Follow these instructions to connect your Windows device to GovWifi
           </li>
           <li>
             <p class="govuk-body">When you see <strong>Continue connecting</strong>, select <strong>Show certificate details.</strong></p>
-            <%= image_tag "troubleshooting/windows-step-6.jpg", class: "img-fluid", alt: "Screenshot of Wifi panel showing certificate details on Windows 8/10" %>
           </li>
           <li>
             <p class="govuk-body">Check that the <strong>Server thumbprint</strong> matches: </p>
-            <p class="govuk-body"><strong>76 29 76 AA 3D CE A8 5C D8 3D 72 0A B8 10 32 93 74 A5 15 5A</strong></p>
+            <p class="govuk-body"><strong>37 CE B5 7A 3F 38 EB 7C 66 A2 4E 90 BB 11 71 D7 BC 4D 65 1A</strong></p>
           </li>
           <li>
             <p class="govuk-body">If it matches, select <strong>Connect</strong>.</p>
@@ -67,7 +69,9 @@ description: Follow these instructions to connect your Windows device to GovWifi
         <h2 class="govuk-heading-m" id="support-windows-8">Support for Windows 8 and 10</h2>
         <h3 class="govuk-heading-s" id="forget">Forget the network</h3>
 
-        <p class="govuk-body">If your device says it <strong>can't connect to network</strong>, it may be trying to connect with an incorrect or expired username and password for GovWifi. You need to tell your device to forget your GovWifi connection.</p>
+        <p class="govuk-body">If your device says it <strong>can't connect to network</strong>, it may be trying to
+          connect with an incorrect or expired username and password for GovWifi or may be expecting an older
+          certificate. You need to tell your device to forget your GovWifi connection.</p>
 
         <ol class="govuk-list govuk-list--number">
           <li>
@@ -117,13 +121,12 @@ description: Follow these instructions to connect your Windows device to GovWifi
 
           <li>
             <p class="govuk-body">Select the <strong>Security</strong> tab and select <strong>Settings</strong>.</p>
-            <%= image_tag "troubleshooting/windows-7-step-7.jpg", class: "img-fluid", alt: "Screenshot of EAP Properties dialog on Windows 7" %>
           </li>
           <li>
             <p class="govuk-body">Tick the <strong>Connect to these servers box</strong>. In the text box below it, enter <strong>wifi.service.gov.uk</strong>.</p>
           </li>
           <li>
-            <p class="govuk-body">In the <strong>Trusted Root Certification Authorities</strong> list, select <strong>GeoTrust Primary Certification Authority - G3.</strong></p>
+            <p class="govuk-body">In the <strong>Trusted Root Certification Authorities</strong> list, select <strong>DigiCert Global Root CA</strong>.</p>
           </li>
           <li>
             <p class="govuk-body">Tick <strong>Enable Identity Privacy</strong> and enter <strong>anonymous</strong> to prevent your device from broadcasting your GovWifi username.</p>
@@ -161,24 +164,27 @@ description: Follow these instructions to connect your Windows device to GovWifi
         <p class="govuk-body">You should now be connected to GovWifi.</p>
 
         <h2 class="govuk-heading-m" id="support-windows-7">Support for Windows 7</h2>
-        <p class="govuk-body">If you can't see 'GeoTrust Primary Certification Authority - G3' in the Trusted Root Certification Authorities list you might not have the right certificate installed on your device. If you manage your own device, you can download it from the web.</p>
+        <p class="govuk-body">If you can't see 'DigiCert Global Root CA' in the Trusted Root Certification Authorities list you might not have the right certificate installed on your device. If you manage your own device, you can download it from the web.</p>
         <ol class="govuk-list govuk-list--number">
           <li>
-            <p class="govuk-body">In your web browser, navigate to: <%= link_to "https://www.geotrust.com/resources/root_certificates/certificates/Geotrust_PCA_G3_Root.pem", "https://www.geotrust.com/resources/root_certificates/certificates/Geotrust_PCA_G3_Root.pem", class: "govuk-link long-link" %></p>
-          </li>
-          <li>
-            <p class="govuk-body">Go to your Start menu. Select 'Accessories' and choose 'Notepad'.  Copy everything from <code>BEGIN CERTIFICATE</code> to <code>END CERTIFICATE</code> into your notepad, and save the file on your C: drive as <code>certificate.pem</code></p>
+            <p class="govuk-body">In your web browser, navigate
+              to: <%= link_to "https://www.digicert.com/digicert-root-certificates.htm", "https://www.digicert.com/digicert-root-certificates.htm", class: "govuk-link long-link" %>
+              and select Download under 'DigiCert Global Root CA'. Save the file to the C: drive</p>
           </li>
           <li>
             <p class="govuk-body">To install the certificate from the Command Prompt, go to your start menu, select 'Accessories' and right click on 'Command Prompt'. Choose 'Run as administrator'.</p>
           </li>
           <li>
-            <p class="govuk-body">Copy (Ctrl + v) the text below:<br />
-              <code>certutil -addstore -enterprise -f "Root" c:\certificate.pem</code>
+            <p class="govuk-body">Copy (Ctrl + v) the text below:<br/>
+              <code>certutil -addstore -enterprise -f "Root" c:\DigiCertGlobalRootCA.crt</code>
           </li>
 
           <li>
             <p class="govuk-body">Right click in the Command Prompt window and select 'Paste'. Press return.</p>
+          </li>
+          <li>
+            <p class="govuk-body">Follow the same steps for 'GeoTrust RSA CA 2018'. You can download it
+              from <%= link_to "https://www.digicert.com/digicert-root-certificates.htm#intermediates", "https://www.digicert.com/digicert-root-certificates.htm#intermediates" %></p>
           </li>
         </ol>
         <p class="govuk-body">You should now be able to select the right certificate when you try connecting to GovWifi again.</p>

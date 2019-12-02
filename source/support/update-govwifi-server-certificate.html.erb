@@ -59,15 +59,20 @@ description: Updating the GovWifi server certificate to keep using the service
         <p class="govuk-body">If you get this error message, you should follow these steps.</p>
 
         <ol class="govuk-list govuk-list--number">
-          <li>Validate that the Thumbprint matches the latest server certificate from 11 November 2019,
+          <li>Depending on the device, select to show the Certificate details</li>
+          <li>Check the certificate is called <strong>wifi.service.gov.uk</strong></li>
+          <li>Check the certificate was issued by <strong>GeoTrust RSA CA 2018</strong></li>
+          <li>Check that the Thumbprint matches the latest server certificate from 11
+            November 2019,
             37:CE:B5:7A:3F:38:EB:7C:66:A2:4E:90:BB:11:71:D7:BC:4D:65:1A
           </li>
-          <li>Validate it was issued by 'GeoTrust RSA CA 2018'</li>
           <li>Accept the new certificate</li>
           <li>You can continue using GovWifi as normal</li>
         </ol>
 
-        <h2 class="govuk-heading-m">What to do if you don't have permissions to trust the GovWifi server
+        <p class="govuk-body">For more details, use the left-hand navigation bar to view instructions specific to your device.</p>
+
+        <h2 class="govuk-heading-m" id="no-permissions-to-trust-certificate">What to do if you don't have permissions to trust the GovWifi server
           certificate</h2>
         <p class="govuk-body">If you are using a device managed by your organisation, your permissions might be
           restricted and you might not be able to trust the new GovWifi certificate. Depending on the device, you will

@@ -24,21 +24,15 @@ description: Follow these instructions to connect your iPhone or iPad to GovWifi
           <li><%= partial 'shared/copy/password_instructions' %></li>
           <li>
             <p class="govuk-body">You'll be asked to confirm that the network presents the correct certificate. This protects you against fake networks which may harm your privacy.</p>
-            <p class="govuk-body">The correct certificate is shown below. It's called <strong>wifi.service.gov.uk</strong> and is issued by <strong>GeoTrust RSA CA 2018</strong>.</p>
-            <%= image_tag "troubleshooting/ios-step-3.jpg", class: "img-fluid", alt: "Screenshot of WiFi certificate panel on iOS" %>
+            <p class="govuk-body">The correct certificate is called <strong>wifi.service.gov.uk</strong> and is issued by <strong>GeoTrust RSA CA 2018</strong>.</p>
           </li>
           <li>
             <p class="govuk-body">Select <strong>More Details</strong> and scroll down.</p>
-            <%= image_tag "troubleshooting/ios-step-4.jpg", class: "img-fluid", alt: "Screenshot of WiFi certificate details panel on iOS" %>
-          </li>
-
-          <li>
             <p class="govuk-body govuk-!-margin-top-7">Check that the SHA-1 Fingerprint matches <strong>37 CE B5 7A 3F 38 EB 7C 66 A2 4E 90 BB 11 71 D7 BC 4D 65 1A</strong>.
             </p>
           </li>
           <li>
             <p class="govuk-body">Select <strong>Certificate</strong> in the top left to go back to the previous screen.</p>
-            <%= image_tag "troubleshooting/ios-step-5.jpg", class: "img-fluid", alt: "Screenshot of Wifi certificate panel on iOS" %>
           </li>
           <li>
             <p class="govuk-body">Select <strong>Trust</strong> in the top right to connect to GovWifi.</p>

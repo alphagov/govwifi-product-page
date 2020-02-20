@@ -1,8 +1,6 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="en" class="no-js govuk-template">
   <head>
-    <%= partial 'layouts/google_analytics' %>
-
     <meta charset="utf-8">
 
     <title><%= current_page.data.title && "#{current_page.data.title}" %></title>
@@ -19,16 +17,15 @@
     <%= javascript_include_tag "dist/all" %>
     <%= javascript_include_tag "dist/gaap-analytics.min" %>
     <%= javascript_include_tag "vendor/modernizr" %>
+    <%= javascript_include_tag 'dist/govwifi-shared-frontend' %>
     <%= javascript_include_tag :application %>
   </head>
 
-  <body>
-    <%= javascript_include_tag 'javascripts/check_cookie' %>
-
+  <body class="govuk-template__body">
     <a href="#main" class="skip-link govuk-link">Skip to main content</a>
 
-    <%= partial 'shared/cookie_policy_banner' %>
     <%= partial 'layouts/google_analytics_noscript' %>
+    <%= partial 'layouts/google_analytics' %>
 
     <header class="govuk-header" role="banner" data-module="govuk-header">
       <div class="govuk-header__container govuk-width-container">

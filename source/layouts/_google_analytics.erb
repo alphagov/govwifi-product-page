@@ -1,15 +1,19 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127779891-1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+ if (!GovWifi.cookies.isCategoryAllowed("tracking")) {
+     window['ga-disable-UA-127779891-1'] = true;
+ }
 
-  gtag('config', 'UA-127779891-1', {
-    'linker': {
-      'domains': ['wifi.service.gov.uk','admin.wifi.service.gov.uk', 'docs.wifi.service.gov.uk']
-    }
-  });
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+
+ gtag('config', 'UA-127779891-1', {
+     'linker': {
+         'domains': ['wifi.service.gov.uk','admin.wifi.service.gov.uk', 'docs.wifi.service.gov.uk']
+     }
+ });
 </script>
 
 <!-- Google Tag Manager -->

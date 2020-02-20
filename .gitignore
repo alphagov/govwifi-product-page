@@ -26,3 +26,4 @@ Staticfile.auth
 
 # build-time copied assets
 source/assets
+source/javascripts/dist

@@ -23,3 +23,6 @@
 
 # PaaS authentication file
 Staticfile.auth
+
+# build-time copied assets
+source/assets

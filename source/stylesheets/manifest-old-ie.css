@@ -1,5 +1,0 @@
-$is-ie: true;
-$ie-version: 8;
-
-//= require screen
-//= link_tree "../../node_modules/govuk-frontend/govuk/assets"

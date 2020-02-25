@@ -11,6 +11,8 @@ To pull the code from Github, enter the following into your terminal (Applicatio
 - `git clone https://github.com/alphagov/govwifi-product-page.git`
 - `cd govwifi-product-page`
 - `gem install bundler`
+- `bundle install`
+- `npm install`
 - `make build`
 
 You can now open the codebase in any text editor and make changes.

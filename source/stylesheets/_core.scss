@@ -19,12 +19,12 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   font-family: "GDS Transport", Arial, sans-serif;
-  background: govuk-colour("white");
 }
 
 // scss-lint:disable IdSelector
 #main {
   display: block;
+  background-color: govuk-colour('white');
 }
 // scss-lint:enable IdSelector
 

@@ -1,0 +1,14 @@
+#cookie-preferences-amended {
+  display: none;
+
+  .container {
+    border: 3px solid govuk-colour("green");
+    margin-bottom: govuk-spacing(6);
+    padding: govuk-spacing(4);
+  }
+
+  h2 {
+    color: govuk-colour('green');
+    margin-bottom: 0;
+  }
+}

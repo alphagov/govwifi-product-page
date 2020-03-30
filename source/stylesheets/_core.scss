@@ -4,11 +4,11 @@
 
 @import "util/colours";
 
+@import "modules/cookies";
 @import "modules/hero";
 @import "modules/hero-button";
 @import "modules/images";
 @import "modules/masthead";
-@import "modules/phase-banner";
 @import "modules/sticky";
 @import "modules/skip-link";
 @import "modules/striped-table";
@@ -27,17 +27,3 @@ body {
   background-color: govuk-colour('white');
 }
 // scss-lint:enable IdSelector
-
-.content-section--with-top-border {
-  padding-top: 5px;
-  border-top: 1px #dee0e2 solid;
-}
-
-.mobile_image_size {
-  height: 100%;
-  width: 165%;
-}
-
-a.long-link {
-  word-wrap: break-word;
-}

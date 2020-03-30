@@ -14,6 +14,16 @@ title: Cookies
     </ol>
   </nav>
   <main class="govuk-main-wrapper" role="main" id="main">
+    <div class="govuk-grid-row" id="cookie-preferences-amended">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="container">
+          <h2 class="govuk-heading-m">
+            Your cookie settings were saved.
+          </h2>
+        </div>
+      </div>
+    </div>
+
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
         <h1 class="govuk-heading-l">Cookies</h1>
@@ -97,6 +107,31 @@ title: Cookies
             </tr>
           </tbody>
         </table>
+
+        <form id="cookie-settings">
+          <div class="govuk-form-group govuk-!-margin-top-6">
+            <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                Do you want to accept analytics cookies?
+              </legend>
+              <div class="govuk-radios govuk-radios--inline">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="cookies-tracking-on" name="tracking" type="radio" value="on">
+                  <label class="govuk-label govuk-radios__label" for="cookies-tracking-on">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="cookies-tracking-off" name="tracking" type="radio" value="off">
+                  <label class="govuk-label govuk-radios__label" for="cookies-tracking-off">
+                    No
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <button class="govuk-button" type="submit">Save cookie settings</button>
+        </form>
       </div>
     </div>
   </main>

@@ -12,7 +12,7 @@ function submitCookiePreferences(e) {
   window.scrollTo(0, 0);
 }
 
-function setCategoryInput(category) {
+function setupCookiePreferencesOptions(category) {
   const isAllowed = GovWifi.cookies.isCategoryAllowed(category);
   const selector = isAllowed ? "on" : "off";
 
@@ -26,7 +26,7 @@ function setupCookiePreferencesPage() {
 
   if (!form) return;
 
-  setCategoryInput("tracking");
+  setupCookiePreferencesOptions("tracking");
 
   form.addEventListener("submit", submitCookiePreferences);
 }

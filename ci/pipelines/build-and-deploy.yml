@@ -124,6 +124,7 @@ jobs:
     serial: true
     plan:
       - get: govwifi-product-page
+        passed: [self-update]
         trigger: true
       - get: organisations-list
         trigger: true

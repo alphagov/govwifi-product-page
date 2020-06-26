@@ -6,3 +6,6 @@ applications:
   path: ./build
   buildpacks:
    - staticfile_buildpack
+  routes:
+   - route: govwifi-product-page.cloudapps.digital
+   - route: www.wifi.service.gov.uk

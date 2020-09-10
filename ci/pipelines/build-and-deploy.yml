@@ -124,6 +124,7 @@ jobs:
     serial: true
     plan:
       - get: govwifi-product-page
+        passed: [self-update]
         trigger: true
       - get: organisations-list
         trigger: true
@@ -162,6 +163,7 @@ jobs:
               cp manifest.yml ../build
       - put: deploy-to-paas
         params:
+          current_app_name: govwifi-product-page
           manifest: build/manifest.yml
           show_app_log: true
           path: build

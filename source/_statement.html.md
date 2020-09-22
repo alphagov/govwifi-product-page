@@ -54,7 +54,7 @@ The following content on the GovWifi Status Page is not compliant with the Web C
 We plan to have the status page issues listed above addressed by the current supplier or move to an alternative supplier in 2021.
 
 ## How we tested this website
-This website was last tested in September 2019. The test was carried out by GDS developers using a combination of automated and manual tests.
+This website was last tested in September 2020. The test was carried out by GDS developers using a combination of automated and manual tests.
 
 We tested:
 
@@ -69,6 +69,6 @@ When testing GovWifi, we:
 * tested successful and unsuccessful end user journeys
 
 ## What we’re doing to improve accessibility
-We have recorded these issues in our backlog and will be handling them as part of our normal workflow. The website will be fully accessible by September 2020.
+We have recorded these issues in our backlog and will be handling them as part of our normal workflow. The website will be fully accessible by the end of the year.
 
-This statement was prepared on 11 September 2019. It was last updated on 18 October 2019.
+This statement was prepared on 11 September 2019. It was last updated on 22 September 2020.

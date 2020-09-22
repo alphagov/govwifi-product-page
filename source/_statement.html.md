@@ -33,11 +33,25 @@ The content listed below is non-accessible for the following reasons.
 
 ### Non compliance with the accessibility regulations
 
-The side navigation on the administrative platform sometimes does not accurately show where a user is on the website. This fails WCAG 2.1 AA success criterion 2.4.7 (focus visible).
+We have identified the following issues:
 
-Some menu entries do not appear in an active state when a user browses their content. This fails WCAG 2.1 AA success criterion 3.2.3 (consistent navigation).
+On our administrative portal, not all of our pages are identified with a unique title.
 
-We'll make all these elements fully accessible by September 2020.
+We'll make all these elements fully accessible by the end of the year.
+
+The following content on the GovWifi Status Page is not compliant with the Web Content Accessibility Guidelines version 2.1 AA standard. The non-compliances, are listed below:
+
+* an incorrect heading hierarchy which fails WCAG 2.1A 1.3.1 success criterion (Info and Relationships).
+* missing level 1 headings (users may not be able to accurately determine the structure of content on the page).
+* Our status incident page is missing the main heading and the status home page has an incorrect heading hierarchy. This fails WCAG 2.1A 1.3.1 success criterion (Info and Relationships).
+* Our status page ‘subscribe to updates’ link does not contain programmatically discernible link text. This fails WCAG 2.1A 1.3.1 success criterion (Info and Relationships).
+* Our status page subscribe to updates form fields do not contain an explicit label. This fails WCAG 2.1A 1.3.1 success criterion (Info and Relationships).
+* Our status page subscribe to updates forms do not indicate to users that they are expandable or collapsible. This fails WCAG 2.1A 4.1.2 success criterion (Name, Role, Value).
+* Our status page subscribe to updates forms contain some text that does not meet the minimum colour contrast requirements. This fails WCAG 2.1AA 1.4.3 success criterion (Contrast (Minimum)).
+* Our status page subscribe to updates form close link (x) is not descriptive enough for some users to determine its function or purpose. This fails WCAG 2.1A 2.4.4 success criterion (Link Purpose (In Context)).
+* Our status page subscribe to updates forms, when submitted with incorrect data, do not inform screen reader users of the error message when it becomes available. This fails WCAG 2.1AA 4.1.3 success criterion (Status Messages).
+
+We plan to have the status page issues listed above addressed by the current supplier or move to an alternative supplier in 2021.
 
 ## How we tested this website
 This website was last tested in September 2019. The test was carried out by GDS developers using a combination of automated and manual tests.

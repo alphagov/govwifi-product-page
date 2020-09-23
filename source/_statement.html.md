@@ -41,17 +41,17 @@ The content listed below is non-accessible for the following reasons.
 
 * Our status page is missing the main heading and the status home page has an incorrect heading hierarchy. This fails WCAG 2.1A 1.3.1 success criterion (Info and Relationships).
 
-* Our status page ‘subscribe to updates’ link does not contain programmatically discernible link text. This fails WCAG 2.1A 1.3.1 success criterion (Info and Relationships).
+* Our status page 'subscribe to updates' link does not contain programmatically discernible link text. This fails WCAG 2.1A 1.3.1 success criterion (Info and Relationships).
 
-* Our status page ‘subscribe to updates’ form fields do not contain an explicit label. This fails WCAG 2.1A 1.3.1 success criterion (Info and Relationships).
+* Our status page 'subscribe to updates' form fields do not contain an explicit label. This fails WCAG 2.1A 1.3.1 success criterion (Info and Relationships).
 
-* Our status page ‘subscribe to updates’ forms do not indicate to users that they are expandable or collapsible. This fails WCAG 2.1A 4.1.2 success criterion (Name, Role, Value).
+* Our status page 'subscribe to updates' forms do not indicate to users that they are expandable or collapsible. This fails WCAG 2.1A 4.1.2 success criterion (Name, Role, Value).
 
-* Our status page ‘subscribe to updates’ forms contain some text that does not meet the minimum colour contrast requirements. This fails WCAG 2.1AA 1.4.3 success criterion (Contrast (Minimum)).
+* Our status page 'subscribe to updates' forms contain some text that does not meet the minimum colour contrast requirements. This fails WCAG 2.1AA 1.4.3 success criterion (Contrast (Minimum)).
 
-* Our status page ‘subscribe to updates’ form close link (x) is not descriptive enough for some users to determine its function or purpose. This fails WCAG 2.1A 2.4.4 success criterion (Link Purpose (In Context)).
+* Our status page 'subscribe to updates' form close link (x) is not descriptive enough for some users to determine its function or purpose. This fails WCAG 2.1A 2.4.4 success criterion (Link Purpose (In Context)).
 
-* Our status page ‘subscribe to updates’ forms, when submitted with incorrect data, do not inform screen reader users of the error message when it becomes available. This fails WCAG 2.1AA 4.1.3 success criterion (Status Messages).
+* Our status page 'subscribe to updates' forms, when submitted with incorrect data, do not inform screen reader users of the error message when it becomes available. This fails WCAG 2.1AA 4.1.3 success criterion (Status Messages).
 
 We plan to have the status page issues listed above addressed by the current supplier or move to an alternative supplier in 2021.
 

@@ -9,7 +9,7 @@ This website is run by the Government Digital Service (GDS). We want as many peo
 
 We’ve also made the website text as simple as possible to understand.
 
-AbilityNet has advice on making your device easier to use if you have a disability.
+[AbilityNet](https://mcmw.abilitynet.org.uk/) has advice on making your device easier to use if you have a disability.
 
 ## What to do if you cannot access parts of this website
 If you need information on this website in a different format like accessible PDF, large print, easy read, audio recording or braille, contact [govwifi-support@digital.cabinet-office.gov.uk](mailto:govwifi-support@digital.cabinet-office.gov.uk).
@@ -20,7 +20,7 @@ We’ll consider your request and get back to you within 2 working days.
 We’re always looking to improve the accessibility of this website. If you find any problems not listed on this page or think we’re not meeting accessibility requirements, contact [govwifi-support@digital.cabinet-office.gov.uk](mailto:govwifi-support@digital.cabinet-office.gov.uk).
 
 ## Enforcement procedure
-The Equality and Human Rights Commission (EHRC) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the ‘accessibility regulations’). If you’re not happy with how we respond to your complaint, contact the (Equality Advisory and Support Service (EASS))[https://www.equalityadvisoryservice.com/]
+The Equality and Human Rights Commission (EHRC) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the ‘accessibility regulations’). If you’re not happy with how we respond to your complaint, contact the [Equality Advisory and Support Service (EASS)](https://www.equalityadvisoryservice.com/).
 
 # Technical information about this website’s accessibility
 GDS is committed to making its website accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.

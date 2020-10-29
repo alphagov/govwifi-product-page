@@ -29,7 +29,7 @@ This website is partially compliant with the [Web Content Accessibility Guidelin
 
 ## Non accessible content
 
-The content listed below is non-accessible for the following reasons.
+The content below is non-accessible for the following reasons.
 
 ### Non compliance with the accessibility regulations
 

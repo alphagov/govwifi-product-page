@@ -14,6 +14,8 @@ resource_types:
   type: registry-image
   source:
     repository: teliaoss/github-pr-resource
+    username: ((docker_hub_username))
+    password: ((docker_hub_authtoken))
 
 resources:
   - name: tech-ops
@@ -95,6 +97,8 @@ jobs:
             type: docker-image
             source:
               repository: governmentpaas/cf-cli
+              username: ((docker_hub_username))
+              password: ((docker_hub_authtoken))
             version: {digest: "sha256:524554e6bcd9e77e9f3886de0ee2c1307976361a41a009b4690c709afd52812e"}
           inputs:
             - name: govwifi-product-page-pr
@@ -138,6 +142,8 @@ jobs:
             type: docker-image
             source:
               repository: governmentpaas/cf-cli
+              username: ((docker_hub_username))
+              password: ((docker_hub_authtoken))
             version: {digest: "sha256:524554e6bcd9e77e9f3886de0ee2c1307976361a41a009b4690c709afd52812e"}
           inputs:
             - name: govwifi-product-page

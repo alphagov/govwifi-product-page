@@ -4,7 +4,7 @@ This is the product page for GovWifi. It is a [middleman site](http://middlemana
 
 ## Getting Setup for Developement
 
-The recommended ruby version is `2.6.5`. You may need to install this.
+The recommended ruby version is `2.7.2`. You may need to install this.
 
 To pull the code from Github, enter the following into your terminal (Applications -> Utilities -> Terminal on Mac):
 

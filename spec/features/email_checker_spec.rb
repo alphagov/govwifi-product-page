@@ -36,4 +36,12 @@ describe "organisational email checker", type: :feature do
       expect(page).to have_selector('tr.result-row')
     end
   end
+
+  context "when there is no value" do
+    it "shows all of them" do
+      fill_in 'Search for eligible organisation emails', with: ''
+
+      expect(page).to have_selector('tr.result-row')
+    end
+  end
 end

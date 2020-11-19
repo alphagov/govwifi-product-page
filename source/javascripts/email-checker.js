@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .trim()
         .slice(1); // remove the leading '@'
 
-      rows[i].style.display = domain.endsWith(text) ? "" : "none";
+      rows[i].style.display = domain.endsWith(text) || !domain ? "" : "none";
     }
 
     displayResultsMessage(rows);

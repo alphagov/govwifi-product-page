@@ -11,3 +11,14 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 # Middleman Gems
 gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
+
+group :development do
+  gem 'capybara'
+  gem 'guard-rspec'
+  gem 'livereload'
+  gem 'puma'
+  gem 'rake'
+  gem 'rspec'
+  gem 'selenium-webdriver'
+  gem 'webdrivers'
+end

@@ -11,19 +11,18 @@ description: Check your government or public sector email address to sign up to 
         <%= partial 'shared/support/sidebar' %>
       </div>
       <main class="govuk-grid-column-two-thirds" role="main" id="main">
-        <h1 class="govuk-heading-l">Check your organisation email address</h1>
-        <p class="govuk-body">You can <%= link_to "signup to GovWifi", "/about-govwifi/connect-to-govwifi", class: "govuk-link" %>
-          using your public sector staff email address.
-        </p>
-        <p class="govuk-body">If you don't have a public sector staff email address, you can
-          <%= link_to "connect to GovWifi as a visitor", "support/visitor-access-to-govwifi", class: "govuk-link" %>.
+        <h1 class="govuk-heading-l">Check your email address is eligible</h1>
+        <p class="govuk-body">You need a public sector email address to <%= link_to "sign up to GovWifi", "/about-govwifi/connect-to-govwifi", class: "govuk-link" %>.
         </p>
 
         <div class="govuk-inset-text">
-          If your public sector staff email address is currently ineligible, please <a href="https://admin.wifi.service.gov.uk/help/new/user_support" class="govuk-link">contact us</a> to register your public sector organisation email domain.
+          If you do not have a public sector email address, you can
+            <%= link_to "connect to GovWifi as a visitor", "support/visitor-access-to-govwifi", class: "govuk-link" %>.
         </div>
 
-        <p class="govuk-body">You can check to see if your public sector staff email address is eligible below:</p>
+        <p class="govuk-body"> Check this list to see if your email address is eligible. <a href="https://admin.wifi.service.gov.uk/help/new/user_support" class="govuk-link">Let us know</a> if your public sector email address is not here.
+        </p>
+
         <div class="govuk-form-group govuk-!-margin-bottom-4">
           <input class="govuk-input" aria-label="Search for eligible organisation emails" id="search-table" type="text" placeholder="Search email domains">
         </div>

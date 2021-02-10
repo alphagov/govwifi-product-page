@@ -1,0 +1,56 @@
+---
+title: Check if you can sign up by email - GovWifi
+description: Check your public sector email address can sign up to GovWifi by email.
+---
+
+<div class="govuk-width-container">
+  <%= partial "shared/product/breadcrumbs", locals: { page: "Check your organisation email address" } %>
+  <div class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third">
+        <%= partial 'shared/product/sidebar' %>
+      </div>
+      <main class="govuk-grid-column-two-thirds" role="main" id="main">
+        <h1 class="govuk-heading-l">Check if you can sign up by email</h1>
+        <p class="govuk-body">You need a public sector email address to <%= link_to "sign up to GovWifi", "/about-govwifi/connect-to-govwifi", class: "govuk-link" %> by email.
+        </p>
+
+        <div class="govuk-inset-text">
+          If you do not have a public sector email address, you can
+            <%= link_to "sign up by text", "/connect-to-govwifi", class: "govuk-link" %>.
+        </div>
+
+        <p class="govuk-body"> If you have a public sector email address and you cannot sign up by text, check this list to see if your email address is eligible. <a href="https://admin.wifi.service.gov.uk/help/new/user_support" class="govuk-link">Let us know</a> if it's not here and it should be.
+        </p>
+
+        <div class="govuk-form-group govuk-!-margin-bottom-4">
+          <input class="govuk-input" aria-label="Search for eligible organisation emails" id="search-table" type="text" placeholder="Search email domains">
+        </div>
+
+        <% domains = data.domains.sort %>
+
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header govuk-!-width-one-half table-header">Email domain</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body striped-table">
+            <% domains.each do |email| %>
+              <tr class="govuk-table__row result-row result">
+                <td class="govuk-table__cell govuk-!-width-one-half result-text" scope="row">
+                  <%= '@' + email %>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+        <p class="govuk-body govuk-!-margin-top-3" id="no-results" style="display: none">
+          <strong>No results found</strong>
+        </p>
+      </main>
+    </div>
+  </div>
+</div>
+
+<%= javascript_include_tag "email-checker" %>

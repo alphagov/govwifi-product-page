@@ -3,8 +3,9 @@ layout: false
 directory_index: false
 ---
 <%
-  pages = sitemap.resources
-    .find_all{ |p| p.source_file.match(/\.html/) }
+  pages = sitemap.resources.find_all do |p| 
+    p.instance_of?(Middleman::Sitemap::Resource) && p.source_file.match(/\.html/)
+  end
 %>
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

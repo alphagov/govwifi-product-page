@@ -1,26 +1,25 @@
 ---
-title: Check your organisation email address - GovWifi
-description: Check your government or public sector email address to sign up to GovWifi.
+title: Check if you can sign up by email - GovWifi
+description: Check your public sector email address can sign up to GovWifi by email.
 ---
 
 <div class="govuk-width-container">
-  <%= partial "shared/support/breadcrumbs", locals: { page: "Check your organisation email address" } %>
   <div class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-one-third">
-        <%= partial 'shared/support/sidebar' %>
+        <%= partial 'shared/product/sidebar' %>
       </div>
       <main class="govuk-grid-column-two-thirds" role="main" id="main">
-        <h1 class="govuk-heading-l">Check your email address is eligible</h1>
-        <p class="govuk-body">You need a public sector email address to <%= link_to "sign up to GovWifi", "/about-govwifi/connect-to-govwifi", class: "govuk-link" %>.
+        <h1 class="govuk-heading-l">Check if you can sign up by email</h1>
+        <p class="govuk-body">You need a public sector email address to sign up by email.
         </p>
 
         <div class="govuk-inset-text">
           If you do not have a public sector email address, you can
-            <%= link_to "connect to GovWifi as a visitor", "support/visitor-access-to-govwifi", class: "govuk-link" %>.
+            <%= link_to "sign up by text", "/connect-to-govwifi", class: "govuk-link" %>.
         </div>
 
-        <p class="govuk-body"> Check this list to see if your email address is eligible. <a href="https://admin.wifi.service.gov.uk/help/new/user_support" class="govuk-link">Let us know</a> if your public sector email address is not here.
+        <p class="govuk-body"> If you have a public sector email address and you cannot sign up by text, check this list to see if your email address is eligible. <a href="https://admin.wifi.service.gov.uk/help/new/user_support" class="govuk-link">Let us know</a> if it's not here and it should be.
         </p>
 
         <div class="govuk-form-group govuk-!-margin-bottom-4">
@@ -32,7 +31,7 @@ description: Check your government or public sector email address to sign up to 
         <table class="govuk-table">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
-              <th class="govuk-table__header govuk-!-width-one-half table-header">Organisation email domain</th>
+              <th class="govuk-table__header govuk-!-width-one-half table-header">Email domain</th>
             </tr>
           </thead>
           <tbody class="govuk-table__body striped-table">

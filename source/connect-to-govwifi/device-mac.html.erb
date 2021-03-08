@@ -1,19 +1,18 @@
 ---
-title: Connect to GovWifi using a Mac, iMac or Macbook - GovWifi
-description: Follow these instructions to connect your Mac, iMac or Macbook to GovWifi
+title: Connect to GovWifi using a Mac - GovWifi
+description: Follow these instructions to connect your Mac to GovWifi
 ---
 
 <div class="govuk-width-container">
-  <%= partial "shared/support/breadcrumbs", locals: { page: "Connect a Mac, iMac or Macbook" } %>
   <div class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-one-third">
-        <%= partial '/shared/support/_sidebar' %>
+        <%= partial '/shared/product/_sidebar' %>
       </div>
 
       <main class="govuk-grid-column-two-thirds" role="main" id="main">
-        <h1 class="govuk-heading-l">Connect to GovWifi using a Mac, iMac or Macbook</h1>
-        <p class="govuk-body">Once you have a GovWifi <%= link_to "username and password", "/about-govwifi/connect-to-govwifi", class: "govuk-link" %>, follow the steps below. Depending on your device, you may need to scroll down to see all the fields.</p>
+        <h1 class="govuk-heading-l">Connect to GovWifi using a Mac</h1>
+        <p class="govuk-body">Once you have a GovWifi <%= link_to "username and password", "/connect-to-govwifi", class: "govuk-link" %>, follow the steps below. Depending on your device, you may need to scroll down to see all the fields.</p>
 
         <ol class="govuk-list govuk-list--number">
           <li>
@@ -49,8 +48,6 @@ description: Follow these instructions to connect your Mac, iMac or Macbook to G
           </li>
         </ol>
         <p class="govuk-body">You should now be connected to GovWifi.</p>
-
-        <p class="govuk-body">If you are using a device managed by your organisation, your permissions might be restricted and you might not be able to trust the new GovWifi certificate. Follow <%= link_to "these instructions", "/support/update-govwifi-server-certificate/#no-permissions-to-trust-certificate", class: "govuk-link" %> to get access.</p>
       </main>
     </div>
   </div>

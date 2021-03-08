@@ -4,11 +4,10 @@ description: Follow these instructions to connect your Blackberry to GovWifi
 ---
 
 <div class="govuk-width-container">
-  <%= partial "shared/support/breadcrumbs", locals: { page: "Connect a Blackberry" } %>
   <div class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-one-third">
-        <%= partial '/shared/support/_sidebar' %>
+        <%= partial '/shared/product/_sidebar' %>
       </div>
 
       <main class="govuk-grid-column-two-thirds" role="main" id="main">
@@ -16,7 +15,7 @@ description: Follow these instructions to connect your Blackberry to GovWifi
         <p class="govuk-body">If your device was made before October 2016, you're probably running the BlackBerry operating system (OS). Follow these instructions to connect to GovWifi.</p>
 
         <h2 class="govuk-heading-m">Instructions</h2>
-        <p class="govuk-body">Once you have a GovWifi <%= link_to "username and password", "/about-govwifi/connect-to-govwifi", class: "govuk-link" %>, follow the steps below. Depending on your device, you may need to scroll down to see all the fields.</p>
+        <p class="govuk-body">Once you have a GovWifi <%= link_to "username and password", "/connect-to-govwifi", class: "govuk-link" %>, follow the steps below. Depending on your device, you may need to scroll down to see all the fields.</p>
         <ol class="govuk-list govuk-list--number">
           <li>
             <p class="govuk-body">Open your wifi settings. A list of wifi networks appears.</p>
@@ -51,7 +50,7 @@ description: Follow these instructions to connect your Blackberry to GovWifi
         <%= image_tag "troubleshooting/blackberry-step-7-b.jpg", class: "img-fluid", alt: "Screenshot of WiFi connection update on Blackberry" %>
 
         <h2 class="govuk-heading-m">BlackBerry Android</h2>
-        <p class="govuk-body">If your BlackBerry device uses Android, follow the <%= link_to "Android instructions", "/support/connect-to-govwifi-using-an-android-device", class: "govuk-link" %>.</p>
+        <p class="govuk-body">If your BlackBerry device uses Android, follow the <%= link_to "Android instructions", "/connect-to-govwifi/device-android", class: "govuk-link" %>.</p>
       </main>
     </div>
   </div>

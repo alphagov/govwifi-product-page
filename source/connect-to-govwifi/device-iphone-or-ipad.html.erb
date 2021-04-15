@@ -12,7 +12,6 @@ description: Follow these instructions to connect your iPhone or iPad to GovWifi
 
       <main class="govuk-grid-column-two-thirds" role="main" id="main">
         <h1 class="govuk-heading-l">Connect to GovWifi using an iPhone or iPad</h1>
-        <h2 class="govuk-heading-m">Instructions</h2>
         <p class="govuk-body">Once you have a GovWifi <%= link_to "username and password", "/connect-to-govwifi", class: "govuk-link" %>, follow the steps below. Depending on your device, you may need to scroll down to see all the fields.</p>
 
         <ol class="govuk-list govuk-list--number">
@@ -22,13 +21,13 @@ description: Follow these instructions to connect your iPhone or iPad to GovWifi
           </li>
           <li><%= partial 'shared/copy/password_instructions' %></li>
           <li>
-            <p class="govuk-body">You'll be asked to confirm that the network presents the correct certificate. This protects you against fake networks which may harm your privacy.</p>
-            <p class="govuk-body">The correct certificate is called <strong>wifi.service.gov.uk</strong> and is issued by <strong>GeoTrust RSA CA 2018</strong>.</p>
+            <p class="govuk-body">You'll be shown the 'certificate' and asked to trust it.</p>
+            <p class="govuk-body">Your device should show that the certificate is called <strong>wifi.service.gov.uk</strong> and is issued by <strong>GeoTrust RSA CA 2018</strong>.</p>
+            <p class="govuk-body">It might also say ‘not trusted’, which just means your device does not recognise the network yet.</p>
           </li>
-          <li><p class="govuk-body">Select <strong>More Details</strong> and scroll down.</p></li>
+          <li><p class="govuk-body">Select <strong>More Details</strong> and scroll down to the 'Fingerprints' section at the bottom of the page.</p></li>
           <li>
-            <p class="govuk-body"><p>Check that the SHA-1 Fingerprint matches:</p>
-            <p><strong>37 CE B5 7A 3F 38 EB 7C 66 A2 4E 90 BB 11 71 D7 BC 4D 65 1A</strong></p>
+            <p class="govuk-body"><p>Check that the SHA-1 Fingerprint ends in strong>BC 4D 65 1A</strong></p>
             </p>
           </li>
           <li>
@@ -41,9 +40,7 @@ description: Follow these instructions to connect your iPhone or iPad to GovWifi
         <p class="govuk-body">You should now be connected to GovWifi.</p>
 
         <h2 class="govuk-heading-m">Support</h2>
-        <p class="govuk-body">If your device shows the message 'Not trusted', it means your phone doesn't recognise this wifi network yet. Check that the certificate is called wifi.service.gov.uk and that it is issued by GeoTrust RSA CA 2018</p>
-
-        <p class="govuk-body">If it is, select Trust so your phone recognises the wifi network.</p>
+        <p class="govuk-body">If you're having problems, contact IT support for the building you're in.</p>
       </main>
     </div>
   </div>

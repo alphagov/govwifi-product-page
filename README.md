@@ -4,7 +4,11 @@ This is the product page for GovWifi. It is a [middleman site](http://middlemana
 
 ## Getting Setup for Developement
 
-The recommended ruby version is `2.7.2`. You may need to install this.
+Packages required to be installed to get the local version working are:
+
+- ruby (The recommended ruby version is `2.7.2`)
+- docker
+- npm (installed with nodejs)
 
 To pull the code from Github, enter the following into your terminal (Applications -> Utilities -> Terminal on Mac):
 
@@ -19,8 +23,11 @@ You can now open the codebase in any text editor and make changes.
 
 To make the site viewable in your browser:
 
+- npm install
 - `make serve`
 - Open your browser and go to http://localhost:4567
+
+All changes now made to the pages you've checked out are visible with a simple browser refresh (F5)
 
 ## Contributing
 

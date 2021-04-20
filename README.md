@@ -2,9 +2,9 @@
 
 This is the product page for GovWifi. It is a [middleman site](http://middlemanapp.com/) originally copied from the [product-page-example](https://github.com/alphagov/product-page-example) repo.
 
-## Getting Setup for Developement
+## Getting Setup for Development
 
-Packages required to be installed to get the local version working are:
+Software required to be installed to get the local version working are:
 
 - ruby (The recommended ruby version is `2.7.2`)
 - docker
@@ -26,8 +26,6 @@ To make the site viewable in your browser:
 - npm install
 - `make serve`
 - Open your browser and go to http://localhost:4567
-
-All changes now made to the pages you've checked out are visible with a simple browser refresh (F5)
 
 ## Contributing
 

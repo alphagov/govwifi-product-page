@@ -2,9 +2,13 @@
 
 This is the product page for GovWifi. It is a [middleman site](http://middlemanapp.com/) originally copied from the [product-page-example](https://github.com/alphagov/product-page-example) repo.
 
-## Getting Setup for Developement
+## Getting Setup for Development
 
-The recommended ruby version is `2.7.2`. You may need to install this.
+Software required to be installed to get the local version working are:
+
+- ruby (recommended version is `2.7.2`)
+- docker
+- npm (installed with nodejs)
 
 To pull the code from Github, enter the following into your terminal (Applications -> Utilities -> Terminal on Mac):
 
@@ -12,6 +16,7 @@ To pull the code from Github, enter the following into your terminal (Applicatio
 - `cd govwifi-product-page`
 - `gem install bundler`
 - `make build`
+- `npm install`
 
 You can now open the codebase in any text editor and make changes.
 

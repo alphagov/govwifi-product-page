@@ -6,7 +6,7 @@ This is the product page for GovWifi. It is a [middleman site](http://middlemana
 
 Software required to be installed to get the local version working are:
 
-- ruby (The recommended ruby version is `2.7.2`)
+- ruby (recommended version is `2.7.2`)
 - docker
 - npm (installed with nodejs)
 
@@ -16,6 +16,7 @@ To pull the code from Github, enter the following into your terminal (Applicatio
 - `cd govwifi-product-page`
 - `gem install bundler`
 - `make build`
+- `npm install`
 
 You can now open the codebase in any text editor and make changes.
 
@@ -23,7 +24,6 @@ You can now open the codebase in any text editor and make changes.
 
 To make the site viewable in your browser:
 
-- npm install
 - `make serve`
 - Open your browser and go to http://localhost:4567
 

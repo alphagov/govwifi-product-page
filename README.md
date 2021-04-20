@@ -13,14 +13,22 @@ To pull the code from Github, enter the following into your terminal (Applicatio
 - `gem install bundler`
 - `make build`
 
+To run the local site you also need the following installed and working
+
+- npm
+- docker
+
 You can now open the codebase in any text editor and make changes.
 
 ## Getting Started
 
-To make the site viewable in your browser:
+To make the site viewable in your browser from the `govwifi-product-page` run the below:
 
+- npm install
 - `make serve`
 - Open your browser and go to http://localhost:4567
+
+Any changes you make after this to the codebase are then viewable by a simple page refresh in the browser
 
 ## Contributing
 

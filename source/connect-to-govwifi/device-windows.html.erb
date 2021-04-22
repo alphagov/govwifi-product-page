@@ -89,7 +89,7 @@ description: Follow these instructions to connect your Windows device to GovWifi
 
         <ol class="govuk-list govuk-list--number">
           <li>
-            <p class="govuk-body">Open the <strong>Control Panel</strong>, and select <strong>Network and Sharing Center</strong>.</p>
+            <p class="govuk-body">Open the <strong>Control Panel</strong>, select <strong>Network and Internet</strong> and then <strong>'Network and Sharing Center'.</p>
             <%= image_tag "troubleshooting/windows-7-step-1.jpg", class: "img-fluid", alt: "Screenshot of the Control Panel's network settings on Windows 7" %>
           </li>
           <li>
@@ -175,7 +175,7 @@ description: Follow these instructions to connect your Windows device to GovWifi
             <p class="govuk-body">To install the certificate from the Command Prompt, go to your start menu, select 'Accessories' and right click on 'Command Prompt'. Choose 'Run as administrator'.</p>
           </li>
           <li>
-            <p class="govuk-body">Copy (Ctrl + v) the text below:<br/>
+            <p class="govuk-body">Copy the text below:<br/>
               <code>certutil -addstore -enterprise -f "Root" c:\DigiCertGlobalRootCA.crt</code>
           </li>
 

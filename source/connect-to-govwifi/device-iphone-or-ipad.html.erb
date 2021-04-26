@@ -17,9 +17,10 @@ description: Follow these instructions to connect your iPhone or iPad to GovWifi
         <ol class="govuk-list govuk-list--number">
           <li>
             <p class="govuk-body">Go to wifi settings and select <strong>GovWifi</strong>.</p>
-            <%= image_tag "troubleshooting/ios-step-1.jpg", class: "img-fluid", alt: "Screenshot of WiFi credentials input on iOS" %>
           </li>
-          <li><%= partial 'shared/copy/password_instructions' %></li>
+          <li><%= partial 'shared/copy/password_instructions' %>
+          <%= image_tag "troubleshooting/ios-step-1.jpg", class: "img-fluid", alt: "Screenshot of WiFi credentials input on iOS" %>
+          </li>
           <li>
             <p class="govuk-body">You'll be shown the 'certificate' and asked to trust it.</p>
             <p class="govuk-body">Your device should show that the certificate is called <strong>wifi.service.gov.uk</strong> and is issued by <strong>GeoTrust RSA CA 2018</strong>.</p>
@@ -29,6 +30,7 @@ description: Follow these instructions to connect your iPhone or iPad to GovWifi
           <li>
             <p class="govuk-body"><p>Check that the SHA-1 Fingerprint matches:</p>
             <p class="govuk-body"> <strong>37 CE B5 7A 3F 38 EB 7C 66 A2 4E 90 BB 11 71 D7 BC 4D 65 1A</strong></p>
+            <div class="govuk-inset-text">If the certificate details are not correct, tell IT support and do not join the network.</div>
           </li>
           <li>
             <p class="govuk-body">Select <strong>Certificate</strong> in the top left to go back to the previous screen.</p>

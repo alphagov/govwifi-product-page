@@ -22,7 +22,6 @@ description: Follow these instructions to connect your Windows device to GovWifi
         <ol class="govuk-list govuk-list--number">
           <li>
             <p class="govuk-body">Select the wifi icon in the system tray at the bottom right of your screen. You'll see all the nearby wifi networks.</p>
-            <%= image_tag "troubleshooting/windows-step-1.jpg", class: "img-fluid", alt: "Screenshot of WiFi panel in Windows 8/10" %>
           </li>
           <li>
             <p class="govuk-body">Select <strong>GovWifi.</strong></p>
@@ -31,27 +30,28 @@ description: Follow these instructions to connect your Windows device to GovWifi
             <p class="govuk-body">
               Select <strong>Connect</strong>.
             </p>
+            <%= image_tag "troubleshooting/windows-step-1.jpg", class: "img-fluid", alt: "Screenshot of WiFi panel in Windows 8/10" %>
+          </li>
+          <li>
+            <%= partial 'shared/copy/password_instructions' %>
             <%= image_tag "troubleshooting/windows-step-3.jpg", class: "img-fluid", alt: "Screenshot of Wifi panel with credentials open on Windows 8/10" %>
+          </li>
+          <li>
+            <p class="govuk-body">Select <strong>OK.</strong></p>
             <p class="govuk-inset-text">
               If it says <strong>"Can't connect to network"</strong>, <%= link_to "forget the network", "#support-windows-8", class: "govuk-link" %> and try
               again.</p>
           </li>
           <li>
-            <%= partial 'shared/copy/password_instructions' %>
-          </li>
-          <li>
-            <p class="govuk-body">Select <strong>OK.</strong></p>
-            <%= image_tag "troubleshooting/windows-step-5.jpg", class: "img-fluid", alt: "Screenshot of Wifi panel confirmation on Windows 8/10" %>
-          </li>
-          <li>
             <p class="govuk-body">When you see <strong>Continue connecting</strong>, select <strong>Show certificate details.</strong></p>
+            <%= image_tag "troubleshooting/windows-step-5.jpg", class: "img-fluid", alt: "Screenshot of Wifi panel confirmation on Windows 8/10" %>
           </li>
           <li>
             <p class="govuk-body">Check that the <strong>Server thumbprint</strong> matches: </p>
             <p class="govuk-body"><strong>37 CE B5 7A 3F 38 EB 7C 66 A2 4E 90 BB 11 71 D7 BC 4D 65 1A</strong></p>
           </li>
           <li>
-            <p class="govuk-body">If it matches, select <strong>Connect</strong>.</p>
+            <p class="govuk-body">If it matches, select <strong>Connect</strong>. If it does not match, tell IT support and do not join the network.</p>
           </li>
         </ol>
         <p class="govuk-body">You should now be connected to GovWifi.</p>
@@ -89,34 +89,35 @@ description: Follow these instructions to connect your Windows device to GovWifi
 
         <ol class="govuk-list govuk-list--number">
           <li>
-            <p class="govuk-body">Open the <strong>Control Panel</strong>, and select <strong>Network and Sharing Center</strong>.</p>
-            <%= image_tag "troubleshooting/windows-7-step-1.jpg", class: "img-fluid", alt: "Screenshot of the Control Panel's network settings on Windows 7" %>
+            <p class="govuk-body">Open the <strong>Control Panel</strong>, select <strong>Network and Internet</strong> and then <strong>'Network and Sharing Center'.</p>
           </li>
           <li>
             <p class="govuk-body">Select <strong>Set up a new connection or network</strong>.</p>
-            <%= image_tag "troubleshooting/windows-7-step-2.jpg", class: "img-fluid", alt: "Screenshot of Connection Setup Wizard on Windows 7" %>
+            <%= image_tag "troubleshooting/windows-7-step-1.jpg", class: "img-fluid", alt: "Screenshot of the Control Panel's network settings on Windows 7" %>
           </li>
           <li>
             <p class="govuk-body">Select <strong>Manually connect to a wireless network</strong>.</p>
-            <%= image_tag "troubleshooting/windows-7-step-3.jpg", class: "img-fluid", alt: "Screenshot of manual WiFi connection panel on Windows 7" %>
+            <%= image_tag "troubleshooting/windows-7-step-2.jpg", class: "img-fluid", alt: "Screenshot of Connection Setup Wizard on Windows 7" %>
           </li>
           <li>
             <p class="govuk-body">For the <strong>Network name</strong>, enter <strong>GovWifi</strong> and for the <strong>Security type</strong>, select <strong>WPA2-Enterprise</strong>. The network name is case sensitive so make sure you enter capital G and capital W.</p>
+            <%= image_tag "troubleshooting/windows-7-step-3.jpg", class: "img-fluid", alt: "Screenshot of manual WiFi connection panel on Windows 7" %>
           </li>
           <li>
             <p class="govuk-body">Select <strong>Next.</strong></p>
-            <%= image_tag "troubleshooting/windows-7-step-5.jpg", class: "img-fluid", alt: "Screenshot of successfull WiFi addition on Windows 7" %>
           </li>
           <li>
             <p class="govuk-body">Select <strong>Change connection settings.</strong></p>
-            <%= image_tag "troubleshooting/windows-7-step-6.jpg", class: "img-fluid", alt: "Screenshot of network properties dialog on Windows 7" %>
+            <%= image_tag "troubleshooting/windows-7-step-5.jpg", class: "img-fluid", alt: "Screenshot of successfull WiFi addition on Windows 7" %>
           </li>
 
           <li>
             <p class="govuk-body">Select the <strong>Security</strong> tab and select <strong>Settings</strong>.</p>
+            <%= image_tag "troubleshooting/windows-7-step-6.jpg", class: "img-fluid", alt: "Screenshot of network properties dialog on Windows 7" %>
           </li>
           <li>
             <p class="govuk-body">Tick the <strong>Connect to these servers</strong> box. In the text box below it, enter <strong>wifi.service.gov.uk</strong>.</p>
+            <%= image_tag "troubleshooting/windows-7-step-8.jpg", class: "img-fluid", alt: "Screenshot of Protected EAP Properties dialog on Windows 7" %>
           </li>
           <li>
             <p class="govuk-body">In the <strong>Trusted Root Certification Authorities</strong> list, select <strong>DigiCert Global Root CA</strong>. If you cannot see this option, <%= link_to "follow these steps to download the root certificate", "#download-root-certificate", class: "govuk-link" %>.</p>
@@ -126,10 +127,10 @@ description: Follow these instructions to connect your Windows device to GovWifi
           </li>
           <li>
             <p class="govuk-body">Select <strong>Configure.</strong></p>
-            <%= image_tag "troubleshooting/windows-7-step-11.jpg", class: "img-fluid", alt: "Screenshot of Identity Privacy settings on Windows 7" %>
           </li>
           <li>
             <p class="govuk-body">Untick <strong>Automatically use my Windows logon name</strong>.</p>
+            <%= image_tag "troubleshooting/windows-7-step-11.jpg", class: "img-fluid", alt: "Screenshot of Identity Privacy settings on Windows 7" %>
           </li>
           <li>
             <p class="govuk-body">Select <strong>OK</strong>, then <strong>OK</strong> again to go back to the <strong>GovWifi Wireless Network Properties</strong> window.</p>
@@ -137,15 +138,15 @@ description: Follow these instructions to connect your Windows device to GovWifi
           </li>
           <li>
             <p class="govuk-body">Select <strong>Advanced settings</strong>.</p>
-            <%= image_tag "troubleshooting/windows-7-step-14.jpg", class: "img-fluid", alt: "Screenshot of Advanced Connection Settings panel on Windows 7" %>
           </li>
           <li>
             <p class="govuk-body">Select <strong>User authentication</strong> from the dropdown menu under <strong>Specify authentication mode</strong>, then select <strong>Save credentials</strong>.</p>
-            <%= image_tag "troubleshooting/windows-7-step-15.jpg", class: "img-fluid", alt: "Screenshot of Save Credentials dialog on Windows 7" %>
+            <%= image_tag "troubleshooting/windows-7-step-14.jpg", class: "img-fluid", alt: "Screenshot of Advanced Connection Settings panel on Windows 7" %>
           </li>
 
           <li>
             <%= partial 'shared/copy/password_instructions' %>
+            <%= image_tag "troubleshooting/windows-7-step-15.jpg", class: "img-fluid", alt: "Screenshot of Save Credentials dialog on Windows 7" %>
           </li>
           <li>
             <p class="govuk-body">Select <strong>OK</strong> to close all windows.</p>
@@ -175,7 +176,7 @@ description: Follow these instructions to connect your Windows device to GovWifi
             <p class="govuk-body">To install the certificate from the Command Prompt, go to your start menu, select 'Accessories' and right click on 'Command Prompt'. Choose 'Run as administrator'.</p>
           </li>
           <li>
-            <p class="govuk-body">Copy (Ctrl + v) the text below:<br/>
+            <p class="govuk-body">Copy the text below:<br/>
               <code>certutil -addstore -enterprise -f "Root" c:\DigiCertGlobalRootCA.crt</code>
           </li>
 

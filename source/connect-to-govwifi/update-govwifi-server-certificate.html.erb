@@ -1,6 +1,6 @@
 ---
-title: Update the GovWifi server certificate - GovWifi
-description: Updating the GovWifi server certificate to keep using the service
+title: Accept the GovWifi server certificate - GovWifi
+description: Information about accepting the new GovWifi server certificate to keep using the service
 ---
 <div class="govuk-width-container">
   <div class="govuk-main-wrapper">
@@ -9,84 +9,41 @@ description: Updating the GovWifi server certificate to keep using the service
         <%= partial 'shared/product/sidebar' %>
       </div>
       <main class="govuk-grid-column-two-thirds" role="main" id="main">
-        <h1 class="govuk-heading-l">Update the GovWifi server certificate</h1>
-        <p class="govuk-body">Every 2 years, GovWifi has to renew its server certificate to keep GovWifi as secure as
-          possible.</p>
-        <p class="govuk-body">From the 11 November 2019, users on iOS, MacOS and Windows devices may receive a pop up
-          message on their device asking them to accept the new certificate. Users will have to accept to continue using
-          the GovWifi service. Android users should have the new certificate automatically accepted.</p>
+        <h1 class="govuk-heading-l">Accept the new GovWifi certificate</h1>
+        <p class="govuk-body">On 5 July 2021, we’ll renew the GovWifi ‘certificate’. Your device checks this certificate each time you connect to GovWifi to make sure it’s connecting to the genuine GovWifi network.</p>
+        <p class="govuk-body">You might need to accept the new certificate on your device to continue using GovWifi.</p>
+        <div class="govuk-inset-text">If you’re ever asked to accept a new GovWifi certificate without being told in advance by the GovWifi team, do not accept it. Report it to the IT support desk for the building you’re in.</div>
 
-        <h2 class="govuk-heading-m">What you need to do to continue using GovWifi</h2>
+        <h2 class="govuk-heading-m">What to do depends on your device</h2>
 
-        <p class="govuk-body">To continue using GovWifi, you must switch to the new certificate when the message prompts
-          you on your device. You must do this for all of your devices which use GovWifi.</p>
+        <p class="govuk-body">Your device might automatically check the new certificate and accept it. In this case, you will not need to do anything.</p>
 
-        <h3 class="govuk-heading-s">Switching to the new certificate on your mobile</h3>
+        <p class="govuk-body">Or, you may be asked to accept the new certificate.</p>
+
+        <h3 class="govuk-heading-s">If your device asks you to accept the new certificate</h3>
         <ol class="govuk-list govuk-list--number">
-          <li>If you receive the GovWifi pop up message on your mobile device, select Accept.</li>
-          <li>Your device will automatically switch to the new certificate and reconnect to GovWifi.</li>
-          <li>You can continue using GovWifi as normal.</li>
+          <li>View the certificate.</li>
+          <li>Check that the domain is <strong>wifi.service.gov.uk</strong></li>
+          <li>Check the issuer is <strong>GeoTrust TLS DV RSA Mixed SHA256 2020 CA-1</strong></li>
+          <li>Check the fingerprint or thumbprint is <strong>AC 70 5D 2B 63 36 4B 3C A4 1D 13 8E 9B F7 11 E7 21 E9 E6 2A</strong></li>
+          <li>Accept or trust the new certificate.</li>
         </ol>
 
-        <h3 class="govuk-heading-s">Switching to the new certificate on your desktop or laptop</h3>
-        <ol class="govuk-list govuk-list--number">
-          <li>If you receive the ‘Authenticating to network “GovWifi”’ pop up message on your desktop or laptop device,
-            select Continue.
-          </li>
-          <li>Your device will automatically switch to the new certificate and reconnect to GovWifi.</li>
-          <li>You can continue using GovWifi as normal.</li>
-        </ol>
+        <p class="govuk-body">Depending on your device, you may not be able to see all the information referred to here.</p>
 
-        <h2 class="govuk-heading-m">What to do if you are unable to connect to GovWifi</h2>
+        <h2 class="govuk-heading-m">If you're having problems</h2>
 
-        <p class="govuk-body">If you are unable to connect to GovWifi you can try:</p>
+        <p class="govuk-body">If you’re on a work device, contact the organisation that gave you the device. You may not have permission to accept the new certificate.</p>
+
+        <p class="govuk-body">If you've accepted the certificate but you still cannot connect:</p>
 
         <ul class="govuk-list govuk-list--bullet">
-          <li>re-entering your GovWifi username and password</li>
-          <li>restarting your device</li>
-          <li>rejoining your GovWifi network</li>
-          <li>check the left-hand navigation bar to view your device specific instructions</li>
+          <li>forget the network and try again</li>
+          <li>restart your device and try again</li>
+          <li>follow our <%= link_to "guidance on common issues", "/connect-to-govwifi/get-help-connecting", class: "govuk-link" %></li>
+          <li>contact the IT support desk for the building you're in</li>
         </ul>
 
-        <p class="govuk-body">If you are still experiencing problems, contact your IT support desk.</p>
-
-        <h2 class="govuk-heading-m">What to do if you get a Thumbprint/Fingerprint error message</h2>
-        <p class="govuk-body">A Thumbprint, also referred to as a Fingerprint, is an ID that is uniquely calculated from
-          a certificate. The Thumbprint is used to identify and validate the certificate, or as a way to manage
-          certificates in devices. The change of server certificate might cause your device to expect a different
-          Thumbprint.</p>
-        <p class="govuk-body">If you get this error message, you should follow these steps.</p>
-
-        <ol class="govuk-list govuk-list--number">
-          <li>Depending on the device, select to show the Certificate details.</li>
-          <li>Check the certificate is called <strong>wifi.service.gov.uk</strong>.</li>
-          <li>Check the certificate was issued by <strong>GeoTrust RSA CA 2018</strong>.</li>
-          <li><p>Check that the Thumbprint matches the latest server certificate from 11
-            November 2019:</p>
-            <p><strong>37:CE:B5:7A:3F:38:EB:7C:66:A2:4E:90:BB:11:71:D7:BC:4D:65:1A</strong></p>
-          </li>
-          <li>Accept the new certificate</li>
-          <li>You can continue using GovWifi as normal</li>
-        </ol>
-
-        <p class="govuk-body">For more details, use the left-hand navigation bar to view instructions specific to your device.</p>
-
-        <h2 class="govuk-heading-m" id="no-permissions-to-trust-certificate">What to do if you don't have permissions to trust the GovWifi server
-          certificate</h2>
-        <p class="govuk-body">If you are using a device managed by your organisation, your permissions might be
-          restricted and you might not be able to trust the new GovWifi certificate. Depending on the device, you will
-          be prompted to trust or add "DigiCert Global Root CA"
-          or "GeoTrust RSA CA 2018". Contact your IT support desk who should be able to accept them for you.</p>
-        <p class="govuk-body">In some cases, your IT support desk might need access to the new certificates. They can
-          download them from these links:</p>
-        <ul class="govuk-list govuk-list--bullet">
-          <li><%= link_to "GovWifi certificate", "https://docs.wifi.service.gov.uk/assets/wifi.service.gov.uk.crt", class: "govuk-link" %></li>
-          <li><%= link_to "GeoTrust RSA CA 2018", "https://docs.wifi.service.gov.uk/assets/GeoTrustRSACA2018.crt", class: "govuk-link" %></li>
-          <li><%= link_to "DigiCert Global Root CA", "https://docs.wifi.service.gov.uk/assets/DigiCertGlobalRootCA.crt", class: "govuk-link" %></li>
-        </ul>
-
-        <h2 class="govuk-heading-m">If you need further support</h2>
-        <p class="govuk-body">If you have any questions or need more help, contact your IT support desk.</p>
       </main>
     </div>
   </div>

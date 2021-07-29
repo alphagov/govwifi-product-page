@@ -19,7 +19,8 @@ description: Find all the public sector organisations where GovWifi is available
           please review our <%= link_to "technical requirements", "https://docs.wifi.service.gov.uk/", class: "govuk-link" %>.
         </p>
         <div class="govuk-form-group govuk-!-margin-bottom-4">
-          <input class="govuk-input" aria-label="Search organisations using the service" id="search-table" type="text" placeholder="Search organisations">
+          <label class="govuk-label" for="search-table">Search organisations using the service</label>
+          <input class="govuk-input" id="search-table" type="text">
         </div>
 
         <% organisations = data.organisations.sort %>
@@ -30,7 +31,7 @@ description: Find all the public sector organisations where GovWifi is available
               <th class="govuk-table__header govuk-!-width-one-half table-header">Organisation</th>
             </tr>
           </thead>
-          <tbody class="govuk-table__body striped-table">
+          <tbody class="govuk-table__body striped-table" aria-live="polite">
             <% organisations.each do |organisation| %>
               <tr class="govuk-table__row result-row result">
                 <td class="govuk-table__cell govuk-!-width-one-half result-text" scope="row">

@@ -22,7 +22,7 @@ We’re always looking to improve the accessibility of this service. If you find
 ## Enforcement procedure
 The Equality and Human Rights Commission (EHRC) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the ‘accessibility regulations’). If you’re not happy with how we respond to your complaint, contact the [Equality Advisory and Support Service (EASS)](https://www.equalityadvisoryservice.com/).
 
-# Technical information about this service’s accessibility
+## Technical information about this service’s accessibility
 We're committed to making this service accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.
 
 This service is partially compliant with the [Web Content Accessibility Guidelines version 2.1](https://www.w3.org/TR/WCAG21/) AA standard, because of the non-compliances listed below.

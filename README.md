@@ -37,6 +37,19 @@ Once you have made any changes, do the following to save your changes to git and
 - `git commit -m "ADD A SHORT DESCRIPTION OF YOUR CHANGES"`
 - `git push`
 
+### External contributions
+
+We welcome contribution suggestions from outside of the GovWifi team, but the process is slightly different:
+
+**How to contribute**
+
+1. Fork the project
+2. Create a feature or fix branch
+3. Make your changes (with tests if applicable)
+4. Raise a pull request
+
+The pull request must be reviewed by members of the GovWifi team and the content community.
+
 ## Licence
 
 The documentation is [© Crown copyright][copyright] and available under the terms

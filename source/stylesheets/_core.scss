@@ -4,6 +4,7 @@
 
 @import "util/colours";
 
+@import "modules/big-number";
 @import "modules/cookies";
 @import "modules/hero";
 @import "modules/hero-button";
@@ -25,5 +26,25 @@ body {
 #main {
   display: block;
   background-color: govuk-colour('white');
+}
+
+.data-card {
+  background-color: govuk-colour("light-grey");
+  padding: govuk-spacing(3) govuk-spacing(3) govuk-spacing(1);
+  margin-bottom: govuk-spacing(8);
+  border-bottom: 3px solid govuk-colour("blue");
+
+  .big-number__value {
+    font-size: 48px
+  }
+  .big-number__label {
+    line-height: 1;
+  }
+
+  @include govuk-media-query ($from: desktop) {
+    .big-number__value {
+      font-size: 60px
+    }
+  }
 }
 // scss-lint:enable IdSelector

@@ -1,0 +1,103 @@
+.big-number {
+  margin-bottom: 15px;
+}
+
+.big-number__value {
+  font-family: "GDS Transport",arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 53px;
+  font-size: 3.3125rem;
+  line-height: 1.0377358491;
+}
+@media print {
+  .big-number__value {
+    font-family: sans-serif;
+  }
+}
+@media (min-width: 40.0625em) {
+  .big-number__value {
+    font-size: 80px;
+    font-size: 5rem;
+    line-height: 1;
+  }
+}
+@media print {
+  .big-number__value {
+    font-size: 53pt;
+    line-height: 1.1;
+  }
+}
+
+.big-number__label {
+  font-family: "GDS Transport",arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 2;
+}
+@media print {
+  .big-number__label {
+    font-family: sans-serif;
+  }
+}
+@media (min-width: 40.0625em) {
+  .big-number__label {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 2;
+  }
+}
+@media print {
+  .big-number__label {
+    font-size: 14pt;
+    line-height: 2;
+  }
+}
+
+.big-number__label:before {
+  content: "";
+  display: block;
+}
+
+.big-number__link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.big-number__link .big-number__value--decorated {
+  text-decoration: underline;
+  text-decoration-thickness: .0625rem;
+  text-underline-offset: 0.1em;
+}
+
+.big-number__link .big-number__value--decorated:not(:hover):not(:active) {
+  text-decoration: none;
+}
+
+.big-number__link .big-number__label {
+  text-decoration: underline;
+  text-decoration-thickness: .0625rem;
+  text-underline-offset: 0.1em;
+}
+
+.big-number__link:active .big-number__label,
+.big-number__link:active .big-number__value--decorated,
+.big-number__link:hover .big-number__label,
+.big-number__link:hover .big-number__value--decorated {
+  text-decoration-thickness: .1875rem;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  -webkit-text-decoration-skip: none;
+  text-decoration-skip: none;
+}
+
+.big-number__link:focus .big-number__label,
+.big-number__link:focus .big-number__value--decorated,
+.big-number__link:focus:hover .big-number__label,
+.big-number__link:focus:hover .big-number__value--decorated {
+  text-decoration: none;
+}

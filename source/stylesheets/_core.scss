@@ -13,6 +13,10 @@
 @import "modules/skip-link";
 @import "modules/striped-table";
 @import "modules/sub-navigation";
+@import "modules/govuk_publishing_components/mixins/govuk-template-link-focus-override";
+@import "modules/govuk_publishing_components/helpers/contents-list-helper";
+@import "modules/govuk_publishing_components/print/contents-list";
+@import "modules/govuk_publishing_components/components/contents-list";
 
 html,
 body {

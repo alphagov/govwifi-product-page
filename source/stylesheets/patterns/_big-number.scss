@@ -1,0 +1,36 @@
+.big-number {
+  margin: govuk-spacing(1) 0 govuk-spacing(3);
+}
+
+.big-number__value {
+  @include govuk-font($size: 48, $weight: bold);
+
+  @include govuk-media-query ($from: desktop) {
+    font-size: 74px;
+  }
+
+  @media print {
+    font-family: sans-serif;
+    font-size: 53pt;
+    line-height: 1.1;
+  }
+}
+
+.big-number__label {
+  @include govuk-font($size: 14, $weight: bold);
+
+  @include govuk-media-query ($from: desktop) {
+    @include govuk-font($size: 16, $weight: bold);
+  }
+
+  @media print {
+    font-family: sans-serif;
+    font-size: 14pt;
+    line-height: 1.1;
+  }
+}
+
+.big-number__label:before {
+  content: "";
+  display: block;
+}

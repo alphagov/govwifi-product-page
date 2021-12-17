@@ -17,6 +17,7 @@
 @import "modules/govuk_publishing_components/helpers/contents-list-helper";
 @import "modules/govuk_publishing_components/print/contents-list";
 @import "modules/govuk_publishing_components/components/contents-list";
+@import "patterns/big-number";
 
 html,
 body {
@@ -31,3 +32,9 @@ body {
   background-color: govuk-colour('white');
 }
 // scss-lint:enable IdSelector
+
+.intro-para {
+  @include govuk-font($size: 24);
+  padding: govuk-spacing(2) 0 govuk-spacing(2) govuk-spacing(4);
+  border-left: 3px solid govuk-colour("blue");
+}

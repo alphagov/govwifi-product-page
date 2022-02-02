@@ -9,7 +9,7 @@ Capybara.default_driver = :selenium_chrome_headless
 
 middleman_app = ::Middleman::Application.new do
   set :root, File.expand_path(File.join(File.dirname(__FILE__), '..'))
-  set :environment, :development
+  set :environment, :build
   set :show_exceptions, false
 end
 

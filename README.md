@@ -39,7 +39,7 @@ $ rspec ./spec/features/
 
 ## Contributing
 
-The `source` folder contains all the pages that you will want to change, eg: `index.html.erb`. Whenever you save a change, the site will automatically reload so you can see your changes at `http://localhost:4567`.
+The `source` folder contains all the pages that you will want to change, for example: `index.html.erb`. Whenever you save a change, the site will automatically reload so you can see your changes at `http://localhost:4567`.
 
 Once you have made any changes, do the following to save your changes to git and push to github:
 

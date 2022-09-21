@@ -32,7 +32,7 @@ jobs:
         run: bundle install
 
       - name: Build static site
-        run: bundle exec middleman build
+        run: bundle exec middleman --verbose build
 
       - name: Install CF CLI
         run: |

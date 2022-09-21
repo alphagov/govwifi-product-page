@@ -10,7 +10,7 @@ on:
 
 jobs:
 
-  build_and_deploy_product_pages_to_Gov.UK_PaaS:
+  build_and_deploy:
     environment: sandbox
     runs-on: ubuntu-latest
     steps:

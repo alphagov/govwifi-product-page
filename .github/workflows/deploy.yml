@@ -3,10 +3,10 @@ name: Deploy
 on:
   push:
     branches:
-      - create-build-and-deploy-actions
+      - main
   pull_request:
     branches:
-      - create-build-and-deploy-actions
+      - main
 
 jobs:
 
@@ -46,7 +46,7 @@ jobs:
         env:
           CF_API: "https://api.cloud.service.gov.uk"
           CF_ORG: "govwifi"
-          CF_SPACE: "sandbox"
+          CF_SPACE: "production"
           CF_USERNAME: ${{ secrets.cf_username }}
           CF_PASSWORD: ${{ secrets.cf_password }}
         run: |
@@ -59,7 +59,7 @@ jobs:
         env:
           CF_API: "https://api.cloud.service.gov.uk"
           CF_ORG: "govwifi"
-          CF_SPACE: "sandbox"
+          CF_SPACE: "production"
           CF_USERNAME: ${{ secrets.cf_username }}
           CF_PASSWORD: ${{ secrets.cf_password }}
         run: |

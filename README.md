@@ -18,6 +18,7 @@ To pull the code from Github, enter the following into your terminal (Applicatio
 - `make build`
 - `npm install`
 
+test
 You can now open the codebase in any text editor and make changes.
 
 ## Getting Started

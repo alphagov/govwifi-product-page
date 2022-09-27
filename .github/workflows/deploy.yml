@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     branches:
-      - main
+      - testing-cam
   pull_request:
     branches:
       - main
@@ -11,7 +11,7 @@ on:
 jobs:
 
   build_and_deploy_product_pages:
-    environment: sandbox
+    environment: staging
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -46,7 +46,7 @@ jobs:
         env:
           CF_API: "https://api.cloud.service.gov.uk"
           CF_ORG: "govwifi"
-          CF_SPACE: "production"
+          CF_SPACE: "sandbox"
           CF_USERNAME: ${{ secrets.cf_username }}
           CF_PASSWORD: ${{ secrets.cf_password }}
         run: |
@@ -59,7 +59,7 @@ jobs:
         env:
           CF_API: "https://api.cloud.service.gov.uk"
           CF_ORG: "govwifi"
-          CF_SPACE: "production"
+          CF_SPACE: "sandbox"
           CF_USERNAME: ${{ secrets.cf_username }}
           CF_PASSWORD: ${{ secrets.cf_password }}
         run: |

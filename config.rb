@@ -61,6 +61,7 @@ redirect "about-govwifi.html", to: "https://docs.wifi.service.gov.uk/"
 redirect "about-govwifi/how-govwifi-works.html", to: "https://docs.wifi.service.gov.uk/"
 redirect "about-govwifi/organisations-using-govwifi.html", to: "/connect-to-govwifi/organisations-using-govwifi/"
 
+redirect "help.html", to: "/connect-to-govwifi/get-help-connecting/?utm_source=Organic&utm_medium=SMS&utm_campaign=Help"
 redirect "support.html", to: "/connect-to-govwifi/get-help-connecting/"
 redirect "support/update-govwifi-server-certificate.html", to: "/connect-to-govwifi/update-govwifi-server-certificate/"
 redirect "support/check-organisation-email-address.html", to: "/connect-to-govwifi/check-organisation-email-address/"

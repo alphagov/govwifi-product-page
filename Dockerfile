@@ -14,5 +14,5 @@ RUN if ping -c 2 google.co.uk ; then wget https://s3.eu-west-2.amazonaws.com/gov
 EXPOSE 4567
 EXPOSE 35729
 
-RUN npm install --unsafe-perm
+RUN npm install
 RUN bundle exec middleman build

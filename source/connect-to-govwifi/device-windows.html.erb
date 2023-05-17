@@ -48,7 +48,7 @@ description: Follow these instructions to connect your Windows device to GovWifi
           </li>
           <li>
             <p class="govuk-body">Check that the <strong>Server thumbprint</strong> matches: </p>
-            <p class="govuk-body"><strong>2A A4 70 43 4F 33 81 5C F7 C4 F7 85 60 46 52 27 F1 AD C9 6A</strong></p>
+            <p class="govuk-body"><strong>3F 8B B7 3C FD F7 50 36 7F 43 10 33 67 40 7A FA 2E 6E E5 D6</strong></p>
           </li>
           <li>
             <p class="govuk-body">If it matches, select <strong>Connect</strong>. If it does not match, tell IT support and do not join the network.</p>
@@ -120,7 +120,7 @@ description: Follow these instructions to connect your Windows device to GovWifi
             <%= image_tag "troubleshooting/windows-7-step-8.jpg", class: "img-fluid", alt: "Screenshot of Protected EAP Properties dialog on Windows 7" %>
           </li>
           <li>
-            <p class="govuk-body">In the <strong>Trusted Root Certification Authorities</strong> list, select <strong>DigiCert Global Root CA</strong>. If you cannot see this option, <%= link_to "follow these steps to download the root certificate", "#download-root-certificate", class: "govuk-link" %>.</p>
+            <p class="govuk-body">In the <strong>Trusted Root Certification Authorities</strong> list, select <strong>DigiCert Global Root G2</strong>. If you cannot see this option, <%= link_to "follow these steps to download the root certificate", "#download-root-certificate", class: "govuk-link" %>.</p>
           </li>
           <li>
             <p class="govuk-body">Tick <strong>Enable Identity Privacy</strong> and enter <strong>anonymous</strong> to prevent your device from broadcasting your GovWifi username.</p>
@@ -163,21 +163,21 @@ description: Follow these instructions to connect your Windows device to GovWifi
 
         <h3 class="govuk-heading-s" id="download-root-certificate">Download the root certificate</h3>
 
-        <p class="govuk-body">If you cannot see 'DigiCert Global Root CA' in the Trusted Root Certification Authorities list you might not have the right certificate installed on your device. </p>
+        <p class="govuk-body">If you cannot see 'DigiCert Global Root G2' in the Trusted Root Certification Authorities list you might not have the right certificate installed on your device. </p>
         <p class="govuk-body">If you manage your own device, you can download it from the web. If you do not, ask your local IT team for help.</p>
 
         <ol class="govuk-list govuk-list--number">
           <li>
             <p class="govuk-body">In your web browser, navigate
               to: <%= link_to "https://www.digicert.com/digicert-root-certificates.htm", "https://www.digicert.com/digicert-root-certificates.htm", class: "govuk-link" %>
-              and select Download under 'DigiCert Global Root CA'. Save the file to the C: drive</p>
+              and select Download under 'DigiCert Global Root G2'. Save the file to the C: drive</p>
           </li>
           <li>
             <p class="govuk-body">To install the certificate from the Command Prompt, go to your start menu, select 'Accessories' and right click on 'Command Prompt'. Choose 'Run as administrator'.</p>
           </li>
           <li>
             <p class="govuk-body">Copy the text below:<br/>
-              <code>certutil -addstore -enterprise -f "Root" c:\DigiCertGlobalRootCA.crt</code>
+              <code>certutil -addstore -enterprise -f "Root" c:\DigiCertGlobalRootG2.crt</code>
           </li>
 
           <li>

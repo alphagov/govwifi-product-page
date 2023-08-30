@@ -1,4 +1,4 @@
-FROM governmentpaas/cf-cli@sha256:5fc9987476f0d435faa07cd0541e9963e0cf965d56ff7c5fe2a54f85097a444c
+FROM governmentpaas/cf-cli@sha256:aaa82611d82bfb6b260c6168ac6a52247219ed364a2f9fffb3c7bd64be1a2888
 
 WORKDIR /usr/src/app
 

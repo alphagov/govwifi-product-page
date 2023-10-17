@@ -60,7 +60,7 @@ We welcome contribution suggestions from outside of the GovWifi team, but the pr
 
 The pull request must be reviewed by members of the GovWifi team and the content community.
 
-## Licence
+## License
 
 The documentation is [© Crown copyright][copyright] and available under the terms
 of the [Open Government 3.0][ogl] licence.

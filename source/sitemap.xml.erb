@@ -11,7 +11,7 @@ directory_index: false
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <% pages.each do |p| %>
   <url>
-    <loc>https://wifi.service.gov.uk<%=p.url.gsub('/index.html','') %></loc>
+    <loc>https://wifi.service.gov.uk<%=p.url.gsub('index.html','') %></loc>
   </url>
 <% end %>
 </urlset>

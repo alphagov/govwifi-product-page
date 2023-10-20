@@ -3,7 +3,7 @@ name: Deploy-to-github-pages
 on:
   push:
     branches:
-    - GW-1162_migrate_github_pages
+    - master
 
 jobs:
 
@@ -15,7 +15,7 @@ jobs:
         fetch-depth: 0
 
     - name: Setup node
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version: 'latest'
 

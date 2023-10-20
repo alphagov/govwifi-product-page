@@ -6,7 +6,7 @@ This is the product page for GovWifi. It is a [middleman site](http://middlemana
 
 Software required to be installed to get the local version working are:
 
-- ruby (recommended version is `2.7.2`)
+- ruby (recommended version is `3.2.2`)
 - docker
 - npm (installed with nodejs)
 
@@ -36,6 +36,9 @@ To run tests locally, run the following command from the project root directory:
 ```bash
 $ rspec ./spec/features/
 ```
+
+## Deploying
+This is deployed to github pages, via a workflow.  Has been noticed that on occasions it can 'stick' on the ```setup node``` step, if this happens, terminate the job and rerun.  Also it something just deploys this readme instead of the main content, to fix this just the workflow again.
 
 ## Contributing
 

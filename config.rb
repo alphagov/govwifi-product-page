@@ -18,6 +18,8 @@ activate :directory_indexes
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
 #  which_fake_page: "Rendering a fake page with a local variable" }
 
+set :relative_links, true
+
 # General configuration
 
 # Reload the browser automatically whenever files change
@@ -35,6 +37,7 @@ end
 # Insert your Google Analytics ID below
 configure :build do
   set :analytics, ""
+  activate :relative_assets
 end
 
 ###
@@ -51,25 +54,3 @@ helpers do
     'govuk-header__navigation-item--active' if current_page.url.start_with? (root_scope or url)
   end
 end
-
-###
-# Redirects
-###
-
-redirect "about-govwifi/connect-to-govwifi.html", to: "/connect-to-govwifi/"
-redirect "about-govwifi.html", to: "https://docs.wifi.service.gov.uk/"
-redirect "about-govwifi/how-govwifi-works.html", to: "https://docs.wifi.service.gov.uk/"
-redirect "about-govwifi/organisations-using-govwifi.html", to: "/connect-to-govwifi/organisations-using-govwifi/"
-
-redirect "help.html", to: "/connect-to-govwifi/get-help-connecting/?utm_source=Organic&utm_medium=SMS&utm_campaign=Help"
-redirect "support.html", to: "/connect-to-govwifi/get-help-connecting/"
-redirect "support/update-govwifi-server-certificate.html", to: "/connect-to-govwifi/update-govwifi-server-certificate/"
-redirect "support/check-organisation-email-address.html", to: "/connect-to-govwifi/check-organisation-email-address/"
-redirect "support/visitor-access-to-govwifi.html", to: "/connect-to-govwifi/ask-staff-member/"
-
-redirect "support/connect-to-govwifi-using-an-android-device.html", to: "/connect-to-govwifi/device-android/"
-redirect "support/connect-to-govwifi-using-an-iphone-or-ipad.html", to: "/connect-to-govwifi/device-iphone-or-ipad/"
-redirect "support/connect-to-govwifi-using-a-mac-imac-or-macbook.html", to: "/connect-to-govwifi/device-mac/"
-redirect "support/connect-to-govwifi-using-a-windows-device.html", to: "/connect-to-govwifi/device-windows/"
-redirect "support/connect-to-govwifi-using-a-chromebook.html", to: "/connect-to-govwifi/device-chromebook/"
-redirect "support/connect-to-govwifi-using-a-blackberry.html", to: "/connect-to-govwifi/device-blackberry/"

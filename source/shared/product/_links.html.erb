@@ -1,0 +1,19 @@
+<% menu_items = [
+  { id: 0, title: "Android", link: "device-android" },
+  { id: 1, title: "iPhone or iPad", link: "device-iphone-or-ipad" },
+  { id: 2, title: "Windows device", link: "device-windows" },
+  { id: 3, title: "Mac", link: "device-mac" },
+  { id: 4, title: "Chromebook", link: "device-chromebook" }
+] %>
+
+<% menu_items.each do |menu_item, i| %>
+  <%= link_to menu_item.fetch(:title), menu_item.fetch(:link), class: "govuk-link" %>
+  <% if menu_item.fetch(:id) < 3 %>
+, 
+  <% end %>
+  <% if menu_item.fetch(:id) == 3 %>
+   or
+   <% end %>
+<% end %>
+
+

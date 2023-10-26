@@ -54,3 +54,5 @@ helpers do
     'govuk-header__navigation-item--active' if current_page.url.start_with? (root_scope or url)
   end
 end
+
+redirect "about-govwifi/connect-to-govwifi.html", to: "/connect-to-govwifi/"

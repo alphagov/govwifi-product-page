@@ -38,7 +38,7 @@ $ rspec ./spec/features/
 ```
 
 ## Deploying
-This is deployed to github pages, via a workflow.  Has been noticed that on occasions it can 'stick' on the ```setup node``` step, if this happens, terminate the job and rerun.  Also it something just deploys this readme instead of the main content, to fix this just the workflow again.
+This is deployed to github pages, via a workflow.  Has been noticed that on occasions it can 'stick' on the ```setup node``` step, if this happens, terminate the job and rerun.
 
 ## Contributing
 

@@ -7,12 +7,12 @@ description: Follow these instructions to connect your iPhone or iPad to GovWifi
   <div class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-one-third">
-        <%= partial '/shared/product/_sidebar' %>
+        <%= partial 'shared/product/_sidebar' %>
       </div>
 
       <main class="govuk-grid-column-two-thirds" role="main" id="main">
         <h1 class="govuk-heading-l">Connect to GovWifi using an iPhone or iPad</h1>
-        <p class="govuk-body">Once you have a GovWifi <%= link_to "username and password", "/connect-to-govwifi", class: "govuk-link" %>, follow the steps below. Depending on your device, you may need to scroll down to see all the fields.</p>
+        <p class="govuk-body">Once you have a GovWifi <%= link_to "username and password", "connect-to-govwifi", class: "govuk-link" %>, follow the steps below. Depending on your device, you may need to scroll down to see all the fields.</p>
 
         <ol class="govuk-list govuk-list--number">
           <li>
@@ -23,13 +23,13 @@ description: Follow these instructions to connect your iPhone or iPad to GovWifi
           </li>
           <li>
             <p class="govuk-body">You'll be shown the 'certificate' and asked to trust it.</p>
-            <p class="govuk-body">Your device should show that the certificate is called <strong>wifi.service.gov.uk</strong> and is issued by <strong>GeoTrust TLS DV RSA Mixed SHA256 2020 CA-1</strong>.</p>
+            <p class="govuk-body">Your device should show that the certificate is called <strong>wifi.service.gov.uk</strong> and is issued by <strong>GeoTrust TLS RSA CA G1</strong>.</p>
             <p class="govuk-body">It might also say ‘Not trusted’, which just means your device does not recognise the network yet.</p>
           </li>
           <li><p class="govuk-body">Select <strong>More Details</strong> and scroll down to the 'Fingerprints' section at the bottom of the page.</p></li>
           <li>
             <p class="govuk-body"><p>Check that the SHA-1 Fingerprint matches:</p>
-            <p class="govuk-body"> <strong>2A A4 70 43 4F 33 81 5C F7 C4 F7 85 60 46 52 27 F1 AD C9 6A</strong></p>
+            <p class="govuk-body"> <strong>3F 8B B7 3C FD F7 50 36 7F 43 10 33 67 40 7A FA 2E 6E E5 D6</strong></p>
             <div class="govuk-inset-text">If the certificate details are not correct, tell IT support and do not join the network.</div>
           </li>
           <li>

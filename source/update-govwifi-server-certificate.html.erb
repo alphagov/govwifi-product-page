@@ -6,7 +6,7 @@ description: Information about accepting the new GovWifi server certificate to k
   <div class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-one-third">
-        <%= partial 'shared/product/sidebar' %>
+        <%= partial 'shared/product/_sidebar' %>
       </div>
       <main class="govuk-grid-column-two-thirds" role="main" id="main">
         <h1 class="govuk-heading-l">Accept the new GovWifi certificate</h1>
@@ -24,8 +24,8 @@ description: Information about accepting the new GovWifi server certificate to k
         <ol class="govuk-list govuk-list--number">
           <li>View the certificate.</li>
           <li>Check that the domain is <strong>wifi.service.gov.uk</strong></li>
-          <li>Check the issuer is <strong>GeoTrust TLS DV RSA Mixed SHA256 2020 CA-1</strong></li>
-          <li>Check the fingerprint or thumbprint is <strong>2A A4 70 43 4F 33 81 5C F7 C4 F7 85 60 46 52 27 F1 AD C9 6A</strong></li>
+          <li>Check the issuer is <strong>GeoTrust TLS RSA CA G1</strong></li>
+          <li>Check the fingerprint or thumbprint is <strong>3F 8B B7 3C FD F7 50 36 7F 43 10 33 67 40 7A FA 2E 6E E5 D6</strong></li>
           <li>Accept or trust the new certificate.</li>
         </ol>
 
@@ -39,7 +39,7 @@ description: Information about accepting the new GovWifi server certificate to k
 
         <ul class="govuk-list govuk-list--bullet">
           <li>forget the network and try to connect again</li>
-          <li>follow our guidance on <%= link_to "common issues with GovWifi", "/connect-to-govwifi/get-help-connecting", class: "govuk-link" %></li>
+          <li>follow our guidance on <%= link_to "common issues with GovWifi", "get-help-connecting", class: "govuk-link" %></li>
           <li>contact the IT support desk for the building you're in</li>
         </ul>
 

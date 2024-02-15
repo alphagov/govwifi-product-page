@@ -7,13 +7,13 @@ description: GovWifi access for non-public sector staff
   <div class="govuk-main-wrapper">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-one-third">
-        <%= partial '/shared/product/_sidebar' %>
+        <%= partial 'shared/product/_sidebar' %>
       </div>
 
       <main class="govuk-grid-column-two-thirds" role="main" id="main">
         <h1 class="govuk-heading-l">Ask a staff member to create your GovWifi account</h1>
         <p class="govuk-body">
-          If you cannot <a class="govuk-link" href="/connect-to-govwifi/">sign up yourself</a>, someone with a public sector email address can sign you up to GovWifi.
+          If you cannot <%= link_to "sign up yourself", "connect-to-govwifi", class: "govuk-link" =%>, someone with a public sector email address can sign you up to GovWifi.
         </p>
 
         <h2 class="govuk-heading-m">1. Ask a public sector staff member to email GovWifi</h2>
@@ -28,14 +28,9 @@ description: GovWifi access for non-public sector staff
         <p class="govuk-body">Once this has been done, you'll get an email or text with your GovWifi username and password.</p>
 
         <h2 class="govuk-heading-m">2. Connect your device</h2>
-        <p class="govuk-body">By connecting to GovWifi, you accept our <a class="govuk-link" href="/privacy-notice">privacy notice</a> and <a href="/terms-and-conditions" class="govuk-link">terms and conditions</a>.</p>
+        <p class="govuk-body">By connecting to GovWifi, you accept our <%= link_to "Privacy Notice", "privacy-notice", class: "govuk-link" =%> and <%= link_to "terms and conditions", "terms-and-conditions", class: "govuk-link" =%>.</p>
         <p class="govuk-body"> To connect your device, follow the guide for
-          <a class="govuk-link" href="/connect-to-govwifi/device-android">Android</a>,
-          <a class="govuk-link" href="/connect-to-govwifi/device-iphone-or-ipad">iPhone or iPad</a>,
-          <a class="govuk-link" href="/connect-to-govwifi/device-mac">Mac</a>,
-          <a class="govuk-link" href="/connect-to-govwifi/device-windows">Windows</a>,
-          <a class="govuk-link" href="/connect-to-govwifi/device-chromebook">Chromebook</a> or
-          <a class="govuk-link" href="/connect-to-govwifi/device-blackberry">BlackBerry</a>.
+          <%= partial 'shared/product/_links' %>
         </p>
         <p class="govuk-body">You can use the same username and password to connect all your devices to GovWifi.</p>
       </main>

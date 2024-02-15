@@ -1,11 +1,10 @@
----
 applications:
 - name: govwifi-product-page
   memory: 64M
   instances: 2
   path: ./build
   buildpacks:
-   - staticfile_buildpack
+  - staticfile_buildpack
   routes:
-   - route: govwifi-product-page.cloudapps.digital
-   - route: www.wifi.service.gov.uk
+  - route: alphagov.github.io/govwifi-product-page/
+  - route: www.wifi.service.gov.uk

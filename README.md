@@ -6,7 +6,7 @@ This is the product page for GovWifi. It is a [middleman site](http://middlemana
 
 Software required to be installed to get the local version working are:
 
-- ruby (recommended version is `2.7.2`)
+- ruby (recommended version is `3.2.2`)
 - docker
 - npm (installed with nodejs)
 
@@ -37,6 +37,9 @@ To run tests locally, run the following command from the project root directory:
 $ rspec ./spec/features/
 ```
 
+## Deploying
+This is deployed to github pages, via a workflow.  Has been noticed that on occasions it can 'stick' on the ```setup node``` step, if this happens, terminate the job and rerun.
+
 ## Contributing
 
 The `source` folder contains all the pages that you will want to change, eg: `index.html.erb`. Whenever you save a change, the site will automatically reload so you can see your changes at `http://localhost:4567`.
@@ -60,7 +63,7 @@ We welcome contribution suggestions from outside of the GovWifi team, but the pr
 
 The pull request must be reviewed by members of the GovWifi team and the content community.
 
-## Licence
+## License
 
 The documentation is [© Crown copyright][copyright] and available under the terms
 of the [Open Government 3.0][ogl] licence.

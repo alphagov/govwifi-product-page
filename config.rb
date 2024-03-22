@@ -56,3 +56,7 @@ helpers do
 end
 
 redirect "about-govwifi/connect-to-govwifi.html", to: "/connect-to-govwifi/"
+
+redirect "help.html", to: "/get-help-connecting/"
+redirect "privacy.html", to: "/privacy-notice/"
+redirect "terms.html", to: "/terms-and-conditions/"

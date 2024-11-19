@@ -5,18 +5,18 @@
   "description": "This is an example product page for use by GaaP products.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alphagov/govwifi-product-page.git"
+    "url": "git+https://github.com/GovWifi/govwifi-product-page.git"
   },
   "author": "Government Digital Service developers",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alphagov/govwifi-product-page/issues"
+    "url": "https://github.com/GovWifi/govwifi-product-page/issues"
   },
-  "homepage": "https://github.com/alphagov/govwifi-product-page#readme",
+  "homepage": "https://github.com/GovWifi/govwifi-product-page#readme",
   "dependencies": {
     "gaap-analytics": "^3.1.0",
-    "govuk-frontend": "^4.7.0",
-    "govwifi-shared-frontend": "https://github.com/alphagov/govwifi-shared-frontend/releases/download/v0.6.8/govwifi-shared-frontend-0.6.8.tgz"
+    "govuk-frontend": "^4.9.0",
+    "govwifi-shared-frontend": "https://github.com/GovWifi/govwifi-shared-frontend/releases/download/v0.6.8/govwifi-shared-frontend-0.6.8.tgz"
   },
   "scripts": {
     "install": "./copy-assets.rb"
